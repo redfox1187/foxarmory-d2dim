@@ -9,6 +9,9 @@ https://destinytracker.com/destiny-2/db/items/2145476623?perks=1294026524,192609
 //Solar Quickfang
 https://destinytracker.com/destiny-2/db/items/1180270692?perks=1713206376,3666208348,269888150,1685431615,0,3205869472,0,876331947 ~Fox: Solar element Quickfang, normally a void weapon.
 
+//Randy's Throwing Knife
+https://destinytracker.com/destiny-2/db/items/3535742959?perks=3920852688,1840239774,2420895100,247725512,1015611457,1841451179,2055287902,684616255,0,2302094943
+
 // ATALANTA-D XG1992
 //notes:(4-) Decent range, recoil is a bit unwieldy, but not the worst. 
 dimwishlist:item=2422664927&perks=2054312701,1885400500,957782887,1359896290,384158423
