@@ -1,6 +1,5 @@
 title:
-.
-description: This version has been customized by Fox 08022020 - This is Fox's custom wishlist.I will be adding my own weapons and builds, with in-depth testing and opinions. This file is meant mostly for my own use and will not necessarily reflect the most popular opinions.
+description: ~Fox ver.08022020 - I will be adding weapons and builds, with in-depth testing and opinions. This file is meant mostly for my own use and will not necessarily reflect the most popular opinions.
 
 //FOX
 
@@ -11,9 +10,14 @@ https://destinytracker.com/destiny-2/db/items/1180270692?perks=1713206376,366620
 
 //Randy's Throwing Knife
 https://destinytracker.com/destiny-2/db/items/3535742959?perks=3920852688,1840239774,2420895100,247725512,1015611457,1841451179,2055287902,684616255,0,2302094943
+(5) ~Fox: Fast, Stable, Long Range, short range, good damage and firerate. This stupid Scout Rifle is good for just about everything. It even has options to tweak it for personal preference. PvP PvE
+
+//Exit Strategy
+https://destinytracker.com/destiny-2/db/items/4227181568?perks=1294026524,839105230,1885400500,4071163871,3708227201,4224972855,1471333428,2942552113,0,2302094943 
+(4+) ~Fox: Very solid SMG. Fast, handles well, decent damage. PvP PvE
 
 // ATALANTA-D XG1992
-//notes:(4-) Decent range, recoil is a bit unwieldy, but not the worst. 
+//notes:(4-ut) ~Fox: Decent range, recoil is a bit unwieldy, but not the worst. PvP PvE
 dimwishlist:item=2422664927&perks=2054312701,1885400500,957782887,1359896290,384158423
 dimwishlist:item=2422664927&perks=2054312701,1885400500,2387244414,1359896290,384158423
 dimwishlist:item=2422664927&perks=2054312701,1885400500,957782887,2213355989,384158423
@@ -34,7 +38,7 @@ dimwishlist:item=2422664927&perks=2054312701,1885400500,957782887,3300816228,294
 dimwishlist:item=2422664927&perks=2054312701,1885400500,2387244414,3300816228,2942552113
 dimwishlist:item=2422664927&perks=2054312701,1885400500,957782887,1359896290,2697220197
 dimwishlist:item=2422664927&perks=2054312701,1885400500,2387244414,1359896290,2697220// ATALANTA-D XG1992
-//notes:(4-) Decent range, recoil is a bit unwieldy, but not the worst. 
+//notes:(4-ut) ~Fox: Decent range, recoil is a bit unwieldy, but not the worst. PvP PvE
 dimwishlist:item=2422664927&perks=2054312701,1885400500,957782887,1359896290,384158423
 dimwishlist:item=2422664927&perks=2054312701,1885400500,2387244414,1359896290,384158423
 dimwishlist:item=2422664927&perks=2054312701,1885400500,957782887,2213355989,384158423
