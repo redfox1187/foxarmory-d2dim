@@ -1,4 +1,4 @@
-title:u/pandapaxxy's Season of the Worthy Seraph Weapons, M+KB edition
+title:u/Weapons not yet scheduled for sunsetting, plus Voltron picks
 description:Originally found at https://www.reddit.com/r/sharditkeepit/comments/fiqp0j/seraph_weapons_mnk/
 
 // Seventh Seraph Carbine
@@ -15995,4 +15995,180 @@ dimwishlist:item=686951703&perks=1840239774,679225683,3124871000,247725512
 dimwishlist:item=686951703&perks=839105230,679225683,3124871000,247725512
 dimwishlist:item=686951703&perks=1392496348,679225683,3124871000,247725512
 
+//seventh seraph carbine
+//notes: AnyRoll NoSunset
+dimwishlist:item=1561006927
+//Uriel's Gift
+//notes: AnyRoll NoSunset
+dimwishlist:item=3863882743
+//The Summoner
+//notes: AnyRoll NoSunset
+dimwishlist:item=1907698332
+//Steelfeather
+//notes: AnyRoll NoSunset
+dimwishlist:item=1251729046
+//Reckless Oracle
+//notes: AnyRoll NoSunset
+dimwishlist:item=3385326721
+//Accrued Redemption
+//notes: AnyRoll NoSunset
+dimwishlist:item=4095896073
+//Point of the Stag
+//notes: AnyRoll NoSunset
+dimwishlist:item=3434944005
+//Tyranny of Heaven
+//notes: AnyRoll NoSunset
+dimwishlist:item=2721249463
+//Exile's Curse
+//notes: AnyRoll NoSunset
+dimwishlist:item=679281855
+//Elatha FR4
+//notes: AnyRoll NoSunset
+dimwishlist:item=4106983932
+//Gallant Charge
+//notes: AnyRoll NoSunset
+dimwishlist:item=1706206669
+//Techeun Force
+//notes: AnyRoll NoSunset
+dimwishlist:item=4094657108
+//Timelines' Vertex
+//notes: AnyRoll NoSunset
+dimwishlist:item=3055192515
+//Zealot's Reward
+//notes: AnyRoll NoSunset
+dimwishlist:item=2209003210
+//Martyr's Retribution
+//notes: AnyRoll NoSunset
+dimwishlist:item=3850168899
+//Interference VI
+//notes: AnyRoll NoSunset
+dimwishlist:item=2257180473
+//True Prophecy
+//notes: AnyRoll NoSunset
+dimwishlist:item=2742838700
+//The Old Fashioned
+//notes: AnyRoll NoSunset
+dimwishlist:item=3569802112
+//Nation of Beasts
+//notes: AnyRoll NoSunset
+dimwishlist:item=654370424
+//Ancient Gospel
+//notes: AnyRoll NoSunset
+dimwishlist:item=48643186
+//Dire Promise
+//notes: AnyRoll NoSunset
+dimwishlist:item=2742838701
+//Jack Queen King 3
+//notes: AnyRoll NoSunset
+dimwishlist:item=410996590
+//Seventh Seraph Officer Revolver
+//notes: AnyRoll NoSunset
+dimwishlist:item=3037520408
+//Line in the Sand
+//notes: AnyRoll NoSunset
+dimwishlist:item=946443267
+//Komodo-4FR
+//notes: AnyRoll NoSunset
+dimwishlist:item=2697058914
+//Seventh Seraph SAW
+//notes: AnyRoll NoSunset
+dimwishlist:item=2582755344
+//Jian 7 Rifle
+//notes: AnyRoll NoSunset
+dimwishlist:item=1162247618
+//Sacred Provenance
+//notes: AnyRoll NoSunset
+dimwishlist:item=2408405461
+//Chattering Bone
+//notes: AnyRoll NoSunset
+dimwishlist:item=568515759
+//Infinite Paths 8
+//notes: AnyRoll NoSunset
+dimwishlist:item=3233390913
+//Tomorrow's Answer
+//notes: AnyRoll NoSunset
+dimwishlist:item=958384347
+//Pyroclastic Flow
+//notes: AnyRoll NoSunset
+dimwishlist:item=1289324202
+//Apex Predator
+//notes: AnyRoll NoSunset
+dimwishlist:item=2545083870
+//Mos Epoch III
+//notes: AnyRoll NoSunset
+dimwishlist:item=1529450902
+//The Scholar
+//notes: AnyRoll NoSunset
+dimwishlist:item=2478792241
+//Transfiguration
+//notes: AnyRoll NoSunset
+dimwishlist:item=3799980700
+//Patron of Lost Causes
+//notes: AnyRoll NoSunset
+dimwishlist:item=2723241847
+//Astral Horizon
+//notes: AnyRoll NoSunset
+dimwishlist:item=1697682876
+//Felwinter's Lie
+//notes: AnyRoll NoSunset
 dimwishlist:item=1179141605
+//Python
+//notes: AnyRoll NoSunset
+dimwishlist:item=838556752
+//Prophet of Doom
+//notes: AnyRoll NoSunset
+dimwishlist:item=4020742303
+//Hawthorne's
+//notes: AnyRoll NoSunset
+dimwishlist:item=1807343361
+//Seventh Seraph CQC-12
+//notes: AnyRoll NoSunset
+dimwishlist:item=1821724780
+//Perfect Paradox
+//notes: AnyRoll NoSunset
+dimwishlist:item=3393519051
+//Enigma's Draw
+//notes: AnyRoll NoSunset
+dimwishlist:item=1723380073
+//Buzzard
+//notes: AnyRoll NoSunset
+dimwishlist:item=805677041
+//Breachlight
+//notes: AnyRoll NoSunset
+dimwishlist:item=1289997971
+//Seventh Seraph SI-2
+//notes: AnyRoll NoSunset
+dimwishlist:item=3937866388
+//Last Hope
+//notes: AnyRoll NoSunset
+dimwishlist:item=3622137132
+//Traveler's Judgement
+//notes: AnyRoll NoSunset
+dimwishlist:item=4149758318
+//Trophy Hunter
+//notes: AnyRoll NoSunset
+dimwishlist:item=4166221755
+//Eye of Sol
+//notes: AnyRoll NoSunset
+dimwishlist:item=3164743584
+//The Supremacy
+//notes: AnyRoll NoSunset
+dimwishlist:item=686951703
+//Distant Tumulus
+//notes: AnyRoll NoSunset
+dimwishlist:item=2807687156
+//Omniscient Eye
+//notes: AnyRoll NoSunset
+dimwishlist:item=3454326177
+//Seventh Seraph VY-7
+//notes: AnyRoll NoSunset
+dimwishlist:item=766323545
+//Cold Front
+//notes: AnyRoll NoSunset
+dimwishlist:item=1506719573
+//Escape Velocity
+//notes: AnyRoll NoSunset
+dimwishlist:item=1786797708
+//Honor's Edge
+//notes: AnyRoll NoSunset
+dimwishlist:item=2857348871
