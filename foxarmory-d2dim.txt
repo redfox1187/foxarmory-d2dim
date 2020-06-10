@@ -1,5 +1,5 @@
 title:
-description: ~Fox ver.08022020 - I will be adding weapons and builds, with in-depth testing and opinions. This file is meant mostly for my own use and will not necessarily reflect the most popular opinions.
+description: ~Fox ver.20201006 -I will be adding weapons and builds, with in-depth testing and opinions. This file is meant mostly for my own use and will not necessarily reflect the most popular opinions.
 
 //FOX
 
@@ -37,7 +37,9 @@ dimwishlist:item=2422664927&perks=2054312701,1885400500,2387244414,2213355989,29
 dimwishlist:item=2422664927&perks=2054312701,1885400500,957782887,3300816228,2942552113
 dimwishlist:item=2422664927&perks=2054312701,1885400500,2387244414,3300816228,2942552113
 dimwishlist:item=2422664927&perks=2054312701,1885400500,957782887,1359896290,2697220197
-dimwishlist:item=2422664927&perks=2054312701,1885400500,2387244414,1359896290,2697220// ATALANTA-D XG1992
+dimwishlist:item=2422664927&perks=2054312701,1885400500,2387244414,1359896290,2697220
+
+// ATALANTA-D XG1992
 //notes:(4-ut) ~Fox: Decent range, recoil is a bit unwieldy, but not the worst. PvP PvE
 dimwishlist:item=2422664927&perks=2054312701,1885400500,957782887,1359896290,384158423
 dimwishlist:item=2422664927&perks=2054312701,1885400500,2387244414,1359896290,384158423
@@ -73,12 +75,12 @@ dimwishlist:item=3116356268&perks=1392496348,1885400500,3300816228,2846385770
 //Duke Mk.44
 dimwishlist:item=2112909414&perks=2846385770,1885400500,3300816228
 
+//Baligant XU7743
+dimwishlist:item=3461377698&perks=1332244541,3177308360,2869569095,3300816228,186337601
 
-
-
-
-
-
+//Toil and Trouble
+dimwishlist:item=2957367743&perks=466087222,791862061,2117683199,3300816228,758092021
+https://destinytracker.com/destiny-2/db/items/2957367743?perks=3983457027,466087222,791862061,2869569095,3300816228,3205869474,3336648220,758092021,0,2302094943
 
 
 
