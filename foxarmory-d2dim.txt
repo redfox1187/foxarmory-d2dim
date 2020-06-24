@@ -1,5 +1,6 @@
 title:
-description: ~Fox ver.20201006 -I will be adding weapons and builds, with in-depth testing and opinions. This file is meant mostly for my own use and will not necessarily reflect the most popular opinions.
+description: ~Fox ver.20202106 - Sunsetting update. I will be adding weapons and builds, with in-depth testing and opinions. This file is meant mostly for my own use and will not necessarily reflect the most popular opinions.
+
 
 //FOX
 
@@ -40,7 +41,8 @@ dimwishlist:item=2422664927&perks=2054312701,1885400500,957782887,1359896290,269
 dimwishlist:item=2422664927&perks=2054312701,1885400500,2387244414,1359896290,2697220
 
 // ATALANTA-D XG1992
-//notes:(4-ut) ~Fox: Decent range, recoil is a bit unwieldy, but not the worst. PvP PvE
+//notes:(4-ut) ~Fox: Decent range, recoil is a bit unwieldy, but not the worst. PVP PvE
+
 dimwishlist:item=2422664927&perks=2054312701,1885400500,957782887,1359896290,384158423
 dimwishlist:item=2422664927&perks=2054312701,1885400500,2387244414,1359896290,384158423
 dimwishlist:item=2422664927&perks=2054312701,1885400500,957782887,2213355989,384158423
@@ -82,5 +84,11 @@ dimwishlist:item=3461377698&perks=1332244541,3177308360,2869569095,3300816228,18
 dimwishlist:item=2957367743&perks=466087222,791862061,2117683199,3300816228,758092021
 https://destinytracker.com/destiny-2/db/items/2957367743?perks=3983457027,466087222,791862061,2869569095,3300816228,3205869474,3336648220,758092021,0,2302094943
 
+//Wishbringer
+dimwishlist:item=3356526253&perks=1047830412,3142289711,4071163871,3300816228,2697220197 ~Fox: Year 4 Ready Y4R. Seemingly decent Rapid fire frame for PVE. Fast ROF can offset the humble impact level. Range mods seem the best choice here.
 
+//Gnawing Hunger
+//notes:~Fox: Y4R. Really good options here, I just want mine with Autoloader. Stability seems the best build, but maxing out handling could make this quite a smooth operator.
+dimwishlist:item=821154603&perks=1840239774,3142289711,3300816228 
+dimwishlist:item=821154603&perks=1392496348,3177308360,3300816228
 
