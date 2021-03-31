@@ -37,3 +37,45 @@ dimwishlist:item=1046651176&perks=1392496348,3177308360,247725512,47981717,75809
 //notes:
 dimwishlist:item=432476743&perks=1482024992,3230963543,3643424744,2846385770,758092021 ~Fox: Perks to help Reload and boost range a bit. 33 Meters. Reload masterwork is best
 
+title:
+description: ~Fox ver.20213103 - Sunset Ended update. I will be adding weapons and builds, with in-depth testing and opinions. This file is meant mostly for my own use and will not necessarily reflect the most popular opinions.
+
+
+//FOX
+
+//Void Annual Skate
+https://destinytracker.com/destiny-2/db/items/2145476623?perks=1294026524,1926090094,3177308360,1168162263,0,2815102891,3144544718 ~Fox: Ancient Relic in Void. Fast, solid handcannon. 
+//Solar Quickfang
+https://destinytracker.com/destiny-2/db/items/1180270692?perks=1713206376,3666208348,269888150,1685431615,0,3205869472,0,876331947 ~Fox: Solar element Quickfang, normally a void weapon.
+
+//Randy's Throwing Knife
+https://destinytracker.com/destiny-2/db/items/3535742959?perks=3920852688,1840239774,2420895100,247725512,1015611457,1841451179,2055287902,684616255,0,2302094943
+(5) ~Fox: Fast, Stable, Long Range, short range, good damage and firerate. This stupid Scout Rifle is good for just about everything. It even has options to tweak it for personal preference. PvP PvE
+
+//Exit Strategy
+https://destinytracker.com/destiny-2/db/items/4227181568?perks=1294026524,839105230,1885400500,4071163871,3708227201,4224972855,1471333428,2942552113,0,2302094943 
+(4+) ~Fox: Very solid SMG. Fast, handles well, decent damage. PvP PvE
+
+
+//Wishbringer
+dimwishlist:item=3356526253&perks=1047830412,3142289711,4071163871,3300816228,2697220197 ~Fox: Year 4 Ready Y4R. Seemingly decent Rapid fire frame for PVE. Fast ROF can offset the humble impact level. Range mods seem the best choice here.
+
+//Gnawing Hunger
+//notes:~Fox: Y4R. Really good options here, I just want mine with Autoloader. Stability seems the best build, but maxing out handling could make this quite a smooth operator.
+dimwishlist:item=821154603&perks=1840239774,3142289711,3300816228 
+dimwishlist:item=821154603&perks=1392496348,3177308360,3300816228
+
+//BOTTOM DOLLAR
+//notes:
+dimwishlist:item=1046651176&perks=4090651448,3142289711,2846385770,3425386926,758092021 ~Fox: Popular roll
+dimwishlist:item=1046651176&perks=202670084,3142289711,2846385770,47981717,2697220197 ~Fox: The Range roll, this baby reaches out an estimated 48.16 meters, even longer on Opening Shots.
+dimwishlist:item=1046651176&perks=1840239774,2420895100,1820235745,2848615171,758092021 ~Fox: Add Sweeper roll. Subsistence and Dragonfly Pair, and extra ammo well keep you in the green
+dimwishlist:item=1046651176&perks=1392496348,3177308360,247725512,47981717,758092021 ~Fox: Stability Stack. Opening Shot gets your Rapid Hit going.
+
+//THE PALINDROME
+//notes:
+dimwishlist:item=432476743&perks=1482024992,3230963543,3643424744,2846385770,758092021 ~Fox: Perks to help Reload and boost range a bit. 33 Meters. Reload masterwork is best
+
+//MULTIMACH CCX
+//notes:
+dimwishlist:item=3717177717&perks=663495155,3142289711,1359896290,1015611457,758092021 ~Fox: One of the best SMGs I've ever used. Fast handling, good mag and stable. Reload Masterwork makes reload mods minimally useful.
