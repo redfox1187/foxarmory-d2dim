@@ -1,5 +1,5 @@
 title:
-description: ~Fox ver.20213103 - Sunset Ended update. I will be adding weapons and builds, with in-depth testing and opinions. This file is meant mostly for my own use and will not necessarily reflect the most popular opinions.
+description: ~Fox ver.20211405 - Season 14 update. I will be adding weapons and builds, with in-depth testing and opinions. This file is meant mostly for my own use and will not necessarily reflect the most popular opinions.
 
 
 //FOX
