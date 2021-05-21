@@ -32,6 +32,7 @@ dimwishlist:item=1046651176&perks=4090651448,3142289711,2846385770,3425386926,75
 dimwishlist:item=1046651176&perks=202670084,3142289711,2846385770,47981717,2697220197 ~Fox: The Range roll, this baby reaches out an estimated 48.16 meters, even longer on Opening Shots.
 dimwishlist:item=1046651176&perks=1840239774,2420895100,1820235745,2848615171,758092021 ~Fox: Add Sweeper roll. Subsistence and Dragonfly Pair, and extra ammo well keep you in the green
 dimwishlist:item=1046651176&perks=1392496348,3177308360,247725512,47981717,758092021 ~Fox: Stability Stack. Opening Shot gets your Rapid Hit going.
+dimwishlist:item=1046651176&perks=202670084,3230963543,2846385770,3038247973,2697220197 Explosive Range for PVP
 
 //THE PALINDROME
 //notes:
