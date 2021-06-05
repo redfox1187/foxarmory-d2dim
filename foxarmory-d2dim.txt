@@ -288,4 +288,6 @@ dimwishlist:item=334171687&perks=1926090092,1885400500,2846385770,957782887,2697
 //THE THIRD AXIOM
 //Test Stability. Reload isn't terrible, but could use help. Rampage seems best for last perk.
 
-
+//FALSE PROMISES
+dimwishlist:item=3143732432&perks=1392496348,3230963543,3643424744,3350417888,384158423 Stability and Sympathetic Arsenal
+dimwishlist:item=3143732432&perks=1392496348,679225683,3643424744,3350417888,384158423 Even More Stability with Sympathetic Arsenal
