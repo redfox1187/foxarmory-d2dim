@@ -285,6 +285,7 @@ dimwishlist:item=1641430382&perks=13792279,3230963543,706527188,1546637391,75809
 dimwishlist:item=334171687&perks=1926090092,1885400500,2846385770,47981717,2697220197 Community PVP Godroll, Opening Shot
 dimwishlist:item=334171687&perks=1926090092,1885400500,2846385770,957782887,2697220197 Community PVP Godroll, Snapshot
 
-
+//THE THIRD AXIOM
+//Test Stability. Reload isn't terrible, but could use help. Rampage seems best for last perk.
 
 
