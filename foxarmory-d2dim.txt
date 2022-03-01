@@ -379,6 +379,10 @@ dimwishlist:item=2342054803&perks=839105230,3142289711,3108830275,4049631843
 dimwishlist:item=2342054803&perks=839105230,3142289711,3523296417,3592538738
 dimwishlist:item=2342054803&perks=839105230,3142289711,3523296417,11612903
 
+// Redback-5si (PvE)
+//notes:#PvE ~Fox#20220228 Not a whole lot of perk options, and the thing shoots fast, but blocks your view in a bad way to bother with any kind of ranged or precision shooting. That's fine, it's a sidearm. Max stability, Subsistence, and Rampage will have you mowing through trash mobs easily, though.
+dimwishlist:item=1687353095&perks=1392496348,3177308360,1820235745,3551326236,,2942552113
+
 
 
 
