@@ -363,5 +363,22 @@ dimwishlist:item=1019000888&perks=202670084,3142289711,3700496672,1546637391,,26
 dimwishlist:item=1019000888&perks=202670084,3142289711,3700496672,124408337,,2697220197
 dimwishlist:item=1019000888&perks=202670084,3142289711,3700496672,3038247973,,2697220197
 
+// Servant Leader (PvE)
+//notes:#PvE ~Fox#20220228 The new Randy's. Honestly, this thing is hard to go wrong with, but a lot can go right with it. Although, it's range does not push beyond (39.85/102.61) at maximum. I opt for stability rolls, to keep hits on target.
+dimwishlist:item=2886171468&perks=1392496348,3177308360,1820235745,3108830275
+dimwishlist:item=2886171468&perks=1392496348,3177308360,1354429876,4104185692
+dimwishlist:item=2886171468&perks=1392496348,3230963543,1820235745,3551326236,,758092021
+dimwishlist:item=2886171468&perks=1392496348,3177308360,1820235745,3551326236,,758092021
+
+// Ogma PR6 (PvE)
+//notes:#PvE ~Fox#20220228 This Pulse is so stable, it really needs no boosts. I opt to bring up the range, which seems to help land more precision shots over stability. Also, this can get the new Adaptive Munitions perk, which could pair with Disruption Break, perhaps? Great Weapon.
+dimwishlist:item=2342054803&perks=839105230,3142289711,1048183818,3871884143
+dimwishlist:item=2342054803&perks=839105230,3142289711,1048183818,11612903
+dimwishlist:item=2342054803&perks=839105230,3142289711,3108830275,11612903
+dimwishlist:item=2342054803&perks=839105230,3142289711,3108830275,4049631843
+dimwishlist:item=2342054803&perks=839105230,3142289711,3523296417,3592538738
+dimwishlist:item=2342054803&perks=839105230,3142289711,3523296417,11612903
+
+
 
 
