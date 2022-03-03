@@ -315,10 +315,13 @@ dimwishlist:item=1016668089&perks=1047830412,3142289711,1556840489,2360754333
 
 
 // KRAIT
-//notes:#PvE ~Fox#20220228 This can be really interesting for add-clear. Headstone can burst and add aoe damage in the midst of unloading on your foes. Subsistence will keep the already huge magazine going.
+//notes:#PvE ~Fox#20220228 This can be really interesting for add-clear. Headstone can burst and add aoe damage in the midst of unloading on your foes. Subsistence will keep the already huge magazine going. Focused Fury can be great for damage boosting. Stability is pretty high as base, Range seems like it would serve this better, or reloading.
 dimwishlist:item=2852052802&perks=1392496348,1885400500,1820235745,124408337
 dimwishlist:item=2852052802&perks=1392496348,1885400500,1820235745,4049631843
 dimwishlist:item=2852052802&perks=1392496348,1885400500,1820235745,1546637391
+dimwishlist:item=2852052802&perks=202670084,2420895100,3643424744,2896038713 Overloaded Fury Build. 
+dimwishlist:item=2852052802&perks=202670084,3230963543,3643424744,2896038713 Overloaded Fury Build. Faster reload
+dimwishlist:item=2852052802&perks=202670084,2420895100,1820235745,2896038713 Subsistence Fury
 
 // Palmyra-B (PvE)
 //notes:#PvE ~Fox#20220228 It's good, but you can craft it. Suggest tanking the velocity, to get the most out of the tracking, and taking advantage of perks that reward direct hits.
@@ -362,6 +365,12 @@ dimwishlist:item=3568377122&perks=1478423395,1380253176,3523296417,3592538738
 dimwishlist:item=1019000888&perks=202670084,3142289711,3700496672,1546637391,,2697220197
 dimwishlist:item=1019000888&perks=202670084,3142289711,3700496672,124408337,,2697220197
 dimwishlist:item=1019000888&perks=202670084,3142289711,3700496672,3038247973,,2697220197
+dimwishlist:item=1019000888&perks=3661387068,3177308360,3700496672,47981717
+dimwishlist:item=1019000888&perks=3661387068,3177308360,247725512,47981717
+dimwishlist:item=1019000888&perks=3661387068,3177308360,247725512,1546637391
+dimwishlist:item=1019000888&perks=3661387068,3177308360,247725512,2896038713
+
+
 
 // Servant Leader (PvE)
 //notes:#PvE ~Fox#20220228 The new Randy's. Honestly, this thing is hard to go wrong with, but a lot can go right with it. Although, it's range does not push beyond (39.85/102.61) at maximum. I opt for stability rolls, to keep hits on target.
