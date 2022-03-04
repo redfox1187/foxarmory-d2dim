@@ -391,6 +391,30 @@ dimwishlist:item=2342054803&perks=839105230,3142289711,3523296417,11612903
 // Redback-5si (PvE)
 //notes:#PvE ~Fox#20220228 Not a whole lot of perk options, and the thing shoots fast, but blocks your view in a bad way to bother with any kind of ranged or precision shooting. That's fine, it's a sidearm. Max stability, Subsistence, and Rampage will have you mowing through trash mobs easily, though.
 dimwishlist:item=1687353095&perks=1392496348,3177308360,1820235745,3551326236,,2942552113
+dimwishlist:item=1687353095&perks=1392496348,3177308360,1583705720,4049631843 
+dimwishlist:item=2891672170&perks=1047830412,791862061,3436462433,2360754333 High Stability with One and Stats for all. Seems better for higher end content than rampage, since you don't need to bank kills for perks.
+
+
+// Xenoclast IV
+//notes: ~Fox#20220228 Very average shotgun. 
+dimwishlist:item=2891672170&perks=1047830412,791862061,3436462433,2450788523 ~SayWallahBruh #PVP
+
+
+// Punching Out (PvE)
+//notes:
+dimwishlist:item=378498222&perks=1561002382,4071163871,438098033
+dimwishlist:item=378498222&perks=1885400500,4071163871,438098033
+dimwishlist:item=378498222&perks=1885400500,1631667848,4082225868
+
+// Fugue-55 (PvE)
+//notes:#PvE ~Fox#20220228 I like adaptive frame snipers a lot, and this one feels nice. I picked max stability rolls with a few perk combos that would increase DPS for most PVE situations.
+dimwishlist:item=2233545123&perks=1392496348,3177308360,1354429876,2896038713
+dimwishlist:item=2233545123&perks=1392496348,3177308360,1556840489,2896038713
+dimwishlist:item=2233545123&perks=1392496348,3177308360,1556840489,1546637391
+dimwishlist:item=2233545123&perks=1392496348,3177308360,1556840489,957782887
+dimwishlist:item=2233545123&perks=1392496348,3177308360,1354429876,2551157718
+dimwishlist:item=2233545123&perks=1392496348,3177308360,2866798147,2551157718
+dimwishlist:item=2233545123&perks=1392496348,3177308360,1556840489,2551157718
 
 
 
