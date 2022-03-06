@@ -396,18 +396,18 @@ dimwishlist:item=2891672170&perks=1047830412,791862061,3436462433,2360754333 Hig
 
 
 // Xenoclast IV
-//notes: ~Fox#20220228 Very average shotgun. 
+//notes:#PvE ~Fox#20220301 Very average shotgun. 
 dimwishlist:item=2891672170&perks=1047830412,791862061,3436462433,2450788523 ~SayWallahBruh #PVP
 
 
 // Punching Out (PvE)
-//notes:
+//notes:#PvE ~Fox#20220301
 dimwishlist:item=378498222&perks=1561002382,4071163871,438098033
 dimwishlist:item=378498222&perks=1885400500,4071163871,438098033
 dimwishlist:item=378498222&perks=1885400500,1631667848,4082225868
 
 // Fugue-55 (PvE)
-//notes:#PvE ~Fox#20220228 I like adaptive frame snipers a lot, and this one feels nice. I picked max stability rolls with a few perk combos that would increase DPS for most PVE situations.
+//notes:#PvE ~Fox#20220301 I like adaptive frame snipers a lot, and this one feels nice. I picked max stability rolls with a few perk combos that would increase DPS for most PVE situations.
 dimwishlist:item=2233545123&perks=1392496348,3177308360,1354429876,2896038713
 dimwishlist:item=2233545123&perks=1392496348,3177308360,1556840489,2896038713
 dimwishlist:item=2233545123&perks=1392496348,3177308360,1556840489,1546637391
@@ -417,13 +417,17 @@ dimwishlist:item=2233545123&perks=1392496348,3177308360,2866798147,2551157718
 dimwishlist:item=2233545123&perks=1392496348,3177308360,1556840489,2551157718
 
 // Wastelander M5
-//notes:~Fox#20220228 This little shotgun packs a lot of punch, and a lot of surprises. PV
+//notes:~Fox#20220306  This little shotgun packs a lot of punch, and a lot of surprises. PV
 dimwishlist:item=1679868061&perks=1047830412,791862061,1556840489,2360754333 #PVE
 dimwishlist:item=1679868061&perks=1482024992,791862061,1556840489,2360754333 #PVE
 dimwishlist:item=1679868061&perks=1332244541,791862061,1556840489,2360754333 #PVE
 dimwishlist:item=1679868061&perks=1332244541,3142289711,3161816588,47981717 #PVP
 dimwishlist:item=1679868061&perks=1047830412,3142289711,3161816588,47981717 #PVP
 
-
+// BxR-55 Battler 
+//notes:~Fox#20220306 Master Chief would be jealous. Lot's of ways to go with this one. Stability seems the choice here, or maybe reload speed if the kick isn't too bad for you.
+dimwishlist:item=2708806099&perks=1392496348,3177308360,1428297954,454085387 #PVE Stability and Perpetual Motion to make use of those Blunt Execution rounds, where you'll likely be close to enemies.
+dimwishlist:item=2708806099&perks=1392496348,3230963543,3523296417,11612903 #PVE Grenadier roll. Balanced choice.
+dimwishlist:item=2708806099&perks=202670084,3230963543,1428297954,1015611457 #PVP #PVE Reloader roll
 
 
