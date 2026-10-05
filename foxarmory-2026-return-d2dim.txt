@@ -1,0 +1,8 @@
+title:Fox Armory — 2026 Return
+description:Fox-curated Destiny 2 wishlist for the 2026 Return project. PvE and PvP are evaluated independently under the current Fox scoring model. This source is intentionally separate from all legacy/Voltron wishlists.
+
+// 2026 Return v0.1
+// Maintained by FQX Studio for Fox.
+// This file intentionally starts clean. Recommendation lines will be added only after review under the 2026 Return wishlist standard.
+// DIM expert-mode syntax: dimwishlist:item=<itemHash>&perks=<perkHash,...>#notes:<compact 2026 Return evaluation>
+// Wishlist notes use mode-specific Fox scores such as PVE:92E / PVP:88V where E=Estimated, P=Provisional, V=Verified.
