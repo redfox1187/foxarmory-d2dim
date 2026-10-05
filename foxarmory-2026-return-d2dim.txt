@@ -1,5 +1,5 @@
 title:Fox Armory — 2026 Return
-description:Fox-curated Destiny 2 wishlist for the 2026 Return project. Community wishlists are used as roll/hash evidence, then re-evaluated through Fox-specific PvE/PvP scoring. Current and permanently obtainable drops are prioritized; legacy carryovers are explicitly marked.
+description:[Updated 2026-10-05 12:38 CDT] Fox-curated Destiny 2 wishlist for the 2026 Return project. Community wishlists are used as roll/hash evidence, then re-evaluated through Fox-specific PvE/PvP scoring. Current and permanently obtainable drops are prioritized; legacy carryovers are explicitly marked.
 
 // 2026 Return v0.2 — first populated pass
 // Score suffix: E=Estimated, P=Provisional, V=Verified.
