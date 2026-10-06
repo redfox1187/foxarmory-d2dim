@@ -9,11 +9,11 @@ First repository-native complete Fox Armory release in the 2026 Return lineage.
 - Applies profile-governed Fox Fit to the curated positive catalogue while preserving sourced community ratings and existing production PvP fields.
 - Completes coverage for all 1,657 current-manifest roll-bearing Legendary definitions and guarantees each a negative fallback after any positive rules.
 - Covers all 256 fixed Legendary and 146 Exotic weapon definitions at item level where no prior rule existed.
-- Records 149 low-tier weapon definitions in the coverage ledger without bloating the live DIM wishlist.
-- Adds 3,431 manifest-inferred positive rules and 657 new negative fallbacks.
+- Explicitly rates all 149 low-tier weapon definitions with conservative item-level Estimated scores; low-tier entries default to non-retention unless evidence says otherwise.
+- Adds 3,431 manifest-inferred positive rules and 805 new negative/item-level fallback rules, including low-tier coverage.
 - Uses `CPVE:NA` / `CPVP:NA` for generated rules rather than fabricating community consensus.
 - Caps manifest-only inferred scores by evidence confidence: 92E for source-indicated definitions and 86E for availability-unverified definitions.
-- Audits to zero missing catalog hashes, zero missing Legendary fallbacks, zero Favorite/order failures, zero malformed rules, zero duplicate signatures, and zero community-score preservation failures.
+- Audits to zero missing roll-bearing Legendary, fixed Legendary, Exotic, or low-tier hashes; zero missing Legendary fallbacks; zero Favorite/order failures; zero malformed rules; zero duplicate signatures; and zero community-score preservation failures.
 - Generator is reproducible from immutable production baseline commit `aab86043519861c2dfcf738c3801dec0ca45b04b`.
 
 ## v0.9 — reconstructed 2026-10-06
