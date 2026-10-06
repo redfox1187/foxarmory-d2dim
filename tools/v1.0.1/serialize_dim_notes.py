@@ -5,8 +5,8 @@ import json
 import pathlib
 import re
 
-RULE_RE = re.compile(r'^dimwishlist:item=(-?)(\\d+)&perks=([^#]*)#notes:(.*)$')
-DIM_RE = re.compile(r'^dimwishlist:item=(-?\\d+)(?:&perks=)?([\\d|,]*)(?:#notes:)?([^|]*)')
+RULE_RE = re.compile(r'^dimwishlist:item=(-?)(\d+)&perks=([^#]*)#notes:(.*)$')
+DIM_RE = re.compile(r'^dimwishlist:item=(-?\d+)(?:&perks=)?([\d|,]*)(?:#notes:)?([^|]*)')
 
 BASE_SHA = "08063a43baccaf360d7551ffcd51475d50a7fdc4"
 VERSION = "v1.0.1"
@@ -16,12 +16,12 @@ def sha256_text(text):
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 def serialize_notes(notes):
-    notes = re.sub(r'\\s*\\|\\s*', '; ', notes.strip())
+    notes = re.sub(r'\s*\|\s*', '; ', notes.strip())
     notes = notes.replace('score-model:v1.0', 'score-model:v1.0.1')
     return notes
 
 def canonical_for_compare(notes):
-    notes = re.sub(r'\\s*\\|\\s*', '; ', notes.strip())
+    notes = re.sub(r'\s*\|\s*', '; ', notes.strip())
     notes = notes.replace('score-model:v1.0.1', 'score-model:v1.0')
     return notes
 
@@ -100,7 +100,7 @@ def main():
             required = ("CPVE:50", "PVE:76E", "CPVP:50", "PVP:63E", "match:fox-favorite", "evidence:favorite")
             firefright_visible = dm is not None and all(x in visible_notes for x in required)
 
-    out_text = "\\n".join(out_lines) + "\\n"
+    out_text = "\n".join(out_lines) + "\n"
 
     if len(source_rules) != len(output_rules):
         signature_diffs.append({"reason": "rule count changed", "before": len(source_rules), "after": len(output_rules)})
@@ -132,21 +132,21 @@ def main():
     pathlib.Path(args.output).write_text(out_text, encoding="utf-8")
     pathlib.Path(args.audit).write_text(json.dumps(audit, indent=2), encoding="utf-8")
     pathlib.Path(args.report).write_text(
-        "# Fox Armory 2026 Return — v1.0.1 DIM Note Serialization Fix\\n\\n"
-        f"- Base v1.0 commit: {BASE_SHA}\\n"
-        f"- Rules audited: **{len(source_rules)}**\\n"
-        f"- v1.0 rules whose notes contained DIM-terminating pipes: **{old_note_pipe_rules}**\\n"
-        f"- v1.0.1 rules whose notes still contain pipes: **{new_note_pipe_rules}**\\n"
-        f"- Rule signature changes: **{len(signature_diffs)}**\\n"
-        f"- Semantic note changes beyond delimiter/model-version serialization: **{len(semantic_diffs)}**\\n"
-        f"- Firefright full metadata visible through DIM-equivalent parser: **{firefright_visible}**\\n"
-        f"- Candidate SHA-256: {sha256_text(out_text)}\\n\\n"
-        "## Fix\\n\\n"
+        "# Fox Armory 2026 Return — v1.0.1 DIM Note Serialization Fix\n\n"
+        f"- Base v1.0 commit: {BASE_SHA}\n"
+        f"- Rules audited: **{len(source_rules)}**\n"
+        f"- v1.0 rules whose notes contained DIM-terminating pipes: **{old_note_pipe_rules}**\n"
+        f"- v1.0.1 rules whose notes still contain pipes: **{new_note_pipe_rules}**\n"
+        f"- Rule signature changes: **{len(signature_diffs)}**\n"
+        f"- Semantic note changes beyond delimiter/model-version serialization: **{len(semantic_diffs)}**\n"
+        f"- Firefright full metadata visible through DIM-equivalent parser: **{firefright_visible}**\n"
+        f"- Candidate SHA-256: {sha256_text(out_text)}\n\n"
+        "## Fix\n\n"
         "DIM's current wishlist parser captures #notes only until the first pipe character. "
         "v1.0 used pipes as metadata separators, causing DIM to display only the first field. "
         "v1.0.1 replaces note-field pipes with semicolon separators and bumps score-model:v1.0 to "
         "score-model:v1.0.1. Item hashes, positive/negative state, perk lists, scores, classifications, "
-        "ordering, and coverage remain unchanged.\\n",
+        "ordering, and coverage remain unchanged.\n",
         encoding="utf-8",
     )
 
