@@ -1,6 +1,6 @@
 # Fox Armory 2026 Return — v1.0 Release Report
 
-**Status:** release candidate generated on \`release/v1.0-20261006\`
+**Status:** release candidate generated on `release/v1.0-20261006`
 **Manifest:** 244213.26.06.29.2000-1-bnet.65864
 
 ## Scope
@@ -16,9 +16,9 @@ v1.0 treats current-manifest weapon definitions as a conservative superset. Mani
 
 Favorite exact rolls remain highest-priority personal-positive rules. The general profile governs weapon-family preference, maintenance/uptime, and direct perk-pair evidence. Hunter-specific survivability/ability preferences remain buildcrafting evidence and do not indiscriminately inflate weapon scores.
 
-Newly generated definitions use type priors plus smoothed perk and pair residuals learned from the curated positive catalogue. Fox profile adjustments are then applied. These are explicitly Estimated scores.
+Newly generated definitions use type priors plus smoothed perk and pair residuals learned from the curated positive catalogue. Fox profile adjustments are then applied. These are explicitly Estimated scores. Manifest-only inference is confidence-capped: source-indicated definitions cannot exceed 92E and availability-unverified definitions cannot exceed 86E without stronger evidence.
 
-No community score is fabricated. Generated rules use \`CPVE:NA\` / \`CPVP:NA\`.
+No community score is fabricated. Generated rules use `CPVE:NA` / `CPVP:NA`.
 
 ## Completeness
 

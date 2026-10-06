@@ -3,16 +3,16 @@
     "candidate_version": "v1.0",
     "manifest_version": "244213.26.06.29.2000-1-bnet.65864",
     "source_lines": 13330,
-    "candidate_lines": 18845,
+    "candidate_lines": 18834,
     "source_rules": 6661,
-    "final_rules": 10993,
+    "final_rules": 10982,
     "favorite_rules": 348,
     "favorite_hashes": 337,
     "roll_bearing_legendary_definitions": 1657,
     "fixed_legendary_definitions": 256,
     "exotic_definitions": 146,
     "low_tier_weapon_definitions_ledger_only": 149,
-    "generated_positive_rules": 3442,
+    "generated_positive_rules": 3431,
     "generated_negative_rules": 657,
     "missing_roll_bearing_legendary_hashes": 0,
     "missing_roll_bearing_negative_fallbacks": 0,
@@ -60,5 +60,5 @@
   "malformed": [],
   "duplicate_signatures": [],
   "source_sha256": "e090065567b36a5424530870134a1d8fd55659683b7c36b50fb595d30df12263",
-  "candidate_sha256": "2ae49f3c82813af4b4b6d24805c4a257ec3a3fc4b41d6507834046444ca6cd87"
+  "candidate_sha256": "f5777a63475477a31d681711fb27bbf2306aaa5fc81dc168d4fc0bbd13a7cb6d"
 }

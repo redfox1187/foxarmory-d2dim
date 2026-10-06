@@ -828,7 +828,7 @@ weapon_hash,name,type,tier,availability,roll_bearing,covered_before_v1,generated
 3116356268,Spare Rations,Hand Cannon,Legendary,source-indicated,True,False,5,True
 3236112986,Spare Rations,Hand Cannon,Legendary,source-indicated,True,False,5,True
 310708513,Survivor's Epitaph,Hand Cannon,Legendary,source-indicated,True,True,0,True
-2152350211,Survivor's Epitaph,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+2152350211,Survivor's Epitaph,Hand Cannon,Legendary,availability-unverified,True,False,4,True
 4059111040,Survivor's Epitaph,Hand Cannon,Legendary,source-indicated,True,False,5,True
 3890055324,Targeted Redaction,Hand Cannon,Legendary,source-indicated,True,True,0,True
 2112909415,Ten Paces,Hand Cannon,Legendary,source-indicated,True,False,5,True
@@ -909,7 +909,7 @@ weapon_hash,name,type,tier,availability,roll_bearing,covered_before_v1,generated
 1207321710,Scintillation,Linear Fusion Rifle,Legendary,source-indicated,True,False,5,True
 2591257541,Scintillation,Linear Fusion Rifle,Legendary,source-indicated,True,False,5,True
 1492522228,Scintillation (Adept),Linear Fusion Rifle,Legendary,source-indicated,True,False,5,True
-2862666249,Stormchaser,Linear Fusion Rifle,Legendary,source-indicated,True,False,5,True
+2862666249,Stormchaser,Linear Fusion Rifle,Legendary,source-indicated,True,False,4,True
 3652506829,Stormchaser,Linear Fusion Rifle,Legendary,availability-unverified,True,True,0,True
 3615421669,Suspectum-4fr,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
 1911060537,Taipan-4fr,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
@@ -918,7 +918,7 @@ weapon_hash,name,type,tier,availability,roll_bearing,covered_before_v1,generated
 3075224551,Threaded Needle,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
 1952295804,Willful Hamartia,Linear Fusion Rifle,Legendary,source-indicated,True,False,5,True
 1600633250,21% Delirium,Machine Gun,Legendary,source-indicated,False,False,1,False
-3001598094,21% Delirium,Machine Gun,Legendary,source-indicated,True,False,5,True
+3001598094,21% Delirium,Machine Gun,Legendary,source-indicated,True,False,4,True
 3211332727,A Fine Memorial,Machine Gun,Legendary,source-indicated,True,False,5,True
 3325778512,A Fine Memorial,Machine Gun,Legendary,source-indicated,True,False,5,True
 91672792,Archon's Thunder,Machine Gun,Legendary,source-indicated,True,False,5,True
@@ -1202,10 +1202,10 @@ weapon_hash,name,type,tier,availability,roll_bearing,covered_before_v1,generated
 2827141087,Cynosure,Rocket Launcher,Legendary,source-indicated,True,True,0,True
 4195186942,Faith-Keeper,Rocket Launcher,Legendary,source-indicated,True,True,0,True
 2725894221,Folded Root,Rocket Launcher,Legendary,source-indicated,True,False,5,True
-3184457500,Folded Root,Rocket Launcher,Legendary,availability-unverified,True,False,5,True
-3184457501,Folded Root,Rocket Launcher,Legendary,availability-unverified,True,False,5,True
-3184457502,Folded Root,Rocket Launcher,Legendary,availability-unverified,True,False,5,True
-3184457503,Folded Root,Rocket Launcher,Legendary,availability-unverified,True,False,5,True
+3184457500,Folded Root,Rocket Launcher,Legendary,availability-unverified,True,False,3,True
+3184457501,Folded Root,Rocket Launcher,Legendary,availability-unverified,True,False,3,True
+3184457502,Folded Root,Rocket Launcher,Legendary,availability-unverified,True,False,3,True
+3184457503,Folded Root,Rocket Launcher,Legendary,availability-unverified,True,False,3,True
 2155534128,Haliaetus,Rocket Launcher,Legendary,source-indicated,True,False,5,True
 2136808079,Heretic,Rocket Launcher,Legendary,source-indicated,True,True,0,True
 3067821200,Heretic,Rocket Launcher,Legendary,source-indicated,True,False,5,True
