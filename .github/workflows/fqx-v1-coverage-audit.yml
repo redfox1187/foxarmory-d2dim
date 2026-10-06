@@ -129,6 +129,45 @@ jobs:
 
           if not rows:
               raise SystemExit("Coverage universe unexpectedly empty; inspect PROBE_A_DISTANT_PULL schema output")
+          # Additional completeness census: all Legendary and Exotic instance weapons, including fixed rolls.
+          represented_hashes=set(known)
+          census={"legendary_random":0,"legendary_fixed":0,"exotic":0,
+                  "legendary_random_missing":0,"legendary_fixed_missing":0,"exotic_missing":0}
+          extra_rows=[]
+          for h,o in items.items():
+              inv=o.get("inventory") or {}
+              if o.get("itemType") != 3 or not inv.get("isInstanceItem",False): continue
+              tier=inv.get("tierType")
+              if tier not in (5,6): continue
+              name=((o.get("displayProperties") or {}).get("name") or "").strip()
+              if not name: continue
+              sc,rand,reuse,traitlike=socket_stats(o)
+              if tier==6:
+                  bucket="exotic"
+              elif rand or reuse:
+                  bucket="legendary_random"
+              else:
+                  bucket="legendary_fixed"
+              census[bucket]+=1
+              missing_h=h not in represented_hashes
+              if missing_h: census[bucket+"_missing"]+=1
+              ch=o.get("collectibleHash")
+              coll=collectibles.get(int(ch)) if ch else None
+              source_string=((coll or {}).get("sourceString") or "").strip()
+              source_data=o.get("sourceData") or {}
+              source_hashes=source_data.get("sourceHashes") or []
+              acquisition=((coll or {}).get("acquisitionInfo") or {})
+              extra_rows.append({
+                  "weapon_hash":h,"name":name,"type":o.get("itemTypeDisplayName") or "",
+                  "tier":"Exotic" if tier==6 else "Legendary","coverage_bucket":bucket,
+                  "wishlist_covered":not missing_h,
+                  "source_indicated":bool(source_string or source_hashes or acquisition),
+                  "collectible_source":source_string,
+              })
+          with open("D2_v1_All_Weapon_Coverage_20261006.csv","w",newline="",encoding="utf-8") as f:
+              w=csv.DictWriter(f,fieldnames=list(extra_rows[0].keys()));w.writeheader();w.writerows(sorted(extra_rows,key=lambda x:(x["tier"],x["type"],x["name"],x["weapon_hash"])))
+          print("ALL_WEAPON_CENSUS="+json.dumps(census,sort_keys=True))
+
           rows.sort(key=lambda x:(x["type"],x["name"],x["weapon_hash"]))
           with open("D2_v1_Manifest_RollBearing_Coverage_20261006.csv","w",newline="",encoding="utf-8") as f:
               w=csv.DictWriter(f,fieldnames=list(rows[0].keys()));w.writeheader();w.writerows(rows)
@@ -154,5 +193,5 @@ jobs:
           name: fqx-v1-coverage-audit
           path: |
             D2_v1_Manifest_RollBearing_Coverage_20261006.csv
-            D2_v1_Manifest_RollBearing_Coverage_20261006.json
+            D2_v1_Manifest_RollBearing_Coverage_20261006.json\n            D2_v1_All_Weapon_Coverage_20261006.csv
           retention-days: 1
