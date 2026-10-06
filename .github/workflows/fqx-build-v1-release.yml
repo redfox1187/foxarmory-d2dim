@@ -60,6 +60,12 @@ jobs:
               parts=[p for p in parts if p and not any(p.startswith(k) for k in kill)]
               return " | ".join(parts)
 
+          def strip_classification_tags(notes):
+              parts=[p.strip() for p in notes.split("|")]
+              kill=("match:","evidence:","source:","scope:","score-model:","fox-fit-bonus:","foxfit-v0.9-delta:","profile-governance:")
+              parts=[p for p in parts if p and not any(p.startswith(k) for k in kill)]
+              return " | ".join(parts)
+
           db_path=next(pathlib.Path("manifestdb").iterdir())
           con=sqlite3.connect(db_path); con.row_factory=sqlite3.Row
 
@@ -183,6 +189,10 @@ jobs:
               exotic_scores[int(wh)]={"PVE":pve,"PVP":pvp}
 
           favorite_hashes={x["weapon_hash"] for x in legends}|set(exotic_scores)
+          existing_exotic_item_positive={
+              r["weapon_hash"] for r in original_rules
+              if (not r["negative"]) and r["weapon_hash"] in exotic_scores and len(r["perks"])==0
+          }
 
           # v0.8 statistical positive-only map.
           catalog_map={}
@@ -229,6 +239,27 @@ jobs:
               wh=int(m.group(2)); perks=tuple(int(x) for x in m.group(3).split(",") if x.strip().isdigit())
               notes=m.group(4).strip()
               old=numeric_metric(notes,"PVE")
+
+              # Existing item-level Favorite Exotic positives are promoted in place.
+              # This avoids duplicate exact signatures while preserving sourced community fields.
+              if wh in exotic_scores and len(perks)==0:
+                  sc=dict(exotic_scores[wh])
+                  nm=item_name(wh) or f"Exotic {wh}"
+                  direct=nm in {"Wish-Ender","The Last Word","Witherhoard","Dead Man's Tale","Telesto"}
+                  if direct:
+                      pve_num=int(re.match(r'(\d+)',sc["PVE"]).group(1))
+                      if nm=="Witherhoard": pve_num=92
+                      if nm=="Telesto": pve_num=88
+                      sc["PVE"]=f"{pve_num}P"
+                  notes=replace_metric(notes,"PVE",sc["PVE"])
+                  notes=replace_metric(notes,"PVP",sc["PVP"])
+                  notes=strip_classification_tags(notes)
+                  notes += f' | match:fox-favorite-exotic | evidence:{"direct-profile+favorite" if direct else "favorite"} | source:fox-owned | scope:item-level | score-model:v1.0'
+                  line=f'dimwishlist:item={wh}&perks=#notes:{notes}'
+                  rewritten.append(line)
+                  source_rewrite_audit.append({"line":idx+1,"weapon_hash":wh,"name":nm,"type":item_type_name(wh),"old_pve":old,"new_pve":int(re.match(r'(\d+)',sc["PVE"]).group(1)),"reasons":"favorite-exotic-in-place"})
+                  continue
+
               if old is None:
                   rewritten.append(line); continue
               pred=catalog_map.get((wh,perks))
@@ -291,12 +322,13 @@ jobs:
                   if name=="Telesto": pve_num=88
                   sc["PVE"]=f"{pve_num}P"
               comm=community(wh)
-              favorite_block.append(f"// {name} — Fox Favorite Exotic (item-level)")
-              favorite_block.append(
-                  f'dimwishlist:item={wh}&perks=#notes:CPVE:{comm["CPVE"]} | PVE:{sc["PVE"]} | CPVP:{comm["CPVP"]} | PVP:{sc["PVP"]}'
-                  f' | match:fox-favorite-exotic | evidence:{"direct-profile+favorite" if direct else "favorite"}'
-                  f' | source:fox-owned | scope:item-level | score-model:v1.0'
-              )
+              if wh not in existing_exotic_item_positive:
+                  favorite_block.append(f"// {name} — Fox Favorite Exotic (item-level)")
+                  favorite_block.append(
+                      f'dimwishlist:item={wh}&perks=#notes:CPVE:{comm["CPVE"]} | PVE:{sc["PVE"]} | CPVP:{comm["CPVP"]} | PVP:{sc["PVP"]}'
+                      f' | match:fox-favorite-exotic | evidence:{"direct-profile+favorite" if direct else "favorite"}'
+                      f' | source:fox-owned | scope:item-level | score-model:v1.0'
+                  )
               favorite_ledger.append({"kind":"exotic","weapon_hash":wh,"name":name,"perks":"","PVE":sc["PVE"],"PVP":sc["PVP"],"direct_profile":direct})
 
           # Insert Favorite block before the comment that owns the first production rule.
@@ -552,7 +584,8 @@ jobs:
               key=(r["idx"],r["negative"],r["weapon_hash"],r["perks"])
               if (metric(notes,"CPVE"),metric(notes,"CPVP")) != original_cp[key]:
                   community_fail.append({"line":r["idx"]+1,"weapon_hash":r["weapon_hash"]})
-              if metric(notes,"PVP") != original_pvp[key]:
+              intentional_exotic=(not r["negative"]) and r["weapon_hash"] in existing_exotic_item_positive and len(r["perks"])==0
+              if (not intentional_exotic) and metric(notes,"PVP") != original_pvp[key]:
                   pvp_fail.append({"line":r["idx"]+1,"weapon_hash":r["weapon_hash"]})
 
           # Generated community values must remain NA.
