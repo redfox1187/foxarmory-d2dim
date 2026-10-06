@@ -12,7 +12,7 @@ The v0.6-v0.8 candidates were generated on the experimental branch during 2026-1
 | v0.7 | reconstructed candidate history | archive/v0.7-generation @ 50ee23224eb3e89156f28be8347acd1bce9a9007 | fqx-d2dim-v0.7-candidate_20261006.zip | 6b87964c1adf75da5a3316efcc465cdc9790743fb5f9fe610e659ad92674272a |
 | v0.8 | verified candidate history | archive/v0.8-generation @ 44d76226b24e57e76259d7c3a28c31d897a50a80 | fqx-d2dim-v0.8-candidate-verified_20261006.zip | af64b603fc102da99a0267ed3801a5d1c32e5c0e0dbdf95aa07b14c115434d51 |
 | v0.9 | verified local reconstruction | archive/v0.9-reconstructed @ fed6268bd173bea147eb3aeb98c284308c953c4d; no original generation commit | fqx-d2dim-v0.9-candidate-verified_20261006.zip | 6946bca3a0ff814f5467e5a4b892ae391701f1e837d947072cf7fec944e40c14 |
-| v1.0 | repository-native live release | initial master merge edcc4f45e3b1b254d6b72438163d71ac9d526b20; full-catalog generator branch release/v1.0-full-catalog-20261006 | generated in-repo; release report + ledgers committed | b6c4b1ce4f2381745cb718924dae3abea00b890e654fe44a51fb57b16e682a35 |
+| v1.0 | repository-native live release | final master merge 8829ff1b6c4a1a244f6ee9df6ff674c9b38fe7ca; full-catalog generator branch release/v1.0-full-catalog-20261006 | generated in-repo; release report + ledgers committed | b6c4b1ce4f2381745cb718924dae3abea00b890e654fe44a51fb57b16e682a35 |
 
 ## Reconstruction policy
 
