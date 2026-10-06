@@ -1,0 +1,213 @@
+name: FQX Build v0.8 Personalized Catalog Candidate
+
+on:
+  push:
+    branches:
+      - work/fqx-manifest-slice-20261006
+    paths:
+      - "tools/favorite-candidates/**"
+      - ".github/workflows/fqx-build-v0.8-candidate.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build v0.8 personalized catalog candidate
+        shell: python
+        run: |
+          import glob, json, re, pathlib
+
+          src=pathlib.Path("foxarmory-2026-return-d2dim.txt").read_text(encoding="utf-8")
+          lines=src.splitlines()
+          rule_re=re.compile(r'^dimwishlist:item=(-?)(\d+)&perks=([^#]*)#notes:(.*)$')
+          metric_re={k:re.compile(r'(?:^|\|\s*)'+k+r':([^|]+)') for k in ("CPVE","PVE","CPVP","PVP")}
+
+          # Existing production rules and score metadata.
+          # Conservative positive-only predictive Fox Fit for the wider positive roll catalogue.
+          catalog_map={}
+          for raw in pathlib.Path("tools/favorite-candidates/catalog-positive-fit-v0.1.txt").read_text(encoding="utf-8").splitlines():
+              if not raw or raw.startswith("#"): continue
+              wh,perks,newpve,bonus=raw.split("|",3)
+              catalog_map[(int(wh),tuple(int(x) for x in perks.split(",") if x))]={"PVE":int(re.match(r'(\\d+)',newpve).group(1)),"bonus":int(bonus)}
+
+          catalog_updated=0
+          rewritten=[]
+          for line in lines:
+              m=rule_re.match(line)
+              if m and not m.group(1):
+                  wh=int(m.group(2)); perks=tuple(int(x) for x in m.group(3).split(",") if x.strip().isdigit())
+                  pred=catalog_map.get((wh,perks))
+                  if pred:
+                      notes=m.group(4).strip()
+                      pm=re.search(r'(?:(?<=^)|(?<=\\|\\s))PVE:(\\d+)([EPV]?)',notes)
+                      if pm:
+                          suffix=pm.group(2) or "E"
+                          notes=re.sub(r'PVE:\\d+[EPV]?',f'PVE:{pred["PVE"]}{suffix}',notes,count=1)
+                          if "score-model:positive-fit-v0.1" not in notes:
+                              notes += f' | score-model:positive-fit-v0.1 | fox-fit-bonus:+{pred["bonus"]}'
+                          line=f'dimwishlist:item={wh}&perks={m.group(3)}#notes:{notes}'
+                          catalog_updated += 1
+              rewritten.append(line)
+          lines=rewritten
+
+          by_hash={}; negative_positions={}
+          for idx,line in enumerate(lines):
+              m=rule_re.match(line)
+              if not m: continue
+              neg=bool(m.group(1)); wh=int(m.group(2))
+              perks=tuple(int(x) for x in m.group(3).split(",") if x.strip().isdigit())
+              rec={"idx":idx,"negative":neg,"perks":perks,"notes":m.group(4).strip()}
+              by_hash.setdefault(wh,[]).append(rec)
+              if neg: negative_positions.setdefault(wh,[]).append(idx)
+
+          def community(wh):
+              recs=by_hash.get(wh,[])
+              preferred=[r for r in recs if "match:fallback" in r["notes"]] or recs
+              for r in preferred:
+                  vals={}
+                  for k in ("CPVE","CPVP"):
+                      m=metric_re[k].search(r["notes"])
+                      if m: vals[k]=m.group(1).strip()
+                  if len(vals)==2: return vals
+              return {"CPVE":"NA","CPVP":"NA"}
+
+          # Legendary exact-roll candidates.
+          legends=[]
+          for p in sorted(glob.glob("tools/favorite-candidates/part*.txt")):
+              for raw in pathlib.Path(p).read_text(encoding="utf-8").splitlines():
+                  if not raw.strip(): continue
+                  wh,perks,name,kind=raw.split("|",3)
+                  legends.append({"weapon_hash":int(wh),"perks":tuple(int(x) for x in perks.split(",") if x),"name":name,"kind":kind})
+          uniq=[]; seen=set()
+          for c in legends:
+              sig=(c["weapon_hash"],c["perks"])
+              if sig not in seen: seen.add(sig); uniq.append(c)
+          legends=uniq
+
+          leg_scores={}
+          for raw in pathlib.Path("tools/favorite-candidates/scores-v0.1.txt").read_text(encoding="utf-8").splitlines():
+              if not raw or raw.startswith("#"): continue
+              wh,perks,pve,pvp=raw.split("|",3)
+              leg_scores[(int(wh),tuple(int(x) for x in perks.split(",") if x))]={"PVE":pve,"PVP":pvp}
+
+          # Exotic item-level candidates.
+          exotic_scores={}
+          for raw in pathlib.Path("tools/favorite-candidates/exotic-scores-v0.1.txt").read_text(encoding="utf-8").splitlines():
+              if not raw or raw.startswith("#"): continue
+              wh,pve,pvp=raw.split("|",2)
+              exotic_scores[int(wh)]={"PVE":pve,"PVP":pvp}
+
+          missing=[]
+          block=[
+              "// FQX Fox Favorite protection + personal-fit recalibration — v0.8 candidate",
+              "// Legendary Favorites use exact owned-roll rules; Favorite Exotics use item-level rules.",
+              "// Community scores remain source-derived. Fox scores use personal-evidence-v0.1; Favorite status alone never grants Verified.",
+              "",
+              "// --- Favorite Legendary exact rolls ---",
+          ]
+
+          audit_leg=[]
+          for c in legends:
+              sig=(c["weapon_hash"],c["perks"]); sc=leg_scores.get(sig); comm=community(c["weapon_hash"])
+              if not sc: missing.append({"kind":"legendary","weapon_hash":c["weapon_hash"],"reason":"missing_personal_score"}); continue
+              if "NA" in comm.values(): missing.append({"kind":"legendary","weapon_hash":c["weapon_hash"],"reason":"missing_community_score"}); continue
+              amb=" | ambiguity:same-name-legal-dual-candidate" if c["kind"]=="ambiguous_dual_candidate" else ""
+              block.append(f'// {c["name"]} — Fox Favorite')
+              block.append(
+                  f'dimwishlist:item={c["weapon_hash"]}&perks={",".join(map(str,c["perks"]))}'
+                  f'#notes:CPVE:{comm["CPVE"]} | PVE:{sc["PVE"]} | CPVP:{comm["CPVP"]} | PVP:{sc["PVP"]}'
+                  f' | match:fox-favorite | evidence:favorite | source:fox-owned | score-model:personal-evidence-v0.1{amb}'
+              )
+              audit_leg.append({**c,"perks":list(c["perks"]),"score":sc,"community":comm})
+
+          block += ["", "// --- Favorite Exotics ---"]
+          audit_ex=[]
+          for wh,sc in sorted(exotic_scores.items()):
+              comm=community(wh)
+              if "NA" in comm.values(): missing.append({"kind":"exotic","weapon_hash":wh,"reason":"missing_community_score"}); continue
+              block.append(f'// Favorite Exotic — {wh}')
+              block.append(
+                  f'dimwishlist:item={wh}&perks='
+                  f'#notes:CPVE:{comm["CPVE"]} | PVE:{sc["PVE"]} | CPVP:{comm["CPVP"]} | PVP:{sc["PVP"]}'
+                  f' | match:fox-favorite-exotic | evidence:favorite | source:fox-owned | score-model:personal-evidence-v0.1'
+              )
+              audit_ex.append({"weapon_hash":wh,"score":sc,"community":comm})
+
+          if missing:
+              pathlib.Path("fqx_v08_candidate_audit.json").write_text(json.dumps({"missing":missing},indent=2),encoding="utf-8")
+              raise SystemExit(f"Missing metadata for {len(missing)} Favorite rules")
+
+          out_lines=list(lines)
+          if len(out_lines)>1 and out_lines[1].startswith("description:"):
+              out_lines[1]="description:[CANDIDATE 2026-10-06] Favorite-aware Destiny 2 triage wishlist with conservative positive-only predictive Fox Fit across the wider positive roll catalogue. Exact Legendary Favorites and Favorite Exotics remain protected; community/core coverage remains intact."
+          for i,l in enumerate(out_lines[:12]):
+              if l.startswith("// 2026 Return v"):
+                  out_lines[i]="// 2026 Return v0.8-candidate — full Favorite-aware personal-fit test"
+                  break
+          first_rule=next(i for i,l in enumerate(out_lines) if l.startswith("dimwishlist:item="))
+          out_lines=out_lines[:first_rule]+block+[""]+out_lines[first_rule:]
+
+          # Audit positions, syntax, and score floor.
+          positions={}; negpos={}; malformed=[]; favorite_rules=[]
+          for idx,line in enumerate(out_lines):
+              if not line.startswith("dimwishlist:item="): continue
+              m=rule_re.match(line)
+              if not m:
+                  malformed.append({"line":idx+1,"text":line[:200]}); continue
+              wh=int(m.group(2)); perks=tuple(int(x) for x in m.group(3).split(",") if x.strip().isdigit())
+              if m.group(1): negpos.setdefault(wh,[]).append(idx)
+              else: positions.setdefault((wh,perks),[]).append(idx)
+              if "match:fox-favorite" in m.group(4): favorite_rules.append((idx,wh,perks,m.group(4)))
+
+          failures=[]; score_failures=[]
+          for a in audit_leg:
+              sig=(a["weapon_hash"],tuple(a["perks"])); pp=positions.get(sig,[])
+              if not pp: failures.append({**a,"reason":"legendary_positive_missing"}); continue
+              neg=negpos.get(a["weapon_hash"],[])
+              if neg and min(pp)>min(neg): failures.append({**a,"reason":"legendary_positive_after_negative"})
+          for a in audit_ex:
+              sig=(a["weapon_hash"],tuple()); pp=positions.get(sig,[])
+              if not pp: failures.append({**a,"reason":"exotic_positive_missing"}); continue
+              neg=negpos.get(a["weapon_hash"],[])
+              if neg and min(pp)>min(neg): failures.append({**a,"reason":"exotic_positive_after_negative"})
+
+          for idx,wh,perks,notes in favorite_rules:
+              m=re.search(r'(?:^|\|\s*)PVE:(\d+)([EPV])',notes)
+              if not m or int(m.group(1))<70: score_failures.append({"weapon_hash":wh,"perks":list(perks),"notes":notes})
+
+          favorite_hashes={a["weapon_hash"] for a in audit_leg}|{a["weapon_hash"] for a in audit_ex}
+          summary={
+              "candidate_version":"v0.7-candidate",
+              "legendary_rules":len(audit_leg),
+              "legendary_hashes":len({a["weapon_hash"] for a in audit_leg}),
+              "exotic_rules":len(audit_ex),
+              "exotic_hashes":len({a["weapon_hash"] for a in audit_ex}),
+              "all_favorite_rules":len(audit_leg)+len(audit_ex),
+              "distinct_favorite_hashes":len(favorite_hashes),
+              "ambiguity_preserving_legendary_rules":sum(a["kind"]=="ambiguous_dual_candidate" for a in audit_leg),
+              "ordering_failures":len(failures),
+              "score_floor_failures":len(score_failures),
+              "malformed_rules":len(malformed),
+              "source_lines":len(lines),
+              "candidate_lines":len(out_lines),
+          }
+          pathlib.Path("foxarmory-2026-return-d2dim.v0.8-candidate.txt").write_text("\n".join(out_lines)+"\n",encoding="utf-8")
+          pathlib.Path("fqx_v07_candidate_audit.json").write_text(json.dumps({"summary":summary,"failures":failures,"score_failures":score_failures,"malformed":malformed,"legendary_rules":audit_leg,"exotic_rules":audit_ex},indent=2),encoding="utf-8")
+          print(json.dumps(summary,indent=2))
+          if failures or score_failures or malformed: raise SystemExit("v0.8 candidate audit failed")
+
+      - name: Upload v0.7 candidate
+        uses: actions/upload-artifact@v4
+        with:
+          name: fqx-d2dim-v0.8-candidate
+          path: |
+            foxarmory-2026-return-d2dim.v0.7-candidate.txt
+            fqx_v07_candidate_audit.json
+          if-no-files-found: error
+          retention-days: 1
