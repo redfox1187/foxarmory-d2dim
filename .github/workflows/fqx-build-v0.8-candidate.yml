@@ -211,7 +211,7 @@ jobs:
         with:
           name: fqx-d2dim-v0.8-candidate
           path: |
-            foxarmory-2026-return-d2dim.v0.7-candidate.txt
+            foxarmory-2026-return-d2dim.v0.8-candidate.txt
             fqx_v08_candidate_audit.json
           if-no-files-found: error
           retention-days: 1
