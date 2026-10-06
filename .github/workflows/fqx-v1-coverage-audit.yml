@@ -43,6 +43,15 @@ jobs:
           items=table("DestinyInventoryItemDefinition")
           collectibles=table("DestinyCollectibleDefinition")
           seasons=table("DestinySeasonDefinition")
+          probe=items.get(1769847435) or {}
+          print("PROBE_A_DISTANT_PULL="+json.dumps({
+              "itemType":probe.get("itemType"),
+              "itemTypeDisplayName":probe.get("itemTypeDisplayName"),
+              "inventory":probe.get("inventory"),
+              "isInstanceItem_top":probe.get("isInstanceItem"),
+              "redacted":probe.get("redacted"),
+              "sockets_present":bool(probe.get("sockets")),
+          },sort_keys=True))
 
           wishlist=pathlib.Path("foxarmory-2026-return-d2dim.txt").read_text(encoding="utf-8")
           rr=re.compile(r'^dimwishlist:item=(-?)(\d+)&perks=([^#]*)#notes:(.*)$')
