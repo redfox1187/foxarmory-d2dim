@@ -79,7 +79,7 @@ jobs:
               if o.get("itemType") != 3: continue
               # Legendary only; Exotics/fixed rolls handled separately.
               if inv.get("tierTypeName") != "Legendary" and inv.get("tierType") != 5: continue
-              if not o.get("isInstanceItem",False): continue
+              if not inv.get("isInstanceItem",False): continue
               sc,rand,reuse,traitlike=socket_stats(o)
               if rand==0 and reuse==0: continue
 
@@ -127,6 +127,8 @@ jobs:
                   "availability_class":availability,
               })
 
+          if not rows:
+              raise SystemExit("Coverage universe unexpectedly empty; inspect PROBE_A_DISTANT_PULL schema output")
           rows.sort(key=lambda x:(x["type"],x["name"],x["weapon_hash"]))
           with open("D2_v1_Manifest_RollBearing_Coverage_20261006.csv","w",newline="",encoding="utf-8") as f:
               w=csv.DictWriter(f,fieldnames=list(rows[0].keys()));w.writeheader();w.writerows(rows)
