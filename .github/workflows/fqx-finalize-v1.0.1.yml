@@ -1,0 +1,67 @@
+name: FQX Finalize v1.0.1
+
+on:
+  push:
+    branches:
+      - work/v1.0.1-dim-notes-20261006
+    paths:
+      - ".github/workflows/fqx-finalize-v1.0.1.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Verify live v1.0.1
+        run: |
+          set -euo pipefail
+          cmp foxarmory-2026-return-d2dim.txt foxarmory-2026-return-d2dim.v1.0.1.txt
+          echo "bd432eb283dbe9ef30c0940fc1b84634c09e76407e081de4367271b3c844eb34  foxarmory-2026-return-d2dim.txt" | sha256sum -c -
+          python - <<'PY'
+          import json
+          a=json.load(open("history/v1.0.1/fqx_v1.0.1_note_serialization_audit.json"))
+          assert a["candidate_sha256"]=="bd432eb283dbe9ef30c0940fc1b84634c09e76407e081de4367271b3c844eb34"
+          assert a["candidate_rules_with_pipe_in_notes"]==0
+          assert a["signature_differences"]==0
+          assert a["semantic_differences"]==0
+          assert a["firefright_full_note_visible_to_dim_parser"] is True
+          PY
+
+      - name: Pin release tag
+        run: |
+          set -euo pipefail
+          git fetch --tags origin
+          if git ls-remote --exit-code --tags origin refs/tags/v1.0.1 >/dev/null 2>&1; then
+            echo "v1.0.1 tag already exists; leaving it untouched."
+          else
+            git config user.name "FQX Wishlist Release"
+            git config user.email "actions@users.noreply.github.com"
+            git tag -a v1.0.1 -m "Fox Armory 2026 Return v1.0.1"
+            git push origin refs/tags/v1.0.1
+          fi
+
+      - name: Assemble live Cabinet package
+        run: |
+          mkdir package
+          cp foxarmory-2026-return-d2dim.txt package/
+          cp foxarmory-2026-return-d2dim.v1.0.1.txt package/
+          cp history/v1.0.1/fqx_v1.0.1_note_serialization_audit.json package/
+          cp history/v1.0.1/report_fqx-destiny-2_v1.0.1-dim-note-fix_20261006.md package/
+          cp history/v1.0.1/README.md package/v1.0.1-provenance.md
+          cp history/README.md package/version-provenance.md
+          cp tools/v1.0.1/serialize_dim_notes.py package/
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fqx-d2dim-v1.0.1-live-release
+          path: package/
+          if-no-files-found: error
+          retention-days: 3
