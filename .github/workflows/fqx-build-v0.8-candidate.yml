@@ -45,10 +45,10 @@ jobs:
                   pred=catalog_map.get((wh,perks))
                   if pred:
                       notes=m.group(4).strip()
-                      pm=re.search(r'(?:^|\\|\\s*)PVE:(\\d+)([EPV]?)',notes)
+                      pm=re.search(r'(?:^|\|\s*)PVE:(\d+)([EPV]?)',notes)
                       if pm:
                           suffix=pm.group(2) or "E"
-                          notes=re.sub(r'PVE:\\d+[EPV]?',f'PVE:{pred["PVE"]}{suffix}',notes,count=1)
+                          notes=re.sub(r'PVE:\d+[EPV]?',f'PVE:{pred["PVE"]}{suffix}',notes,count=1)
                           if "score-model:positive-fit-v0.1" not in notes:
                               notes += f' | score-model:positive-fit-v0.1 | fox-fit-bonus:+{pred["bonus"]}'
                           line=f'dimwishlist:item={wh}&perks={m.group(3)}#notes:{notes}'
