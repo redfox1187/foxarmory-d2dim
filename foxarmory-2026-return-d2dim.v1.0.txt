@@ -1,5 +1,5 @@
 title:Fox Armory — 2026 Return
-description:[v1.0 2026-10-06] Complete manifest-superset Destiny 2 weapon triage. Favorite exact rolls protected; profile-governed Fox scores; all roll-bearing Legendaries receive inferred coverage; fixed Legendaries and Exotics receive item-level estimates where missing.
+description:[v1.0 2026-10-06] Complete current-manifest weapon triage. Favorite exact rolls protected; profile-governed Fox scores; roll-bearing/fixed Legendaries, Exotics, and low-tier weapon definitions all receive explicit inferred coverage.
 
 // 2026 Return v1.0 — complete manifest-superset personalized release
 // CPVE/CPVP community scale; PVE/PVP Fox scale. Core trait pairs first, scored item fallback last.
@@ -18832,3 +18832,299 @@ dimwishlist:item=3049715579&perks=#notes:CPVE:NA | PVE:92E | CPVP:NA | PVP:65E |
 dimwishlist:item=1753923263&perks=#notes:CPVE:NA | PVE:92E | CPVP:NA | PVP:65E | match:exotic-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
 // Microcosm — Exotic manifest estimate (item-level)
 dimwishlist:item=4207066264&perks=#notes:CPVE:NA | PVE:89E | CPVP:NA | PVP:68E | match:exotic-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Husk of the Pit — Common manifest estimate (item-level)
+dimwishlist:item=-3319810952&perks=#notes:CPVE:NA | PVE:55E | CPVP:NA | PVP:40E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Origin Story — Common manifest estimate (item-level)
+dimwishlist:item=-4024037919&perks=#notes:CPVE:NA | PVE:55E | CPVP:NA | PVP:40E | match:low-tier-item | evidence:manifest-inferred | availability:availability-unverified | scope:item-level | score-model:v1.0
+// Pariah — Common manifest estimate (item-level)
+dimwishlist:item=-2209451511&perks=#notes:CPVE:NA | PVE:55E | CPVP:NA | PVP:40E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Stay Away — Common manifest estimate (item-level)
+dimwishlist:item=-2734369894&perks=#notes:CPVE:NA | PVE:59E | CPVP:NA | PVP:38E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Headstrong — Common manifest estimate (item-level)
+dimwishlist:item=-2553946496&perks=#notes:CPVE:NA | PVE:52E | CPVP:NA | PVP:48E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Helios HC1 — Common manifest estimate (item-level)
+dimwishlist:item=-2553946497&perks=#notes:CPVE:NA | PVE:52E | CPVP:NA | PVP:48E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Lost and Found — Common manifest estimate (item-level)
+dimwishlist:item=-3569842567&perks=#notes:CPVE:NA | PVE:53E | CPVP:NA | PVP:45E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Thistle and Yew — Common manifest estimate (item-level)
+dimwishlist:item=-3550697748&perks=#notes:CPVE:NA | PVE:54E | CPVP:NA | PVP:42E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Stubborn Oak — Common manifest estimate (item-level)
+dimwishlist:item=-1977926913&perks=#notes:CPVE:NA | PVE:52E | CPVP:NA | PVP:43E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Spiderbite-1si — Common manifest estimate (item-level)
+dimwishlist:item=-3792720684&perks=#notes:CPVE:NA | PVE:54E | CPVP:NA | PVP:43E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// The Last Dance — Common manifest estimate (item-level)
+dimwishlist:item=-1699493316&perks=#notes:CPVE:NA | PVE:54E | CPVP:NA | PVP:43E | match:low-tier-item | evidence:manifest-inferred | availability:availability-unverified | scope:item-level | score-model:v1.0
+// Traveler's Chosen — Common manifest estimate (item-level)
+dimwishlist:item=-53159280&perks=#notes:CPVE:NA | PVE:54E | CPVP:NA | PVP:43E | match:low-tier-item | evidence:manifest-inferred | availability:availability-unverified | scope:item-level | score-model:v1.0
+// Traveler's Chosen (Damaged) — Common manifest estimate (item-level)
+dimwishlist:item=-53159281&perks=#notes:CPVE:NA | PVE:54E | CPVP:NA | PVP:43E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Dead Zone Rifle — Common manifest estimate (item-level)
+dimwishlist:item=-254156943&perks=#notes:CPVE:NA | PVE:54E | CPVP:NA | PVP:41E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Etude-12 — Common manifest estimate (item-level)
+dimwishlist:item=-772531208&perks=#notes:CPVE:NA | PVE:53E | CPVP:NA | PVP:45E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Sorrow MG2 — Common manifest estimate (item-level)
+dimwishlist:item=-1195725819&perks=#notes:CPVE:NA | PVE:53E | CPVP:NA | PVP:45E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Traitor's Fate — Common manifest estimate (item-level)
+dimwishlist:item=-2683682447&perks=#notes:CPVE:NA | PVE:61E | CPVP:NA | PVP:34E | match:low-tier-item | evidence:manifest-inferred | availability:availability-unverified | scope:item-level | score-model:v1.0
+// Cuboid ARu — Rare manifest estimate (item-level)
+dimwishlist:item=-2351747816&perks=#notes:CPVE:NA | PVE:65E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Cuboid ARu — Rare manifest estimate (item-level)
+dimwishlist:item=-2860172149&perks=#notes:CPVE:NA | PVE:65E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Lionheart — Rare manifest estimate (item-level)
+dimwishlist:item=-2903592984&perks=#notes:CPVE:NA | PVE:65E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Rebuke AX-GL — Rare manifest estimate (item-level)
+dimwishlist:item=-2903592986&perks=#notes:CPVE:NA | PVE:65E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:availability-unverified | scope:item-level | score-model:v1.0
+// Refrain-23 — Rare manifest estimate (item-level)
+dimwishlist:item=-2351747817&perks=#notes:CPVE:NA | PVE:65E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Refrain-23 — Rare manifest estimate (item-level)
+dimwishlist:item=-2860172148&perks=#notes:CPVE:NA | PVE:65E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Ros Lysis II — Rare manifest estimate (item-level)
+dimwishlist:item=-2351747819&perks=#notes:CPVE:NA | PVE:65E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Ros Lysis II — Rare manifest estimate (item-level)
+dimwishlist:item=-2860172150&perks=#notes:CPVE:NA | PVE:65E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Sand Wasp-3au — Rare manifest estimate (item-level)
+dimwishlist:item=-2351747818&perks=#notes:CPVE:NA | PVE:65E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Sand Wasp-3au — Rare manifest estimate (item-level)
+dimwishlist:item=-2860172151&perks=#notes:CPVE:NA | PVE:65E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Yellowjacket-3au — Rare manifest estimate (item-level)
+dimwishlist:item=-2903592987&perks=#notes:CPVE:NA | PVE:65E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Holless-IV — Rare manifest estimate (item-level)
+dimwishlist:item=-3651075426&perks=#notes:CPVE:NA | PVE:67E | CPVP:NA | PVP:48E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Nox Cordis II — Rare manifest estimate (item-level)
+dimwishlist:item=-3441197112&perks=#notes:CPVE:NA | PVE:54E | CPVP:NA | PVP:51E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Nox Cordis II — Rare manifest estimate (item-level)
+dimwishlist:item=-3662200189&perks=#notes:CPVE:NA | PVE:54E | CPVP:NA | PVP:51E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Nox Lumen II — Rare manifest estimate (item-level)
+dimwishlist:item=-3441197113&perks=#notes:CPVE:NA | PVE:54E | CPVP:NA | PVP:51E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Nox Lumen II — Rare manifest estimate (item-level)
+dimwishlist:item=-3662200188&perks=#notes:CPVE:NA | PVE:54E | CPVP:NA | PVP:51E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Parsec TSu — Rare manifest estimate (item-level)
+dimwishlist:item=-3441197115&perks=#notes:CPVE:NA | PVE:54E | CPVP:NA | PVP:51E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Parsec TSu — Rare manifest estimate (item-level)
+dimwishlist:item=-3662200190&perks=#notes:CPVE:NA | PVE:54E | CPVP:NA | PVP:51E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Harsh Language — Rare manifest estimate (item-level)
+dimwishlist:item=-2936850733&perks=#notes:CPVE:NA | PVE:69E | CPVP:NA | PVP:48E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Plemusa-B — Rare manifest estimate (item-level)
+dimwishlist:item=-1120843238&perks=#notes:CPVE:NA | PVE:69E | CPVP:NA | PVP:48E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Plemusa-B — Rare manifest estimate (item-level)
+dimwishlist:item=-3493948735&perks=#notes:CPVE:NA | PVE:69E | CPVP:NA | PVP:48E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Stampede Mk.32 — Rare manifest estimate (item-level)
+dimwishlist:item=-1120843239&perks=#notes:CPVE:NA | PVE:69E | CPVP:NA | PVP:48E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Stampede Mk.32 — Rare manifest estimate (item-level)
+dimwishlist:item=-3493948734&perks=#notes:CPVE:NA | PVE:69E | CPVP:NA | PVP:48E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Allegro-34 — Rare manifest estimate (item-level)
+dimwishlist:item=-653875715&perks=#notes:CPVE:NA | PVE:62E | CPVP:NA | PVP:58E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Allegro-34 — Rare manifest estimate (item-level)
+dimwishlist:item=-2591586260&perks=#notes:CPVE:NA | PVE:62E | CPVP:NA | PVP:58E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Azimuth DSu — Rare manifest estimate (item-level)
+dimwishlist:item=-653875714&perks=#notes:CPVE:NA | PVE:62E | CPVP:NA | PVP:58E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Azimuth DSu — Rare manifest estimate (item-level)
+dimwishlist:item=-2591586261&perks=#notes:CPVE:NA | PVE:62E | CPVP:NA | PVP:58E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Ballyhoo Mk.27 — Rare manifest estimate (item-level)
+dimwishlist:item=-653875712&perks=#notes:CPVE:NA | PVE:62E | CPVP:NA | PVP:58E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Ballyhoo Mk.27 — Rare manifest estimate (item-level)
+dimwishlist:item=-2591586263&perks=#notes:CPVE:NA | PVE:62E | CPVP:NA | PVP:58E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Guseva-C — Rare manifest estimate (item-level)
+dimwishlist:item=-1595336070&perks=#notes:CPVE:NA | PVE:62E | CPVP:NA | PVP:58E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Lamia HC2 — Rare manifest estimate (item-level)
+dimwishlist:item=-653875713&perks=#notes:CPVE:NA | PVE:62E | CPVP:NA | PVP:58E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Lamia HC2 — Rare manifest estimate (item-level)
+dimwishlist:item=-2591586262&perks=#notes:CPVE:NA | PVE:62E | CPVP:NA | PVP:58E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Presto-48 — Rare manifest estimate (item-level)
+dimwishlist:item=-1595336071&perks=#notes:CPVE:NA | PVE:62E | CPVP:NA | PVP:58E | match:low-tier-item | evidence:manifest-inferred | availability:availability-unverified | scope:item-level | score-model:v1.0
+// King Cobra-4fr — Rare manifest estimate (item-level)
+dimwishlist:item=-1502662697&perks=#notes:CPVE:NA | PVE:66E | CPVP:NA | PVP:48E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Exitus Mk.I — Rare manifest estimate (item-level)
+dimwishlist:item=-3117873459&perks=#notes:CPVE:NA | PVE:69E | CPVP:NA | PVP:47E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Agrona PR2 — Rare manifest estimate (item-level)
+dimwishlist:item=-1669771781&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Agrona PR2 — Rare manifest estimate (item-level)
+dimwishlist:item=-1678957658&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Bayesian MSu — Rare manifest estimate (item-level)
+dimwishlist:item=-1669771783&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Bayesian MSu — Rare manifest estimate (item-level)
+dimwishlist:item=-1678957656&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Encore-25 — Rare manifest estimate (item-level)
+dimwishlist:item=-1669771780&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Encore-25 — Rare manifest estimate (item-level)
+dimwishlist:item=-1678957659&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Nanty Narker — Rare manifest estimate (item-level)
+dimwishlist:item=-3627718345&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Psi Cirrus II — Rare manifest estimate (item-level)
+dimwishlist:item=-1669771782&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Psi Cirrus II — Rare manifest estimate (item-level)
+dimwishlist:item=-1678957657&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Cup-Bearer SA/2 — Rare manifest estimate (item-level)
+dimwishlist:item=-1877183765&perks=#notes:CPVE:NA | PVE:66E | CPVP:NA | PVP:49E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Cup-Bearer SA/2 — Rare manifest estimate (item-level)
+dimwishlist:item=-4221925398&perks=#notes:CPVE:NA | PVE:66E | CPVP:NA | PVP:49E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Reginar-B — Rare manifest estimate (item-level)
+dimwishlist:item=-1877183764&perks=#notes:CPVE:NA | PVE:66E | CPVP:NA | PVP:49E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Reginar-B — Rare manifest estimate (item-level)
+dimwishlist:item=-4221925399&perks=#notes:CPVE:NA | PVE:66E | CPVP:NA | PVP:49E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Weaver-C — Rare manifest estimate (item-level)
+dimwishlist:item=-372212741&perks=#notes:CPVE:NA | PVE:66E | CPVP:NA | PVP:49E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Armillary PSu — Rare manifest estimate (item-level)
+dimwishlist:item=-1650626964&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:52E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Armillary PSu — Rare manifest estimate (item-level)
+dimwishlist:item=-3906357379&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:52E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Black Tiger-2sr — Rare manifest estimate (item-level)
+dimwishlist:item=-1650626965&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:52E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Black Tiger-2sr — Rare manifest estimate (item-level)
+dimwishlist:item=-3906357378&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:52E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Madrugada SR2 — Rare manifest estimate (item-level)
+dimwishlist:item=-1650626967&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:52E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Madrugada SR2 — Rare manifest estimate (item-level)
+dimwishlist:item=-3906357376&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:52E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Sonata-48 — Rare manifest estimate (item-level)
+dimwishlist:item=-2842493170&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:52E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Trax Dynia — Rare manifest estimate (item-level)
+dimwishlist:item=-2842493171&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:52E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Trax Lysis II — Rare manifest estimate (item-level)
+dimwishlist:item=-1650626966&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:52E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Trax Lysis II — Rare manifest estimate (item-level)
+dimwishlist:item=-3906357377&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:52E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Badlands Mk.24 — Rare manifest estimate (item-level)
+dimwishlist:item=-1457394911&perks=#notes:CPVE:NA | PVE:62E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Badlands Mk.24 — Rare manifest estimate (item-level)
+dimwishlist:item=-1995011456&perks=#notes:CPVE:NA | PVE:62E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Botheration Mk.28 — Rare manifest estimate (item-level)
+dimwishlist:item=-1457394910&perks=#notes:CPVE:NA | PVE:62E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Botheration Mk.28 — Rare manifest estimate (item-level)
+dimwishlist:item=-1995011457&perks=#notes:CPVE:NA | PVE:62E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Fussed Dark Mk.21 — Rare manifest estimate (item-level)
+dimwishlist:item=-1457394908&perks=#notes:CPVE:NA | PVE:62E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Fussed Dark Mk.21 — Rare manifest estimate (item-level)
+dimwishlist:item=-1995011459&perks=#notes:CPVE:NA | PVE:62E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Requiem-43 — Rare manifest estimate (item-level)
+dimwishlist:item=-3556971406&perks=#notes:CPVE:NA | PVE:62E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Dissonance-34 — Rare manifest estimate (item-level)
+dimwishlist:item=-711899775&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Dissonance-34 — Rare manifest estimate (item-level)
+dimwishlist:item=-3809805228&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Requiem SI2 — Rare manifest estimate (item-level)
+dimwishlist:item=-711899774&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Requiem SI2 — Rare manifest estimate (item-level)
+dimwishlist:item=-3809805229&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Roderic-C — Rare manifest estimate (item-level)
+dimwishlist:item=-711899773&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Roderic-C — Rare manifest estimate (item-level)
+dimwishlist:item=-3809805230&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Vinegaroon-2si — Rare manifest estimate (item-level)
+dimwishlist:item=-711899772&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Vinegaroon-2si — Rare manifest estimate (item-level)
+dimwishlist:item=-3809805231&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Aachen-LR2 — Rare manifest estimate (item-level)
+dimwishlist:item=-1177293327&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:51E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Aachen-LR2 — Rare manifest estimate (item-level)
+dimwishlist:item=-4157959958&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:51E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Damietta-LR2 — Rare manifest estimate (item-level)
+dimwishlist:item=-1177293326&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:51E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Damietta-LR2 — Rare manifest estimate (item-level)
+dimwishlist:item=-4157959959&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:51E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Tongeren-LR3 — Rare manifest estimate (item-level)
+dimwishlist:item=-1177293325&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:51E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Tongeren-LR3 — Rare manifest estimate (item-level)
+dimwishlist:item=-4157959956&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:51E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Furina-2mg — Rare manifest estimate (item-level)
+dimwishlist:item=-1281822858&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Furina-2mg — Rare manifest estimate (item-level)
+dimwishlist:item=-3383958217&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Harmony-21 — Rare manifest estimate (item-level)
+dimwishlist:item=-1281822859&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Harmony-21 — Rare manifest estimate (item-level)
+dimwishlist:item=-3383958216&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Philippis-B — Rare manifest estimate (item-level)
+dimwishlist:item=-1281822857&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Philippis-B — Rare manifest estimate (item-level)
+dimwishlist:item=-3383958218&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Protostar CSu — Rare manifest estimate (item-level)
+dimwishlist:item=-1281822856&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Protostar CSu — Rare manifest estimate (item-level)
+dimwishlist:item=-3383958219&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Sondok-C — Rare manifest estimate (item-level)
+dimwishlist:item=-1195725817&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Whip Scorpion-3mg — Rare manifest estimate (item-level)
+dimwishlist:item=-1195725818&perks=#notes:CPVE:NA | PVE:63E | CPVP:NA | PVP:55E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Future Imperfect — Rare manifest estimate (item-level)
+dimwishlist:item=-1447973651&perks=#notes:CPVE:NA | PVE:69E | CPVP:NA | PVP:44E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Future Imperfect — Rare manifest estimate (item-level)
+dimwishlist:item=-2891976012&perks=#notes:CPVE:NA | PVE:69E | CPVP:NA | PVP:44E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Rest for the Wicked — Rare manifest estimate (item-level)
+dimwishlist:item=-1447973650&perks=#notes:CPVE:NA | PVE:69E | CPVP:NA | PVP:44E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Rest for the Wicked — Rare manifest estimate (item-level)
+dimwishlist:item=-2891976013&perks=#notes:CPVE:NA | PVE:69E | CPVP:NA | PVP:44E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Cydonia-AR1 — Uncommon manifest estimate (item-level)
+dimwishlist:item=-2694044461&perks=#notes:CPVE:NA | PVE:60E | CPVP:NA | PVP:45E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Home Again — Uncommon manifest estimate (item-level)
+dimwishlist:item=-2694044460&perks=#notes:CPVE:NA | PVE:60E | CPVP:NA | PVP:45E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Jiangshi AR1 — Uncommon manifest estimate (item-level)
+dimwishlist:item=-2694044463&perks=#notes:CPVE:NA | PVE:60E | CPVP:NA | PVP:45E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// SUROS Throwback — Uncommon manifest estimate (item-level)
+dimwishlist:item=-2694044462&perks=#notes:CPVE:NA | PVE:60E | CPVP:NA | PVP:45E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Equinox Tsu — Uncommon manifest estimate (item-level)
+dimwishlist:item=-1393021133&perks=#notes:CPVE:NA | PVE:49E | CPVP:NA | PVP:46E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Nox Calyx II — Uncommon manifest estimate (item-level)
+dimwishlist:item=-1393021135&perks=#notes:CPVE:NA | PVE:49E | CPVP:NA | PVP:46E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Nox Reve II — Uncommon manifest estimate (item-level)
+dimwishlist:item=-1393021134&perks=#notes:CPVE:NA | PVE:49E | CPVP:NA | PVP:46E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Gareth-C — Uncommon manifest estimate (item-level)
+dimwishlist:item=-2936850734&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:43E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Hadrian-A — Uncommon manifest estimate (item-level)
+dimwishlist:item=-3246523828&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:43E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Para Torus I — Uncommon manifest estimate (item-level)
+dimwishlist:item=-3246523831&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:43E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Penumbra GSm — Uncommon manifest estimate (item-level)
+dimwishlist:item=-2936850735&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:43E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Resilient People — Uncommon manifest estimate (item-level)
+dimwishlist:item=-3246523829&perks=#notes:CPVE:NA | PVE:64E | CPVP:NA | PVP:43E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Minuet-12 — Uncommon manifest estimate (item-level)
+dimwishlist:item=-3185293914&perks=#notes:CPVE:NA | PVE:57E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Mos Ultima II — Uncommon manifest estimate (item-level)
+dimwishlist:item=-3185293912&perks=#notes:CPVE:NA | PVE:57E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// One Earth — Uncommon manifest estimate (item-level)
+dimwishlist:item=-3185293913&perks=#notes:CPVE:NA | PVE:57E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Picayune Mk. 33 — Uncommon manifest estimate (item-level)
+dimwishlist:item=-3185293915&perks=#notes:CPVE:NA | PVE:57E | CPVP:NA | PVP:53E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Cadenza-11 — Uncommon manifest estimate (item-level)
+dimwishlist:item=-2213848861&perks=#notes:CPVE:NA | PVE:58E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Psi Ferox II — Uncommon manifest estimate (item-level)
+dimwishlist:item=-2213848863&perks=#notes:CPVE:NA | PVE:58E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Psi Termina II — Uncommon manifest estimate (item-level)
+dimwishlist:item=-2213848860&perks=#notes:CPVE:NA | PVE:58E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Standing Tall — Uncommon manifest estimate (item-level)
+dimwishlist:item=-2213848862&perks=#notes:CPVE:NA | PVE:58E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Triumph DX-PR — Uncommon manifest estimate (item-level)
+dimwishlist:item=-3627718344&perks=#notes:CPVE:NA | PVE:58E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Butler RS/2 — Uncommon manifest estimate (item-level)
+dimwishlist:item=-2037589099&perks=#notes:CPVE:NA | PVE:61E | CPVP:NA | PVP:44E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Fare-Thee-Well — Uncommon manifest estimate (item-level)
+dimwishlist:item=-3361694401&perks=#notes:CPVE:NA | PVE:59E | CPVP:NA | PVP:47E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Inverness-SR2 — Uncommon manifest estimate (item-level)
+dimwishlist:item=-3361694403&perks=#notes:CPVE:NA | PVE:59E | CPVP:NA | PVP:47E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Sea Scorpion-1sr — Uncommon manifest estimate (item-level)
+dimwishlist:item=-3361694402&perks=#notes:CPVE:NA | PVE:59E | CPVP:NA | PVP:47E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Trax Arda II — Uncommon manifest estimate (item-level)
+dimwishlist:item=-3361694400&perks=#notes:CPVE:NA | PVE:59E | CPVP:NA | PVP:47E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Ded Acumen II — Uncommon manifest estimate (item-level)
+dimwishlist:item=-4138415949&perks=#notes:CPVE:NA | PVE:57E | CPVP:NA | PVP:48E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Ded Nemoris II — Uncommon manifest estimate (item-level)
+dimwishlist:item=-4138415950&perks=#notes:CPVE:NA | PVE:57E | CPVP:NA | PVP:48E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Hand in Hand — Uncommon manifest estimate (item-level)
+dimwishlist:item=-4138415948&perks=#notes:CPVE:NA | PVE:57E | CPVP:NA | PVP:48E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Recital-17 — Uncommon manifest estimate (item-level)
+dimwishlist:item=-1310413524&perks=#notes:CPVE:NA | PVE:59E | CPVP:NA | PVP:48E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Victoire SI2 — Uncommon manifest estimate (item-level)
+dimwishlist:item=-1310413525&perks=#notes:CPVE:NA | PVE:59E | CPVP:NA | PVP:48E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Luna Nullis II — Uncommon manifest estimate (item-level)
+dimwishlist:item=-2605790033&perks=#notes:CPVE:NA | PVE:59E | CPVP:NA | PVP:46E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Trondheim-LR2 — Uncommon manifest estimate (item-level)
+dimwishlist:item=-2605790034&perks=#notes:CPVE:NA | PVE:59E | CPVP:NA | PVP:46E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Troubadour — Uncommon manifest estimate (item-level)
+dimwishlist:item=-2605790032&perks=#notes:CPVE:NA | PVE:59E | CPVP:NA | PVP:46E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Daystar SMG2 — Uncommon manifest estimate (item-level)
+dimwishlist:item=-531591353&perks=#notes:CPVE:NA | PVE:58E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Forte-15 — Uncommon manifest estimate (item-level)
+dimwishlist:item=-531591352&perks=#notes:CPVE:NA | PVE:58E | CPVP:NA | PVP:50E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0
+// Nasreddin — Uncommon manifest estimate (item-level)
+dimwishlist:item=-1270948323&perks=#notes:CPVE:NA | PVE:66E | CPVP:NA | PVP:39E | match:low-tier-item | evidence:manifest-inferred | availability:source-indicated | scope:item-level | score-model:v1.0

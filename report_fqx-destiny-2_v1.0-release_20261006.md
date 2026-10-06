@@ -1,6 +1,6 @@
 # Fox Armory 2026 Return — v1.0 Release Report
 
-**Status:** PROMOTED TO `master` via PR #1 on 2026-10-06
+**Status:** full-catalog release candidate generated on `release/v1.0-full-catalog-20261006`
 **Manifest:** 244213.26.06.29.2000-1-bnet.65864
 
 ## Scope
@@ -10,7 +10,7 @@ v1.0 treats current-manifest weapon definitions as a conservative superset. Mani
 - Roll-bearing Legendary definitions: **1657**
 - Fixed Legendary definitions: **256**
 - Exotic definitions: **146**
-- Low-tier weapon definitions recorded in the ledger only: **149**
+- Low-tier weapon definitions explicitly rated: **149**
 
 ## Personalization
 
@@ -26,6 +26,7 @@ No community score is fabricated. Generated rules use `CPVE:NA` / `CPVP:NA`.
 - Missing Legendary fallbacks: **0**
 - Missing fixed Legendary hashes: **0**
 - Missing Exotic hashes: **0**
+- Missing low-tier weapon hashes: **0**
 
 ## Integrity
 
@@ -39,4 +40,4 @@ No community score is fabricated. Generated rules use `CPVE:NA` / `CPVP:NA`.
 
 ## Version-history note
 
-v0.6-v0.8 are pinned to their actual generator commits on archival branches. v0.9 was produced locally and is documented as a reconstruction rather than backdated. v1.0 is the first repository-native complete release in this lineage. PR #1 merged to `master` as merge commit `edcc4f45e3b1b254d6b72438163d71ac9d526b20`.
+v0.6-v0.8 are pinned to their actual generator commits on archival branches. v0.9 was produced locally and is documented as a reconstruction rather than backdated. v1.0 is the first repository-native complete release candidate in this new lineage.
