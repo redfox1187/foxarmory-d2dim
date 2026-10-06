@@ -402,7 +402,11 @@ jobs:
               maint=bool(names & MAINTENANCE)
               if typ in PREFERRED_TYPES and (maint or sum(pe.get(p,0) for p in pair)>0): score+=1
               if any(dp.issubset(names) for dp in DIRECT_PAIRS): score+=3
-              return max(45,min(98,int(round(score))))
+              # Manifest-only inference must not claim Exceptional certainty.
+              # Source-indicated definitions may reach Elite; availability-unverified definitions are capped Strong.
+              av=availability(o)
+              confidence_cap=92 if av=="source-indicated" else 86
+              return max(45,min(confidence_cap,int(round(score))))
 
           def fallback_score(wh,mode):
               typ=item_type_name(wh)
@@ -480,7 +484,7 @@ jobs:
                               f' | match:generated-core | evidence:manifest-inferred | availability:{rec["availability"]} | score-model:v1.0'
                           )
                           generated_positive+=1; added_pairs.append(pair); covered_positive_sigs.add(sig)
-                          scoring_rows.append({"weapon_hash":wh,"name":rec["name"],"type":rec["type"],"tier":"Legendary","scope":"generated-core","perks":",".join(map(str,pair)),"PVE":pve,"PVP":pvp,"validation":"E","availability":rec["availability"],"basis":"type mean + shrunk perk residuals + shrunk pair residual + Fox profile governance"})
+                          scoring_rows.append({"weapon_hash":wh,"name":rec["name"],"type":rec["type"],"tier":"Legendary","scope":"generated-core","perks":",".join(map(str,pair)),"PVE":pve,"PVP":pvp,"validation":"E","availability":rec["availability"],"basis":"type mean + shrunk perk residuals + shrunk pair residual + Fox profile governance; confidence-capped by availability evidence"})
               if wh not in neg_hashes:
                   pve=fallback_score(wh,"PVE"); pvp=fallback_score(wh,"PVP")
                   generated_lines.append(
@@ -697,7 +701,7 @@ jobs:
 
           Favorite exact rolls remain highest-priority personal-positive rules. The general profile governs weapon-family preference, maintenance/uptime, and direct perk-pair evidence. Hunter-specific survivability/ability preferences remain buildcrafting evidence and do not indiscriminately inflate weapon scores.
 
-          Newly generated definitions use type priors plus smoothed perk and pair residuals learned from the curated positive catalogue. Fox profile adjustments are then applied. These are explicitly Estimated scores.
+          Newly generated definitions use type priors plus smoothed perk and pair residuals learned from the curated positive catalogue. Fox profile adjustments are then applied. These are explicitly Estimated scores. Manifest-only inference is confidence-capped: source-indicated definitions cannot exceed 92E and availability-unverified definitions cannot exceed 86E without stronger evidence.
 
           No community score is fabricated. Generated rules use \`CPVE:NA\` / \`CPVP:NA\`.
 
