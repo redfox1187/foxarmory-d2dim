@@ -1,0 +1,158 @@
+name: FQX v1.0 Coverage Audit
+
+on:
+  push:
+    branches:
+      - work/fqx-manifest-slice-20261006
+    paths:
+      - ".github/workflows/fqx-v1-coverage-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download verified Destiny manifest
+        run: |
+          curl -fSL "https://www.bungie.net/common/destiny2_content/sqlite/en/world_sql_content_a695ee698e87bcb0333c1026ba10cd63.content" -o manifest.content
+          mkdir manifestdb
+          unzip -q manifest.content -d manifestdb
+
+      - name: Build roll-bearing weapon coverage ledger
+        shell: python
+        run: |
+          import csv, json, pathlib, re, sqlite3, collections
+
+          MANIFEST_VERSION="244213.26.06.29.2000-1-bnet.65864"
+          db_path=next(pathlib.Path("manifestdb").iterdir())
+          con=sqlite3.connect(db_path); con.row_factory=sqlite3.Row
+
+          def table(name):
+              out={}
+              for r in con.execute(f'SELECT id,json FROM "{name}"'):
+                  try:o=json.loads(r["json"])
+                  except:continue
+                  out[int(r["id"]) & 0xffffffff]=o
+              return out
+
+          items=table("DestinyInventoryItemDefinition")
+          collectibles=table("DestinyCollectibleDefinition")
+          seasons=table("DestinySeasonDefinition")
+          probe=items.get(1769847435) or {}
+          print("PROBE_A_DISTANT_PULL="+json.dumps({
+              "itemType":probe.get("itemType"),
+              "itemTypeDisplayName":probe.get("itemTypeDisplayName"),
+              "inventory":probe.get("inventory"),
+              "isInstanceItem_top":probe.get("isInstanceItem"),
+              "redacted":probe.get("redacted"),
+              "sockets_present":bool(probe.get("sockets")),
+          },sort_keys=True))
+
+          wishlist=pathlib.Path("foxarmory-2026-return-d2dim.txt").read_text(encoding="utf-8")
+          rr=re.compile(r'^dimwishlist:item=(-?)(\d+)&perks=([^#]*)#notes:(.*)$')
+          known=collections.defaultdict(lambda:{"positive":0,"negative":0,"notes":[]})
+          for line in wishlist.splitlines():
+              m=rr.match(line)
+              if not m: continue
+              h=int(m.group(2))
+              known[h]["negative" if m.group(1) else "positive"]+=1
+              known[h]["notes"].append(m.group(4))
+
+          def socket_stats(o):
+              entries=((o.get("sockets") or {}).get("socketEntries") or [])
+              randomized=0; reusable=0; traitlike=0
+              for s in entries:
+                  if s.get("randomizedPlugSetHash"): randomized+=1
+                  if s.get("reusablePlugSetHash"): reusable+=1
+                  if s.get("randomizedPlugSetHash") or s.get("reusablePlugSetHash"):
+                      traitlike+=1
+              return len(entries),randomized,reusable,traitlike
+
+          rows=[]
+          for h,o in items.items():
+              inv=o.get("inventory") or {}
+              if o.get("itemType") != 3: continue
+              # Legendary only; Exotics/fixed rolls handled separately.
+              if inv.get("tierTypeName") != "Legendary" and inv.get("tierType") != 5: continue
+              if not inv.get("isInstanceItem",False): continue
+              sc,rand,reuse,traitlike=socket_stats(o)
+              if rand==0 and reuse==0: continue
+
+              dp=o.get("displayProperties") or {}
+              name=dp.get("name") or ""
+              if not name: continue
+              ch=o.get("collectibleHash")
+              coll=collectibles.get(int(ch)) if ch else None
+              source_string=((coll or {}).get("sourceString") or "").strip()
+              acquisition=((coll or {}).get("acquisitionInfo") or {})
+              source_data=o.get("sourceData") or {}
+              source_hashes=source_data.get("sourceHashes") or []
+              season_hash=o.get("seasonHash")
+              season_name=((seasons.get(int(season_hash)) or {}).get("displayProperties") or {}).get("name","") if season_hash else ""
+              k=known[h]
+
+              # Availability confidence is intentionally conservative.
+              # "source-indicated" means Bungie definition carries at least one source/acquisition clue;
+              # it is NOT proof the source is live today.
+              if o.get("redacted"):
+                  availability="redacted"
+              elif source_string or source_hashes or acquisition:
+                  availability="source-indicated"
+              else:
+                  availability="availability-unverified"
+
+              rows.append({
+                  "weapon_hash":h,
+                  "name":name,
+                  "type":o.get("itemTypeDisplayName") or "",
+                  "season_hash":season_hash or "",
+                  "season_name":season_name,
+                  "redacted":bool(o.get("redacted")),
+                  "collectible_hash":ch or "",
+                  "collectible_source":source_string,
+                  "source_hashes":";".join(str(x) for x in source_hashes),
+                  "acquisition_info":json.dumps(acquisition,separators=(",",":"),sort_keys=True) if acquisition else "",
+                  "socket_count":sc,
+                  "randomized_socket_count":rand,
+                  "reusable_socket_count":reuse,
+                  "roll_socket_count":traitlike,
+                  "wishlist_positive_rules":k["positive"],
+                  "wishlist_negative_rules":k["negative"],
+                  "wishlist_covered":bool(k["positive"] or k["negative"]),
+                  "availability_class":availability,
+              })
+
+          if not rows:
+              raise SystemExit("Coverage universe unexpectedly empty; inspect PROBE_A_DISTANT_PULL schema output")
+          rows.sort(key=lambda x:(x["type"],x["name"],x["weapon_hash"]))
+          with open("D2_v1_Manifest_RollBearing_Coverage_20261006.csv","w",newline="",encoding="utf-8") as f:
+              w=csv.DictWriter(f,fieldnames=list(rows[0].keys()));w.writeheader();w.writerows(rows)
+
+          summary={
+              "manifest_version":MANIFEST_VERSION,
+              "legendary_roll_bearing_definitions":len(rows),
+              "wishlist_covered":sum(r["wishlist_covered"] for r in rows),
+              "wishlist_missing":sum(not r["wishlist_covered"] for r in rows),
+              "source_indicated_total":sum(r["availability_class"]=="source-indicated" for r in rows),
+              "source_indicated_covered":sum(r["availability_class"]=="source-indicated" and r["wishlist_covered"] for r in rows),
+              "source_indicated_missing":sum(r["availability_class"]=="source-indicated" and not r["wishlist_covered"] for r in rows),
+              "availability_unverified_total":sum(r["availability_class"]=="availability-unverified" for r in rows),
+              "redacted_total":sum(r["availability_class"]=="redacted" for r in rows),
+          }
+          pathlib.Path("D2_v1_Manifest_RollBearing_Coverage_20261006.json").write_text(json.dumps({"summary":summary},indent=2),encoding="utf-8")
+          print(json.dumps(summary,indent=2))
+          con.close()
+
+      - name: Upload coverage audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: fqx-v1-coverage-audit
+          path: |
+            D2_v1_Manifest_RollBearing_Coverage_20261006.csv
+            D2_v1_Manifest_RollBearing_Coverage_20261006.json
+          retention-days: 1

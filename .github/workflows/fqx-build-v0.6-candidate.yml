@@ -1,0 +1,170 @@
+name: FQX Build v0.6 Candidate Wishlist
+
+on:
+  push:
+    branches:
+      - work/fqx-manifest-slice-20261006
+    paths:
+      - "tools/favorite-candidates/**"
+      - ".github/workflows/fqx-build-v0.6-candidate.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build v0.6 Favorite-aware candidate
+        shell: python
+        run: |
+          import glob, json, re, pathlib
+
+          src=pathlib.Path("foxarmory-2026-return-d2dim.txt").read_text(encoding="utf-8")
+          lines=src.splitlines()
+
+          candidates=[]
+          for p in sorted(glob.glob("tools/favorite-candidates/part*.txt")):
+              for raw in pathlib.Path(p).read_text(encoding="utf-8").splitlines():
+                  if not raw.strip(): continue
+                  wh,perks,name,kind=raw.split("|",3)
+                  candidates.append({
+                      "weapon_hash":int(wh),
+                      "perks":tuple(int(x) for x in perks.split(",") if x),
+                      "name":name,
+                      "kind":kind,
+                  })
+
+          uniq=[]; seen=set()
+          for c in candidates:
+              sig=(c["weapon_hash"],c["perks"])
+              if sig not in seen:
+                  seen.add(sig); uniq.append(c)
+          candidates=uniq
+
+          scores={}
+          for raw in pathlib.Path("tools/favorite-candidates/scores-v0.1.txt").read_text(encoding="utf-8").splitlines():
+              if not raw or raw.startswith("#"): continue
+              wh,perks,pve,pvp=raw.split("|",3)
+              scores[(int(wh),tuple(int(x) for x in perks.split(",") if x))]={"PVE":pve,"PVP":pvp}
+
+          rule_re=re.compile(r'^dimwishlist:item=(-?)(\d+)&perks=([^#]*)#notes:(.*)$')
+          metric_re={k:re.compile(r'(?:^|\|\s*)'+k+r':([^|]+)') for k in ("CPVE","PVE","CPVP","PVP")}
+          by_hash={}; exact_existing=set(); negative_positions={}
+          for idx,line in enumerate(lines):
+              m=rule_re.match(line)
+              if not m: continue
+              neg=bool(m.group(1)); wh=int(m.group(2))
+              perks=tuple(int(x) for x in m.group(3).split(",") if x.strip().isdigit())
+              rec={"idx":idx,"negative":neg,"perks":perks,"notes":m.group(4).strip()}
+              by_hash.setdefault(wh,[]).append(rec)
+              if neg: negative_positions.setdefault(wh,[]).append(idx)
+              else: exact_existing.add((wh,perks))
+
+          def community(wh):
+              recs=by_hash.get(wh,[])
+              preferred=[r for r in recs if "match:fallback" in r["notes"]] or recs
+              for r in preferred:
+                  vals={}
+                  for k in ("CPVE","CPVP"):
+                      m=metric_re[k].search(r["notes"])
+                      if m: vals[k]=m.group(1).strip()
+                  if len(vals)==2: return vals
+              return {"CPVE":"NA","CPVP":"NA"}
+
+          block=[
+              "// FQX Fox Favorite exact-roll protection + personal-fit recalibration — v0.6 candidate",
+              "// Exact owned Favorite rolls precede generic/core and negative fallback rules.",
+              "// Community scores are preserved. Fox scores use personal-evidence-v0.1; Favorite alone does not grant Verified status.",
+              "",
+          ]
+          audit=[]; missing=[]; inserted=0; existing=0
+          for c in candidates:
+              sig=(c["weapon_hash"],c["perks"])
+              sc=scores.get(sig)
+              if not sc:
+                  missing.append({"name":c["name"],"weapon_hash":c["weapon_hash"],"reason":"missing_personal_score"})
+                  continue
+              comm=community(c["weapon_hash"])
+              if "NA" in comm.values():
+                  missing.append({"name":c["name"],"weapon_hash":c["weapon_hash"],"reason":"missing_community_score"})
+                  continue
+              if sig in exact_existing:
+                  state="already_positive"; existing+=1
+              else:
+                  state="inserted"; inserted+=1
+                  amb=" | ambiguity:same-name-legal-dual-candidate" if c["kind"]=="ambiguous_dual_candidate" else ""
+                  block.append(f'// {c["name"]} — Fox Favorite')
+                  block.append(
+                      f'dimwishlist:item={c["weapon_hash"]}&perks={",".join(map(str,c["perks"]))}'
+                      f'#notes:CPVE:{comm["CPVE"]} | PVE:{sc["PVE"]} | CPVP:{comm["CPVP"]} | PVP:{sc["PVP"]}'
+                      f' | match:fox-favorite | evidence:favorite | source:fox-owned | score-model:personal-evidence-v0.1{amb}'
+                  )
+              audit.append({**c,"perks":list(c["perks"]),"state":state,"score":sc,"community":comm})
+
+          if missing:
+              pathlib.Path("fqx_v06_candidate_audit.json").write_text(json.dumps({"missing":missing},indent=2))
+              raise SystemExit(f"Missing score metadata for {len(missing)} Favorite rules")
+
+          # Candidate-only metadata; original production file is untouched.
+          out_lines=list(lines)
+          if out_lines and out_lines[0].startswith("title:"):
+              pass
+          if len(out_lines)>1 and out_lines[1].startswith("description:"):
+              out_lines[1]="description:[CANDIDATE 2026-10-06] Favorite-aware Destiny 2 triage wishlist. Exact owned Favorites are protected and Fox Fit uses personal evidence; current community/core coverage remains intact."
+          for i,l in enumerate(out_lines[:12]):
+              if l.startswith("// 2026 Return v"):
+                  out_lines[i]="// 2026 Return v0.6-candidate — Favorite-aware personal-fit test"
+                  break
+
+          first_rule=next(i for i,l in enumerate(out_lines) if l.startswith("dimwishlist:item="))
+          out_lines=out_lines[:first_rule]+block+[""]+out_lines[first_rule:]
+
+          positions={}; negpos={}
+          for idx,line in enumerate(out_lines):
+              m=rule_re.match(line)
+              if not m: continue
+              wh=int(m.group(2)); perks=tuple(int(x) for x in m.group(3).split(",") if x.strip().isdigit())
+              if m.group(1): negpos.setdefault(wh,[]).append(idx)
+              else: positions.setdefault((wh,perks),[]).append(idx)
+
+          failures=[]
+          score_band_failures=[]
+          for a in audit:
+              sig=(a["weapon_hash"],tuple(a["perks"]))
+              pp=positions.get(sig,[])
+              if not pp: failures.append({**a,"reason":"positive_rule_missing"}); continue
+              neg=negpos.get(a["weapon_hash"],[])
+              if neg and min(pp)>min(neg): failures.append({**a,"reason":"positive_after_negative"})
+              pve=int(re.match(r'(\d+)',a["score"]["PVE"]).group(1))
+              if pve<70: score_band_failures.append({**a,"reason":"favorite_pve_below_70"})
+
+          summary={
+              "candidate_version":"v0.6-candidate",
+              "candidate_rules":len(candidates),
+              "inserted_rules":inserted,
+              "already_positive_rules":existing,
+              "distinct_weapon_hashes":len({c["weapon_hash"] for c in candidates}),
+              "ambiguity_preserving_rules":sum(c["kind"]=="ambiguous_dual_candidate" for c in candidates),
+              "ordering_failures":len(failures),
+              "score_band_failures":len(score_band_failures),
+              "source_lines":len(lines),
+              "candidate_lines":len(out_lines),
+          }
+          pathlib.Path("foxarmory-2026-return-d2dim.v0.6-candidate.txt").write_text("\n".join(out_lines)+"\n",encoding="utf-8")
+          pathlib.Path("fqx_v06_candidate_audit.json").write_text(json.dumps({"summary":summary,"failures":failures,"score_band_failures":score_band_failures,"rules":audit},indent=2),encoding="utf-8")
+          print(json.dumps(summary,indent=2))
+          if failures or score_band_failures: raise SystemExit("v0.6 candidate audit failed")
+
+      - name: Upload v0.6 candidate
+        uses: actions/upload-artifact@v4
+        with:
+          name: fqx-d2dim-v0.6-candidate
+          path: |
+            foxarmory-2026-return-d2dim.v0.6-candidate.txt
+            fqx_v06_candidate_audit.json
+          if-no-files-found: error
+          retention-days: 1

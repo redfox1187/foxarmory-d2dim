@@ -1,0 +1,174 @@
+name: FQX Build Favorite-Protected Wishlist
+
+on:
+  push:
+    branches:
+      - work/fqx-manifest-slice-20261006
+    paths:
+      - "tools/favorite-candidates/**"
+      - ".github/workflows/fqx-build-favorite-test.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build favorite-protected test wishlist
+        shell: python
+        run: |
+          import glob, json, re, pathlib
+
+          src_path = pathlib.Path("foxarmory-2026-return-d2dim.txt")
+          text = src_path.read_text(encoding="utf-8")
+          lines = text.splitlines()
+
+          candidates = []
+          for p in sorted(glob.glob("tools/favorite-candidates/part*.txt")):
+              for raw in pathlib.Path(p).read_text(encoding="utf-8").splitlines():
+                  if not raw.strip():
+                      continue
+                  wh, perks, name, kind = raw.split("|", 3)
+                  candidates.append({
+                      "weapon_hash": int(wh),
+                      "perks": tuple(int(x) for x in perks.split(",") if x),
+                      "name": name,
+                      "kind": kind,
+                  })
+
+          # De-dupe exact rule signatures.
+          uniq=[]; seen=set()
+          for c in candidates:
+              key=(c["weapon_hash"], c["perks"])
+              if key not in seen:
+                  seen.add(key); uniq.append(c)
+          candidates=uniq
+
+          rule_re = re.compile(r'^dimwishlist:item=(-?)(\d+)&perks=([^#]*)#notes:(.*)$')
+          score_re = {
+              k: re.compile(r'(?:^|\|\s*)'+k+r':([^|]+)')
+              for k in ("CPVE","PVE","CPVP","PVP")
+          }
+
+          by_hash={}
+          exact_existing=set()
+          negative_positions={}
+          for idx,line in enumerate(lines):
+              m=rule_re.match(line)
+              if not m:
+                  continue
+              neg=bool(m.group(1)); wh=int(m.group(2))
+              perks=tuple(int(x) for x in m.group(3).split(",") if x.strip().isdigit())
+              notes=m.group(4).strip()
+              rec={"idx":idx,"negative":neg,"perks":perks,"notes":notes}
+              by_hash.setdefault(wh,[]).append(rec)
+              if not neg:
+                  exact_existing.add((wh,perks))
+              else:
+                  negative_positions.setdefault(wh,[]).append(idx)
+
+          def score_note(wh):
+              recs=by_hash.get(wh,[])
+              # Prefer definition-level fallback metadata, then any rule for that hash.
+              preferred=[r for r in recs if "match:fallback" in r["notes"]] or recs
+              for r in preferred:
+                  vals={}
+                  for k,rx in score_re.items():
+                      m=rx.search(r["notes"])
+                      if m: vals[k]=m.group(1).strip()
+                  if all(k in vals for k in ("CPVE","PVE","CPVP","PVP")):
+                      return f'CPVE:{vals["CPVE"]} | PVE:{vals["PVE"]} | CPVP:{vals["CPVP"]} | PVP:{vals["PVP"]}'
+              return "CPVE:NA | PVE:NA | CPVP:NA | PVP:NA"
+
+          block=[
+              "// FQX Fox Favorite exact-roll protection — generated 2026-10-06",
+              "// Exact owned Favorite rolls. These personal-positive rules intentionally precede generic/core and negative fallback rules.",
+              "// Scores are carried from existing weapon-level wishlist metadata; Favorite evidence changes match/evidence classification, not the numerical score in this pass.",
+              "",
+          ]
+
+          audit=[]
+          inserted=0; already=0
+          for c in candidates:
+              sig=(c["weapon_hash"],c["perks"])
+              if sig in exact_existing:
+                  state="already_positive"
+                  already += 1
+              else:
+                  state="inserted"
+                  inserted += 1
+                  amb = " | ambiguity:same-name-legal-dual-candidate" if c["kind"]=="ambiguous_dual_candidate" else ""
+                  block.append(f'// {c["name"]} — Fox Favorite')
+                  block.append(
+                      f'dimwishlist:item={c["weapon_hash"]}&perks={",".join(map(str,c["perks"]))}'
+                      f'#notes:{score_note(c["weapon_hash"])} | match:fox-favorite | evidence:favorite | source:fox-owned{amb}'
+                  )
+              audit.append({
+                  **c,
+                  "perks": list(c["perks"]),
+                  "state": state,
+                  "had_negative_fallback": bool(negative_positions.get(c["weapon_hash"])),
+              })
+
+          # Insert after title/description/version header and before existing roll rules.
+          first_rule = next(i for i,l in enumerate(lines) if l.startswith("dimwishlist:item="))
+          new_lines = lines[:first_rule] + block + [""] + lines[first_rule:]
+          out_path=pathlib.Path("foxarmory-2026-return-d2dim.favorite-test.txt")
+          out_path.write_text("\n".join(new_lines)+"\n",encoding="utf-8")
+
+          # Validate every candidate rule exists positively before every negative fallback for same weapon.
+          out_lines=new_lines
+          positions={}
+          negpos={}
+          for idx,line in enumerate(out_lines):
+              m=rule_re.match(line)
+              if not m: continue
+              neg=bool(m.group(1)); wh=int(m.group(2))
+              perks=tuple(int(x) for x in m.group(3).split(",") if x.strip().isdigit())
+              if neg: negpos.setdefault(wh,[]).append(idx)
+              else: positions.setdefault((wh,perks),[]).append(idx)
+
+          failures=[]
+          for a in audit:
+              sig=(a["weapon_hash"],tuple(a["perks"]))
+              pp=positions.get(sig,[])
+              if not pp:
+                  failures.append({"name":a["name"],"weapon_hash":a["weapon_hash"],"reason":"positive_rule_missing"})
+                  continue
+              negatives=negpos.get(a["weapon_hash"],[])
+              if negatives and min(pp) > min(negatives):
+                  failures.append({"name":a["name"],"weapon_hash":a["weapon_hash"],"reason":"positive_after_negative"})
+
+          summary={
+              "candidate_rules":len(candidates),
+              "inserted_rules":inserted,
+              "already_positive_rules":already,
+              "distinct_weapon_hashes":len({c["weapon_hash"] for c in candidates}),
+              "ambiguous_dual_candidate_rules":sum(c["kind"]=="ambiguous_dual_candidate" for c in candidates),
+              "candidates_with_negative_fallback":sum(a["had_negative_fallback"] for a in audit),
+              "ordering_failures":len(failures),
+              "missing_score_metadata":sum("CPVE:NA" in l for l in block),
+              "source_wishlist_lines":len(lines),
+              "test_wishlist_lines":len(new_lines),
+          }
+          pathlib.Path("fqx_favorite_test_audit.json").write_text(
+              json.dumps({"summary":summary,"failures":failures,"rules":audit},indent=2),
+              encoding="utf-8"
+          )
+          print(json.dumps(summary,indent=2))
+          if failures:
+              raise SystemExit("Favorite rule audit failed")
+
+      - name: Upload test wishlist
+        uses: actions/upload-artifact@v4
+        with:
+          name: fqx-favorite-protected-wishlist-test
+          path: |
+            foxarmory-2026-return-d2dim.favorite-test.txt
+            fqx_favorite_test_audit.json
+          if-no-files-found: error
+          retention-days: 1

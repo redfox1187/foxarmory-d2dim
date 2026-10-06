@@ -1,0 +1,756 @@
+name: FQX Build v1.0 Complete Release
+
+on:
+  push:
+    branches:
+      - release/v1.0-20261006
+    paths:
+      - ".github/workflows/fqx-build-v1-release.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download verified Destiny manifest
+        run: |
+          curl -fSL "https://www.bungie.net/common/destiny2_content/sqlite/en/world_sql_content_a695ee698e87bcb0333c1026ba10cd63.content" -o manifest.content
+          mkdir manifestdb
+          unzip -q manifest.content -d manifestdb
+
+      - name: Build and audit v1.0
+        shell: python
+        run: |
+          import csv, glob, json, math, pathlib, re, sqlite3, statistics, collections, hashlib, subprocess
+
+          VERSION="v1.0"
+          MANIFEST_VERSION="244213.26.06.29.2000-1-bnet.65864"
+          BASE_SOURCE_SHA="aab86043519861c2dfcf738c3801dec0ca45b04b"
+          source=subprocess.check_output(
+              ["git","show",f"{BASE_SOURCE_SHA}:foxarmory-2026-return-d2dim.txt"],
+              text=True, encoding="utf-8"
+          )
+          source_lines=source.splitlines()
+
+          rule_re=re.compile(r'^dimwishlist:item=(-?)(\d+)&perks=([^#]*)#notes:(.*)$')
+          metric_re={k:re.compile(r'(?:^|\|\s*)'+k+r':([^|]+)') for k in ("CPVE","PVE","CPVP","PVP")}
+          score_re=re.compile(r'^(\d+)([EPV]?)$')
+
+          def metric(notes,key):
+              m=metric_re[key].search(notes)
+              return m.group(1).strip() if m else None
+
+          def numeric_metric(notes,key):
+              v=metric(notes,key)
+              if not v: return None
+              m=score_re.match(v)
+              return int(m.group(1)) if m else None
+
+          def replace_metric(notes,key,value):
+              rx=re.compile(r'(^|\|\s*)'+key+r':[^|]+')
+              if rx.search(notes):
+                  return rx.sub(lambda m:f'{m.group(1)}{key}:{value}',notes,count=1)
+              return notes+f' | {key}:{value}'
+
+          def strip_model_tags(notes):
+              parts=[p.strip() for p in notes.split("|")]
+              kill=("score-model:","fox-fit-bonus:","foxfit-v0.9-delta:","profile-governance:")
+              parts=[p for p in parts if p and not any(p.startswith(k) for k in kill)]
+              return " | ".join(parts)
+
+          def strip_classification_tags(notes):
+              parts=[p.strip() for p in notes.split("|")]
+              kill=("match:","evidence:","source:","scope:","score-model:","fox-fit-bonus:","foxfit-v0.9-delta:","profile-governance:")
+              parts=[p for p in parts if p and not any(p.startswith(k) for k in kill)]
+              return " | ".join(parts)
+
+          db_path=next(pathlib.Path("manifestdb").iterdir())
+          con=sqlite3.connect(db_path); con.row_factory=sqlite3.Row
+
+          def load_table(name):
+              out={}
+              for r in con.execute(f'SELECT id,json FROM "{name}"'):
+                  try:o=json.loads(r["json"])
+                  except Exception: continue
+                  out[int(r["id"]) & 0xffffffff]=o
+              return out
+
+          items=load_table("DestinyInventoryItemDefinition")
+          plugsets=load_table("DestinyPlugSetDefinition")
+          collectibles=load_table("DestinyCollectibleDefinition")
+          seasons=load_table("DestinySeasonDefinition")
+
+          def item_name(h):
+              return ((items.get(int(h)) or {}).get("displayProperties") or {}).get("name","")
+
+          def item_type_name(h):
+              return (items.get(int(h)) or {}).get("itemTypeDisplayName","")
+
+          def plug_category(h):
+              return (((items.get(int(h)) or {}).get("plug") or {}).get("plugCategoryIdentifier") or "")
+
+          def tier(o):
+              inv=o.get("inventory") or {}
+              return inv.get("tierTypeName") or str(inv.get("tierType") or "")
+
+          def is_instance(o):
+              return bool((o.get("inventory") or {}).get("isInstanceItem"))
+
+          def availability(o):
+              if o.get("redacted"): return "redacted"
+              ch=o.get("collectibleHash")
+              coll=collectibles.get(int(ch)) if ch else None
+              src=((coll or {}).get("sourceString") or "").strip()
+              acq=((coll or {}).get("acquisitionInfo") or {})
+              sh=((o.get("sourceData") or {}).get("sourceHashes") or [])
+              return "source-indicated" if src or acq or sh else "availability-unverified"
+
+          def socket_options(s):
+              seen=set(); out=[]
+              def add(ph):
+                  if ph is None: return
+                  ph=int(ph)
+                  if ph in seen: return
+                  seen.add(ph); out.append(ph)
+              add(s.get("singleInitialItemHash"))
+              for psh in (s.get("randomizedPlugSetHash"),s.get("reusablePlugSetHash")):
+                  if psh:
+                      ps=plugsets.get(int(psh)) or {}
+                      for e in ps.get("reusablePlugItems") or []: add(e.get("plugItemHash"))
+              for e in s.get("reusablePlugItems") or []: add(e.get("plugItemHash"))
+              return out
+
+          def normal_trait_options(s):
+              opts=[]
+              for ph in socket_options(s):
+                  po=items.get(ph) or {}
+                  typ=po.get("itemTypeDisplayName") or ""
+                  cat=((po.get("plug") or {}).get("plugCategoryIdentifier") or "").lower()
+                  if typ != "Trait": continue
+                  if "origin" in cat or "intrinsic" in cat or "catalyst" in cat or "masterwork" in cat: continue
+                  if "enhanced" in (po.get("displayProperties") or {}).get("name","").lower(): continue
+                  opts.append(ph)
+              return list(dict.fromkeys(opts))
+
+          def trait_columns(o):
+              cols=[]
+              for i,s in enumerate(((o.get("sockets") or {}).get("socketEntries") or [])):
+                  opts=normal_trait_options(s)
+                  if len(opts)>=2: cols.append((i,opts))
+              # Weapon trait columns are normally the last two multi-option normal-Trait sockets.
+              return cols[-2:] if len(cols)>=2 else cols
+
+          # Parse production source.
+          original_rules=[]
+          by_hash=collections.defaultdict(list)
+          positive_sigs=set(); negative_hashes=set()
+          for idx,line in enumerate(source_lines):
+              m=rule_re.match(line)
+              if not m: continue
+              neg=bool(m.group(1)); wh=int(m.group(2))
+              perks=tuple(int(x) for x in m.group(3).split(",") if x.strip().isdigit())
+              rec={"idx":idx,"negative":neg,"weapon_hash":wh,"perks":perks,"notes":m.group(4).strip(),"raw":line}
+              original_rules.append(rec); by_hash[wh].append(rec)
+              if neg: negative_hashes.add(wh)
+              else: positive_sigs.add((wh,perks))
+
+          original_cp={}
+          original_pvp={}
+          for r in original_rules:
+              key=(r["idx"],r["negative"],r["weapon_hash"],r["perks"])
+              original_cp[key]=(metric(r["notes"],"CPVE"),metric(r["notes"],"CPVP"))
+              original_pvp[key]=metric(r["notes"],"PVP")
+
+          # Favorite hashes and score maps.
+          legends=[]
+          for p in sorted(glob.glob("tools/favorite-candidates/part*.txt")):
+              for raw in pathlib.Path(p).read_text(encoding="utf-8").splitlines():
+                  if not raw.strip(): continue
+                  wh,perks,name,kind=raw.split("|",3)
+                  legends.append({"weapon_hash":int(wh),"perks":tuple(int(x) for x in perks.split(",") if x),"name":name,"kind":kind})
+          uniq=[]; seen=set()
+          for c in legends:
+              sig=(c["weapon_hash"],c["perks"])
+              if sig not in seen: seen.add(sig); uniq.append(c)
+          legends=uniq
+
+          leg_scores={}
+          for raw in pathlib.Path("tools/favorite-candidates/scores-v0.1.txt").read_text(encoding="utf-8").splitlines():
+              if not raw or raw.startswith("#"): continue
+              wh,perks,pve,pvp=raw.split("|",3)
+              leg_scores[(int(wh),tuple(int(x) for x in perks.split(",") if x))]={"PVE":pve,"PVP":pvp}
+
+          exotic_scores={}
+          for raw in pathlib.Path("tools/favorite-candidates/exotic-scores-v0.1.txt").read_text(encoding="utf-8").splitlines():
+              if not raw or raw.startswith("#"): continue
+              wh,pve,pvp=raw.split("|",2)
+              exotic_scores[int(wh)]={"PVE":pve,"PVP":pvp}
+
+          favorite_hashes={x["weapon_hash"] for x in legends}|set(exotic_scores)
+          existing_exotic_item_positive={
+              r["weapon_hash"] for r in original_rules
+              if (not r["negative"]) and r["weapon_hash"] in exotic_scores and len(r["perks"])==0
+          }
+
+          # v0.8 statistical positive-only map.
+          catalog_map={}
+          for raw in pathlib.Path("tools/favorite-candidates/catalog-positive-fit-v0.1.txt").read_text(encoding="utf-8").splitlines():
+              if not raw or raw.startswith("#"): continue
+              wh,perks,newpve,bonus=raw.split("|",3)
+              catalog_map[(int(wh),tuple(int(x) for x in perks.split(",") if x))]={"PVE":int(re.match(r'(\d+)',newpve).group(1)),"bonus":int(bonus)}
+
+          MAINTENANCE={"Auto-Loading Holster","Reconstruction","Overflow","Subsistence","Envious Assassin","Rewind Rounds"}
+          PREFERRED_TYPES={"Submachine Gun","Hand Cannon","Grenade Launcher","Rocket Launcher"}
+          DIRECT_PAIRS={
+              frozenset(("Shoot to Loot","Kinetic Tremors")),
+              frozenset(("Shoot to Loot","Attrition Orbs")),
+          }
+
+          def fox_profile_adjust(wh,perk_hashes,starting,original):
+              o=items.get(wh) or {}
+              typ=o.get("itemTypeDisplayName") or ""
+              name=((o.get("displayProperties") or {}).get("name") or "")
+              names={item_name(p) for p in perk_hashes if item_name(p)}
+              target=starting
+              reasons=[]
+              if wh not in favorite_hashes and typ=="Fusion Rifle" and name!="Telesto":
+                  target-=4; reasons.append("fusion-dislike:-4")
+              prior_support=(wh,tuple(perk_hashes)) in catalog_map
+              maint=bool(names & MAINTENANCE)
+              if typ in PREFERRED_TYPES and prior_support:
+                  target+=1; reasons.append("preferred-family:+1")
+              if maint and target-original<1:
+                  target=original+1; reasons.append("maintenance-floor:+1")
+              if any(pair.issubset(names) for pair in DIRECT_PAIRS):
+                  if target < original+3:
+                      target=original+3
+                  reasons.append("direct-pair:min+3")
+              return max(0,min(98,int(round(target)))),reasons
+
+          # Rewrite production positive PVE into v0.9-governed baseline.
+          rewritten=[]
+          source_rewrite_audit=[]
+          for idx,line in enumerate(source_lines):
+              m=rule_re.match(line)
+              if not m or m.group(1):
+                  rewritten.append(line); continue
+              wh=int(m.group(2)); perks=tuple(int(x) for x in m.group(3).split(",") if x.strip().isdigit())
+              notes=m.group(4).strip()
+              old=numeric_metric(notes,"PVE")
+
+              # Existing item-level Favorite Exotic positives are promoted in place.
+              # This avoids duplicate exact signatures while preserving sourced community fields.
+              if wh in exotic_scores and len(perks)==0:
+                  sc=dict(exotic_scores[wh])
+                  nm=item_name(wh) or f"Exotic {wh}"
+                  direct=nm in {"Wish-Ender","The Last Word","Witherhoard","Dead Man's Tale","Telesto"}
+                  if direct:
+                      pve_num=int(re.match(r'(\d+)',sc["PVE"]).group(1))
+                      if nm=="Witherhoard": pve_num=92
+                      if nm=="Telesto": pve_num=88
+                      sc["PVE"]=f"{pve_num}P"
+                  notes=replace_metric(notes,"PVE",sc["PVE"])
+                  notes=replace_metric(notes,"PVP",sc["PVP"])
+                  notes=strip_classification_tags(notes)
+                  notes += f' | match:fox-favorite-exotic | evidence:{"direct-profile+favorite" if direct else "favorite"} | source:fox-owned | scope:item-level | score-model:v1.0'
+                  line=f'dimwishlist:item={wh}&perks=#notes:{notes}'
+                  rewritten.append(line)
+                  source_rewrite_audit.append({"line":idx+1,"weapon_hash":wh,"name":nm,"type":item_type_name(wh),"old_pve":old,"new_pve":int(re.match(r'(\d+)',sc["PVE"]).group(1)),"reasons":"favorite-exotic-in-place"})
+                  continue
+
+              if old is None:
+                  rewritten.append(line); continue
+              pred=catalog_map.get((wh,perks))
+              start=pred["PVE"] if pred else old
+              new,reasons=fox_profile_adjust(wh,perks,start,old)
+              if new!=old:
+                  oldval=metric(notes,"PVE")
+                  suffix=(re.match(r'\d+([EPV]?)',oldval).group(1) if oldval else "") or "E"
+                  notes=replace_metric(notes,"PVE",f"{new}{suffix}")
+                  notes=strip_model_tags(notes)
+                  notes += f" | score-model:foxfit-v0.9 | profile-governance:{'+'.join(reasons) if reasons else 'affinity'}"
+                  line=f'dimwishlist:item={wh}&perks={m.group(3)}#notes:{notes}'
+              rewritten.append(line)
+              source_rewrite_audit.append({"line":idx+1,"weapon_hash":wh,"name":item_name(wh),"type":item_type_name(wh),"old_pve":old,"new_pve":new,"reasons":";".join(reasons)})
+          governed_lines=rewritten
+
+          # Community scores from production definition/fallback rules.
+          def community(wh):
+              recs=by_hash.get(wh,[])
+              preferred=[r for r in recs if "match:fallback" in r["notes"]] or recs
+              for r in preferred:
+                  a=metric(r["notes"],"CPVE"); b=metric(r["notes"],"CPVP")
+                  if a is not None and b is not None: return {"CPVE":a,"CPVP":b}
+              return {"CPVE":"NA","CPVP":"NA"}
+
+          # Build Favorite protection block, incorporating direct profile updates.
+          favorite_block=[
+              "// FQX Fox Favorite protection + personal-fit evidence — v1.0",
+              "// Exact Legendary Favorites precede generic/core and negative fallback rules.",
+              "// Favorite Exotics are item-level protections. Favorite alone never grants Verified.",
+              "",
+              "// --- Favorite Legendary exact rolls ---",
+          ]
+          favorite_ledger=[]
+          for c in legends:
+              sig=(c["weapon_hash"],c["perks"]); sc=dict(leg_scores[sig]); comm=community(c["weapon_hash"])
+              direct=False
+              if c["weapon_hash"]==2026755633:
+                  names={item_name(p) for p in c["perks"]}
+                  if {"Shoot to Loot","Kinetic Tremors"}.issubset(names) or {"Shoot to Loot","Attrition Orbs"}.issubset(names):
+                      sc["PVE"]="80P"; direct=True
+              amb=" | ambiguity:same-name-legal-dual-candidate" if c["kind"]=="ambiguous_dual_candidate" else ""
+              favorite_block.append(f'// {c["name"]} — Fox Favorite')
+              favorite_block.append(
+                  f'dimwishlist:item={c["weapon_hash"]}&perks={",".join(map(str,c["perks"]))}'
+                  f'#notes:CPVE:{comm["CPVE"]} | PVE:{sc["PVE"]} | CPVP:{comm["CPVP"]} | PVP:{sc["PVP"]}'
+                  f' | match:fox-favorite | evidence:{"direct-profile+favorite" if direct else "favorite"} | source:fox-owned'
+                  f' | score-model:v1.0{amb}'
+              )
+              favorite_ledger.append({"kind":"legendary","weapon_hash":c["weapon_hash"],"name":c["name"],"perks":",".join(map(str,c["perks"])),"PVE":sc["PVE"],"PVP":sc["PVP"],"direct_profile":direct})
+
+          favorite_block += ["","// --- Favorite Exotics ---"]
+          direct_exotic_names={"Wish-Ender","The Last Word","Witherhoard","Dead Man's Tale","Telesto"}
+          for wh,base_sc in sorted(exotic_scores.items()):
+              name=item_name(wh) or f"Exotic {wh}"
+              sc=dict(base_sc); direct=name in direct_exotic_names
+              if direct:
+                  pve_num=int(re.match(r'(\d+)',sc["PVE"]).group(1))
+                  if name=="Witherhoard": pve_num=92
+                  if name=="Telesto": pve_num=88
+                  sc["PVE"]=f"{pve_num}P"
+              comm=community(wh)
+              if wh not in existing_exotic_item_positive:
+                  favorite_block.append(f"// {name} — Fox Favorite Exotic (item-level)")
+                  favorite_block.append(
+                      f'dimwishlist:item={wh}&perks=#notes:CPVE:{comm["CPVE"]} | PVE:{sc["PVE"]} | CPVP:{comm["CPVP"]} | PVP:{sc["PVP"]}'
+                      f' | match:fox-favorite-exotic | evidence:{"direct-profile+favorite" if direct else "favorite"}'
+                      f' | source:fox-owned | scope:item-level | score-model:v1.0'
+                  )
+              favorite_ledger.append({"kind":"exotic","weapon_hash":wh,"name":name,"perks":"","PVE":sc["PVE"],"PVP":sc["PVP"],"direct_profile":direct})
+
+          # Insert Favorite block before the comment that owns the first production rule.
+          first_rule=next(i for i,l in enumerate(governed_lines) if l.startswith("dimwishlist:item="))
+          insert_at=first_rule
+          while insert_at>0 and governed_lines[insert_at-1].startswith("//") and not governed_lines[insert_at-1].startswith("// 2026 Return"):
+              insert_at-=1
+          base_lines=governed_lines[:insert_at]+favorite_block+[""]+governed_lines[insert_at:]
+
+          # Learn v1.0 inferred scoring priors from governed production positive rules.
+          positive_samples=[]
+          for line in governed_lines:
+              m=rule_re.match(line)
+              if not m or m.group(1): continue
+              wh=int(m.group(2)); perks=tuple(int(x) for x in m.group(3).split(",") if x.strip().isdigit())
+              notes=m.group(4).strip()
+              pve=numeric_metric(notes,"PVE"); pvp=numeric_metric(notes,"PVP")
+              typ=item_type_name(wh)
+              if typ and (pve is not None or pvp is not None):
+                  positive_samples.append({"wh":wh,"perks":perks,"type":typ,"PVE":pve,"PVP":pvp})
+
+          def means_by_type(mode):
+              d=collections.defaultdict(list); allv=[]
+              for s in positive_samples:
+                  v=s[mode]
+                  if v is not None: d[s["type"]].append(v); allv.append(v)
+              glob=statistics.mean(allv) if allv else 75
+              return {k:statistics.mean(v) for k,v in d.items()},glob
+
+          type_mean_pve,global_pve=means_by_type("PVE")
+          type_mean_pvp,global_pvp=means_by_type("PVP")
+
+          def learn_effects(mode,type_means,global_mean):
+              perk_res=collections.defaultdict(list); pair_res=collections.defaultdict(list)
+              for s in positive_samples:
+                  val=s[mode]
+                  if val is None: continue
+                  base=type_means.get(s["type"],global_mean)
+                  trait_perks=[]
+                  for ph in s["perks"]:
+                      po=items.get(ph) or {}
+                      typ=po.get("itemTypeDisplayName") or ""
+                      cat=((po.get("plug") or {}).get("plugCategoryIdentifier") or "").lower()
+                      if typ=="Trait" and "origin" not in cat and "intrinsic" not in cat:
+                          trait_perks.append(ph)
+                  for ph in set(trait_perks): perk_res[ph].append(val-base)
+                  if len(trait_perks)>=2:
+                      pair=tuple(sorted(trait_perks[-2:]))
+                      pair_res[pair].append(val-base)
+              pe={}
+              for ph,vals in perk_res.items():
+                  raw=statistics.mean(vals); n=len(vals); pe[ph]=max(-8,min(8,raw*n/(n+5)))
+              pae={}
+              for pair,vals in pair_res.items():
+                  raw=statistics.mean(vals); n=len(vals); pae[pair]=max(-6,min(6,raw*n/(n+3)))
+              return pe,pae
+
+          perk_pve,pair_pve=learn_effects("PVE",type_mean_pve,global_pve)
+          perk_pvp,pair_pvp=learn_effects("PVP",type_mean_pvp,global_pvp)
+
+          def score_pair(wh,pair,mode):
+              o=items[wh]; typ=o.get("itemTypeDisplayName") or ""
+              if mode=="PVE":
+                  base=type_mean_pve.get(typ,global_pve); pe=perk_pve; pae=pair_pve
+              else:
+                  base=type_mean_pvp.get(typ,global_pvp); pe=perk_pvp; pae=pair_pvp
+              score=base+sum(pe.get(p,0) for p in pair)+pae.get(tuple(sorted(pair)),0)
+              names={item_name(p) for p in pair}
+              name=((o.get("displayProperties") or {}).get("name") or "")
+              if typ=="Fusion Rifle" and name!="Telesto": score-=4
+              maint=bool(names & MAINTENANCE)
+              if typ in PREFERRED_TYPES and (maint or sum(pe.get(p,0) for p in pair)>0): score+=1
+              if any(dp.issubset(names) for dp in DIRECT_PAIRS): score+=3
+              # Manifest-only inference must not claim Exceptional certainty.
+              # Source-indicated definitions may reach Elite; availability-unverified definitions are capped Strong.
+              av=availability(o)
+              confidence_cap=92 if av=="source-indicated" else 86
+              return max(45,min(confidence_cap,int(round(score))))
+
+          def fallback_score(wh,mode):
+              typ=item_type_name(wh)
+              base=(type_mean_pve.get(typ,global_pve) if mode=="PVE" else type_mean_pvp.get(typ,global_pvp))
+              name=item_name(wh)
+              if typ=="Fusion Rifle" and name!="Telesto": base-=4
+              return max(40,min(69,int(round(base-14))))
+
+          # Current covered hashes after Favorite block + production.
+          covered_hashes=set()
+          covered_positive_sigs=set()
+          neg_hashes=set()
+          for line in base_lines:
+              m=rule_re.match(line)
+              if not m: continue
+              wh=int(m.group(2)); perks=tuple(int(x) for x in m.group(3).split(",") if x.strip().isdigit())
+              covered_hashes.add(wh)
+              if m.group(1): neg_hashes.add(wh)
+              else: covered_positive_sigs.add((wh,perks))
+
+          # Manifest universes.
+          roll_legendaries=[]
+          fixed_legendaries=[]
+          exotics=[]
+          low_tier=[]
+          for wh,o in items.items():
+              if o.get("itemType")!=3 or not is_instance(o) or o.get("redacted"): continue
+              name=((o.get("displayProperties") or {}).get("name") or "")
+              if not name: continue
+              t=tier(o)
+              cols=trait_columns(o)
+              rec={"weapon_hash":wh,"name":name,"type":o.get("itemTypeDisplayName") or "","tier":t,"availability":availability(o),"trait_columns":cols}
+              if t=="Legendary":
+                  if len(cols)>=1: roll_legendaries.append(rec)
+                  else: fixed_legendaries.append(rec)
+              elif t=="Exotic": exotics.append(rec)
+              elif t in ("Rare","Uncommon","Common"): low_tier.append(rec)
+
+          generated_lines=["","// ============================================================","// v1.0 manifest-completeness layer","// Generated estimates cover current-manifest Legendary/Exotic weapon definitions.","// Manifest presence is a superset, not proof that a historical definition is currently obtainable.","// CPVE/CPVP remain NA where no sourced community rating exists.","// ============================================================",""]
+          coverage_rows=[]
+          scoring_rows=[]
+          generated_positive=0; generated_negative=0
+
+          # Generate missing roll-bearing Legendary positives + ensure every one has negative fallback.
+          for rec in sorted(roll_legendaries,key=lambda r:(r["type"],r["name"],r["weapon_hash"])):
+              wh=rec["weapon_hash"]; cols=rec["trait_columns"]
+              was_covered=wh in covered_hashes
+              added_pairs=[]
+              if not was_covered:
+                  combos=[]
+                  if len(cols)>=2:
+                      a=cols[-2][1]; b=cols[-1][1]
+                      for p1 in a:
+                          for p2 in b:
+                              if p1==p2: continue
+                              pair=(p1,p2)
+                              combos.append((pair,score_pair(wh,pair,"PVE"),score_pair(wh,pair,"PVP")))
+                  elif len(cols)==1:
+                      for p in cols[0][1]:
+                          pair=(p,); combos.append((pair,score_pair(wh,pair,"PVE"),score_pair(wh,pair,"PVP")))
+                  # Union of top 3 PvE and top 2 PvP, preserving deterministic order.
+                  chosen=[]; seenp=set()
+                  for row in sorted(combos,key=lambda x:(-x[1],-x[2],x[0]))[:3]+sorted(combos,key=lambda x:(-x[2],-x[1],x[0]))[:2]:
+                      if row[0] not in seenp:
+                          seenp.add(row[0]); chosen.append(row)
+                  if chosen:
+                      generated_lines.append(f'// {rec["name"]} — inferred manifest coverage')
+                      for pair,pve,pvp in chosen:
+                          if max(pve,pvp)<70: continue
+                          sig=(wh,tuple(pair))
+                          if sig in covered_positive_sigs: continue
+                          generated_lines.append(
+                              f'dimwishlist:item={wh}&perks={",".join(map(str,pair))}'
+                              f'#notes:CPVE:NA | PVE:{pve}E | CPVP:NA | PVP:{pvp}E'
+                              f' | match:generated-core | evidence:manifest-inferred | availability:{rec["availability"]} | score-model:v1.0'
+                          )
+                          generated_positive+=1; added_pairs.append(pair); covered_positive_sigs.add(sig)
+                          scoring_rows.append({"weapon_hash":wh,"name":rec["name"],"type":rec["type"],"tier":"Legendary","scope":"generated-core","perks":",".join(map(str,pair)),"PVE":pve,"PVP":pvp,"validation":"E","availability":rec["availability"],"basis":"type mean + shrunk perk residuals + shrunk pair residual + Fox profile governance; confidence-capped by availability evidence"})
+              if wh not in neg_hashes:
+                  pve=fallback_score(wh,"PVE"); pvp=fallback_score(wh,"PVP")
+                  generated_lines.append(
+                      f'dimwishlist:item=-{wh}&perks=#notes:CPVE:NA | PVE:{pve}E | CPVP:NA | PVP:{pvp}E'
+                      f' | match:generated-fallback | evidence:manifest-inferred | availability:{rec["availability"]} | score-model:v1.0'
+                  )
+                  generated_negative+=1; neg_hashes.add(wh)
+                  scoring_rows.append({"weapon_hash":wh,"name":rec["name"],"type":rec["type"],"tier":"Legendary","scope":"generated-fallback","perks":"","PVE":pve,"PVP":pvp,"validation":"E","availability":rec["availability"],"basis":"type prior minus fallback margin + Fox profile governance"})
+              covered_hashes.add(wh)
+              coverage_rows.append({**{k:rec[k] for k in ("weapon_hash","name","type","tier","availability")},"roll_bearing":True,"covered_before_v1":was_covered,"generated_positive_rules":len(added_pairs),"has_negative_fallback":True})
+
+          # Fixed Legendary definitions missing from wishlist get one item-level inferred rule.
+          for rec in sorted(fixed_legendaries,key=lambda r:(r["type"],r["name"],r["weapon_hash"])):
+              wh=rec["weapon_hash"]; was_covered=wh in covered_hashes
+              added=0
+              if not was_covered:
+                  pve=max(45,min(90,int(round(type_mean_pve.get(rec["type"],global_pve)-5))))
+                  pvp=max(45,min(90,int(round(type_mean_pvp.get(rec["type"],global_pvp)-5))))
+                  sign="" if max(pve,pvp)>=70 else "-"
+                  generated_lines.append(f'// {rec["name"]} — fixed Legendary manifest estimate')
+                  generated_lines.append(
+                      f'dimwishlist:item={sign}{wh}&perks=#notes:CPVE:NA | PVE:{pve}E | CPVP:NA | PVP:{pvp}E'
+                      f' | match:fixed-item | evidence:manifest-inferred | availability:{rec["availability"]} | scope:item-level | score-model:v1.0'
+                  )
+                  if sign: generated_negative+=1
+                  else: generated_positive+=1
+                  added=1; covered_hashes.add(wh)
+                  scoring_rows.append({"weapon_hash":wh,"name":rec["name"],"type":rec["type"],"tier":"Legendary","scope":"fixed-item","perks":"","PVE":pve,"PVP":pvp,"validation":"E","availability":rec["availability"],"basis":"type prior -5; fixed item-level"})
+              coverage_rows.append({**{k:rec[k] for k in ("weapon_hash","name","type","tier","availability")},"roll_bearing":False,"covered_before_v1":was_covered,"generated_positive_rules":added if added and not sign else 0,"has_negative_fallback":bool(added and sign)})
+
+          # Exotic definitions missing from wishlist get conservative item-level estimates.
+          for rec in sorted(exotics,key=lambda r:(r["type"],r["name"],r["weapon_hash"])):
+              wh=rec["weapon_hash"]; was_covered=wh in covered_hashes
+              added=0
+              if not was_covered:
+                  pve=max(65,min(92,int(round(type_mean_pve.get(rec["type"],global_pve)+3))))
+                  pvp=max(60,min(92,int(round(type_mean_pvp.get(rec["type"],global_pvp)+3))))
+                  if rec["type"]=="Fusion Rifle" and rec["name"]!="Telesto":
+                      pve-=4; pvp-=4
+                  generated_lines.append(f'// {rec["name"]} — Exotic manifest estimate (item-level)')
+                  generated_lines.append(
+                      f'dimwishlist:item={wh}&perks=#notes:CPVE:NA | PVE:{pve}E | CPVP:NA | PVP:{pvp}E'
+                      f' | match:exotic-item | evidence:manifest-inferred | availability:{rec["availability"]} | scope:item-level | score-model:v1.0'
+                  )
+                  generated_positive+=1; added=1; covered_hashes.add(wh)
+                  scoring_rows.append({"weapon_hash":wh,"name":rec["name"],"type":rec["type"],"tier":"Exotic","scope":"exotic-item","perks":"","PVE":pve,"PVP":pvp,"validation":"E","availability":rec["availability"],"basis":"type prior + exotic item-level allowance + Fox profile governance"})
+              coverage_rows.append({**{k:rec[k] for k in ("weapon_hash","name","type","tier","availability")},"roll_bearing":bool(rec["trait_columns"]),"covered_before_v1":was_covered,"generated_positive_rules":added,"has_negative_fallback":False})
+
+          out_lines=base_lines+generated_lines
+
+          # Candidate metadata.
+          if len(out_lines)>1 and out_lines[1].startswith("description:"):
+              out_lines[1]="description:[v1.0 2026-10-06] Complete manifest-superset Destiny 2 weapon triage. Favorite exact rolls protected; profile-governed Fox scores; all roll-bearing Legendaries receive inferred coverage; fixed Legendaries and Exotics receive item-level estimates where missing."
+          for i,l in enumerate(out_lines[:15]):
+              if l.startswith("// 2026 Return v"):
+                  out_lines[i]="// 2026 Return v1.0 — complete manifest-superset personalized release"
+                  break
+
+          # Final parse / audit.
+          final_rules=[]; malformed=[]
+          for idx,line in enumerate(out_lines):
+              if not line.startswith("dimwishlist:item="): continue
+              m=rule_re.match(line)
+              if not m:
+                  malformed.append({"line":idx+1,"text":line[:200]}); continue
+              final_rules.append({"idx":idx,"negative":bool(m.group(1)),"wh":int(m.group(2)),"perks":tuple(int(x) for x in m.group(3).split(",") if x.strip().isdigit()),"notes":m.group(4).strip()})
+
+          final_by_hash=collections.defaultdict(list)
+          for r in final_rules: final_by_hash[r["wh"]].append(r)
+
+          roll_hashes={r["weapon_hash"] for r in roll_legendaries}
+          fixed_hashes={r["weapon_hash"] for r in fixed_legendaries}
+          exotic_hashes={r["weapon_hash"] for r in exotics}
+          missing_roll=[h for h in sorted(roll_hashes) if h not in final_by_hash]
+          missing_roll_fallback=[h for h in sorted(roll_hashes) if not any(r["negative"] for r in final_by_hash[h])]
+          missing_fixed=[h for h in sorted(fixed_hashes) if h not in final_by_hash]
+          missing_exotic=[h for h in sorted(exotic_hashes) if h not in final_by_hash]
+
+          favorite_failures=[]
+          for f in favorite_ledger:
+              wh=f["weapon_hash"]; perks=tuple(int(x) for x in f["perks"].split(",") if x)
+              pp=[r["idx"] for r in final_by_hash[wh] if not r["negative"] and r["perks"]==perks]
+              nn=[r["idx"] for r in final_by_hash[wh] if r["negative"]]
+              if not pp: favorite_failures.append({"weapon_hash":wh,"name":f["name"],"reason":"favorite_positive_missing"})
+              elif nn and min(pp)>min(nn): favorite_failures.append({"weapon_hash":wh,"name":f["name"],"reason":"favorite_after_negative"})
+
+          generated_order_fail=[]
+          for h in roll_hashes:
+              positives=[r["idx"] for r in final_by_hash[h] if not r["negative"]]
+              negatives=[r["idx"] for r in final_by_hash[h] if r["negative"]]
+              if positives and negatives and min(negatives)<min(positives):
+                  generated_order_fail.append(h)
+
+          # Preserve source CPVE/CPVP and PVP on the one-to-one governed source lines.
+          community_fail=[]; pvp_fail=[]
+          for r in original_rules:
+              if r["idx"]>=len(governed_lines): continue
+              m=rule_re.match(governed_lines[r["idx"]])
+              if not m: continue
+              notes=m.group(4).strip()
+              key=(r["idx"],r["negative"],r["weapon_hash"],r["perks"])
+              if (metric(notes,"CPVE"),metric(notes,"CPVP")) != original_cp[key]:
+                  community_fail.append({"line":r["idx"]+1,"weapon_hash":r["weapon_hash"]})
+              intentional_exotic=(not r["negative"]) and r["weapon_hash"] in existing_exotic_item_positive and len(r["perks"])==0
+              if (not intentional_exotic) and metric(notes,"PVP") != original_pvp[key]:
+                  pvp_fail.append({"line":r["idx"]+1,"weapon_hash":r["weapon_hash"]})
+
+          # Generated community values must remain NA.
+          generated_community_fail=[]
+          for r in final_rules:
+              if "evidence:manifest-inferred" in r["notes"]:
+                  if metric(r["notes"],"CPVE")!="NA" or metric(r["notes"],"CPVP")!="NA":
+                      generated_community_fail.append({"line":r["idx"]+1,"weapon_hash":r["wh"]})
+
+          # Duplicate exact rule signatures (same sign/hash/perks).
+          sig_counts=collections.Counter((r["negative"],r["wh"],r["perks"]) for r in final_rules)
+          duplicates=[{"negative":k[0],"weapon_hash":k[1],"perks":list(k[2]),"count":v} for k,v in sig_counts.items() if v>1]
+
+          # Profile direct checks.
+          direct_checks={}
+          for name in ("Witherhoard","Dead Man's Tale","Telesto","Wish-Ender","The Last Word"):
+              hs=[h for h,o in items.items() if ((o.get("displayProperties") or {}).get("name") or "")==name]
+              vals=[]
+              for h in hs:
+                  for r in final_by_hash.get(h,[]):
+                      if "fox-favorite-exotic" in r["notes"]:
+                          vals.append(metric(r["notes"],"PVE"))
+              direct_checks[name]=vals
+          breakneck=[]
+          for r in final_by_hash.get(2026755633,[]):
+              if "fox-favorite" in r["notes"]: breakneck.append(metric(r["notes"],"PVE"))
+          direct_checks["Breakneck"]=breakneck
+
+          summary={
+              "candidate_version":"v1.0",
+              "manifest_version":MANIFEST_VERSION,
+              "source_lines":len(source_lines),
+              "candidate_lines":len(out_lines),
+              "source_rules":len(original_rules),
+              "final_rules":len(final_rules),
+              "favorite_rules":len(favorite_ledger),
+              "favorite_hashes":len({f["weapon_hash"] for f in favorite_ledger}),
+              "roll_bearing_legendary_definitions":len(roll_hashes),
+              "fixed_legendary_definitions":len(fixed_hashes),
+              "exotic_definitions":len(exotic_hashes),
+              "low_tier_weapon_definitions_ledger_only":len(low_tier),
+              "generated_positive_rules":generated_positive,
+              "generated_negative_rules":generated_negative,
+              "missing_roll_bearing_legendary_hashes":len(missing_roll),
+              "missing_roll_bearing_negative_fallbacks":len(missing_roll_fallback),
+              "missing_fixed_legendary_hashes":len(missing_fixed),
+              "missing_exotic_hashes":len(missing_exotic),
+              "favorite_failures":len(favorite_failures),
+              "ordering_failures":len(generated_order_fail),
+              "community_preservation_failures":len(community_fail),
+              "production_pvp_preservation_failures":len(pvp_fail),
+              "generated_community_failures":len(generated_community_fail),
+              "malformed_rules":len(malformed),
+              "duplicate_signatures":len(duplicates),
+              "direct_profile_checks":direct_checks,
+          }
+
+          # Add low-tier rows to manifest ledger only.
+          for rec in low_tier:
+              coverage_rows.append({**{k:rec[k] for k in ("weapon_hash","name","type","tier","availability")},"roll_bearing":bool(rec["trait_columns"]),"covered_before_v1":rec["weapon_hash"] in by_hash,"generated_positive_rules":0,"has_negative_fallback":False})
+
+          # Write outputs.
+          wishlist_path=pathlib.Path("foxarmory-2026-return-d2dim.v1.0.txt")
+          wishlist_path.write_text("\n".join(out_lines)+"\n",encoding="utf-8")
+          # Root live-file candidate copy on release branch only.
+          pathlib.Path("foxarmory-2026-return-d2dim.txt").write_text("\n".join(out_lines)+"\n",encoding="utf-8")
+
+          cov_fields=["weapon_hash","name","type","tier","availability","roll_bearing","covered_before_v1","generated_positive_rules","has_negative_fallback"]
+          with open("D2_v1_Coverage_Ledger_20261006.csv","w",newline="",encoding="utf-8") as f:
+              w=csv.DictWriter(f,fieldnames=cov_fields);w.writeheader();w.writerows(sorted(coverage_rows,key=lambda r:(r["tier"],r["type"],r["name"],r["weapon_hash"])))
+
+          score_fields=["weapon_hash","name","type","tier","scope","perks","PVE","PVP","validation","availability","basis"]
+          with open("D2_v1_Scoring_Ledger_20261006.csv","w",newline="",encoding="utf-8") as f:
+              w=csv.DictWriter(f,fieldnames=score_fields);w.writeheader();w.writerows(scoring_rows)
+
+          audit={
+              "summary":summary,
+              "missing_roll_bearing":missing_roll,
+              "missing_roll_fallback":missing_roll_fallback,
+              "missing_fixed":missing_fixed,
+              "missing_exotic":missing_exotic,
+              "favorite_failures":favorite_failures,
+              "ordering_failures":generated_order_fail,
+              "community_preservation_failures":community_fail,
+              "production_pvp_preservation_failures":pvp_fail,
+              "generated_community_failures":generated_community_fail,
+              "malformed":malformed,
+              "duplicate_signatures":duplicates[:500],
+              "source_sha256":hashlib.sha256(source.encode()).hexdigest(),
+              "candidate_sha256":hashlib.sha256(wishlist_path.read_bytes()).hexdigest(),
+          }
+          pathlib.Path("fqx_v1_release_audit.json").write_text(json.dumps(audit,indent=2),encoding="utf-8")
+
+          report=f"""# Fox Armory 2026 Return — v1.0 Release Report
+
+          **Status:** release candidate generated on `release/v1.0-20261006`
+          **Manifest:** {MANIFEST_VERSION}
+
+          ## Scope
+
+          v1.0 treats current-manifest weapon definitions as a conservative superset. Manifest presence is not proof that a historical definition is currently obtainable. The release deliberately over-covers the manifest so an actually droppable weapon cannot be omitted merely because its source metadata is stale.
+
+          - Roll-bearing Legendary definitions: **{len(roll_hashes)}**
+          - Fixed Legendary definitions: **{len(fixed_hashes)}**
+          - Exotic definitions: **{len(exotic_hashes)}**
+          - Low-tier weapon definitions recorded in the ledger only: **{len(low_tier)}**
+
+          ## Personalization
+
+          Favorite exact rolls remain highest-priority personal-positive rules. The general profile governs weapon-family preference, maintenance/uptime, and direct perk-pair evidence. Hunter-specific survivability/ability preferences remain buildcrafting evidence and do not indiscriminately inflate weapon scores.
+
+          Newly generated definitions use type priors plus smoothed perk and pair residuals learned from the curated positive catalogue. Fox profile adjustments are then applied. These are explicitly Estimated scores. Manifest-only inference is confidence-capped: source-indicated definitions cannot exceed 92E and availability-unverified definitions cannot exceed 86E without stronger evidence.
+
+          No community score is fabricated. Generated rules use `CPVE:NA` / `CPVP:NA`.
+
+          ## Completeness
+
+          - Missing roll-bearing Legendary hashes after build: **{len(missing_roll)}**
+          - Missing Legendary fallbacks: **{len(missing_roll_fallback)}**
+          - Missing fixed Legendary hashes: **{len(missing_fixed)}**
+          - Missing Exotic hashes: **{len(missing_exotic)}**
+
+          ## Integrity
+
+          - Favorite failures: **{len(favorite_failures)}**
+          - Ordering failures: **{len(generated_order_fail)}**
+          - Community-preservation failures: **{len(community_fail)}**
+          - Existing-production PvP preservation failures: **{len(pvp_fail)}**
+          - Generated community-value failures: **{len(generated_community_fail)}**
+          - Malformed rules: **{len(malformed)}**
+          - Duplicate exact signatures: **{len(duplicates)}**
+
+          ## Version-history note
+
+          v0.6-v0.8 are pinned to their actual generator commits on archival branches. v0.9 was produced locally and is documented as a reconstruction rather than backdated. v1.0 is the first repository-native complete release candidate in this new lineage.
+          """
+          pathlib.Path("report_fqx-destiny-2_v1.0-release_20261006.md").write_text("\n".join(x.strip() for x in report.splitlines())+"\n",encoding="utf-8")
+
+          print(json.dumps(summary,indent=2))
+
+          hard_fail = (
+              missing_roll or missing_roll_fallback or missing_fixed or missing_exotic or
+              favorite_failures or generated_order_fail or community_fail or pvp_fail or
+              generated_community_fail or malformed or duplicates
+          )
+          if hard_fail:
+              raise SystemExit("v1.0 release audit failed")
+
+          con.close()
+
+      - name: Commit verified release candidate
+        run: |
+          git config user.name "FQX Belladonna"
+          git config user.email "actions@users.noreply.github.com"
+          git add foxarmory-2026-return-d2dim.txt foxarmory-2026-return-d2dim.v1.0.txt \
+            D2_v1_Coverage_Ledger_20261006.csv D2_v1_Scoring_Ledger_20261006.csv \
+            fqx_v1_release_audit.json report_fqx-destiny-2_v1.0-release_20261006.md
+          git commit -m "Build complete Fox Armory v1.0 release candidate"
+          git push
