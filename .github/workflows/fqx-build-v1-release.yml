@@ -3,7 +3,7 @@ name: FQX Build v1.0 Complete Release
 on:
   push:
     branches:
-      - release/v1.0-20261006
+      - release/v1.0-full-catalog-20261006
     paths:
       - ".github/workflows/fqx-build-v1-release.yml"
   workflow_dispatch:
@@ -538,11 +538,32 @@ jobs:
                   scoring_rows.append({"weapon_hash":wh,"name":rec["name"],"type":rec["type"],"tier":"Exotic","scope":"exotic-item","perks":"","PVE":pve,"PVP":pvp,"validation":"E","availability":rec["availability"],"basis":"type prior + exotic item-level allowance + Fox profile governance"})
               coverage_rows.append({**{k:rec[k] for k in ("weapon_hash","name","type","tier","availability")},"roll_bearing":bool(rec["trait_columns"]),"covered_before_v1":was_covered,"generated_positive_rules":added,"has_negative_fallback":False})
 
+          # Low-tier weapon definitions receive conservative item-level Estimated ratings too.
+          # They are normally non-retention items, but Fox requested explicit ratings on the full weapon universe.
+          low_tier_generated=0
+          for rec in sorted(low_tier,key=lambda r:(r["tier"],r["type"],r["name"],r["weapon_hash"])):
+              wh=rec["weapon_hash"]; was_covered=wh in covered_hashes
+              added=0
+              if not was_covered:
+                  penalty={"Rare":18,"Uncommon":23,"Common":28}.get(rec["tier"],20)
+                  pve=max(20,min(69,int(round(type_mean_pve.get(rec["type"],global_pve)-penalty))))
+                  pvp=max(20,min(69,int(round(type_mean_pvp.get(rec["type"],global_pvp)-penalty))))
+                  if rec["type"]=="Fusion Rifle" and rec["name"]!="Telesto":
+                      pve=max(20,pve-4); pvp=max(20,pvp-4)
+                  generated_lines.append(f'// {rec["name"]} — {rec["tier"]} manifest estimate (item-level)')
+                  generated_lines.append(
+                      f'dimwishlist:item=-{wh}&perks=#notes:CPVE:NA | PVE:{pve}E | CPVP:NA | PVP:{pvp}E'
+                      f' | match:low-tier-item | evidence:manifest-inferred | availability:{rec["availability"]} | scope:item-level | score-model:v1.0'
+                  )
+                  generated_negative+=1; low_tier_generated+=1; added=1; covered_hashes.add(wh)
+                  scoring_rows.append({"weapon_hash":wh,"name":rec["name"],"type":rec["type"],"tier":rec["tier"],"scope":"low-tier-item","perks":"","PVE":pve,"PVP":pvp,"validation":"E","availability":rec["availability"],"basis":f"type prior minus {penalty}-point low-tier retention penalty; item-level"})
+              coverage_rows.append({**{k:rec[k] for k in ("weapon_hash","name","type","tier","availability")},"roll_bearing":bool(rec["trait_columns"]),"covered_before_v1":was_covered,"generated_positive_rules":0,"has_negative_fallback":bool(added)})
+
           out_lines=base_lines+generated_lines
 
           # Candidate metadata.
           if len(out_lines)>1 and out_lines[1].startswith("description:"):
-              out_lines[1]="description:[v1.0 2026-10-06] Complete manifest-superset Destiny 2 weapon triage. Favorite exact rolls protected; profile-governed Fox scores; all roll-bearing Legendaries receive inferred coverage; fixed Legendaries and Exotics receive item-level estimates where missing."
+              out_lines[1]="description:[v1.0 2026-10-06] Complete current-manifest weapon triage. Favorite exact rolls protected; profile-governed Fox scores; roll-bearing/fixed Legendaries, Exotics, and low-tier weapon definitions all receive explicit inferred coverage."
           for i,l in enumerate(out_lines[:15]):
               if l.startswith("// 2026 Return v"):
                   out_lines[i]="// 2026 Return v1.0 — complete manifest-superset personalized release"
@@ -563,10 +584,12 @@ jobs:
           roll_hashes={r["weapon_hash"] for r in roll_legendaries}
           fixed_hashes={r["weapon_hash"] for r in fixed_legendaries}
           exotic_hashes={r["weapon_hash"] for r in exotics}
+          low_tier_hashes={r["weapon_hash"] for r in low_tier}
           missing_roll=[h for h in sorted(roll_hashes) if h not in final_by_hash]
           missing_roll_fallback=[h for h in sorted(roll_hashes) if not any(r["negative"] for r in final_by_hash[h])]
           missing_fixed=[h for h in sorted(fixed_hashes) if h not in final_by_hash]
           missing_exotic=[h for h in sorted(exotic_hashes) if h not in final_by_hash]
+          missing_low_tier=[h for h in sorted(low_tier_hashes) if h not in final_by_hash]
 
           favorite_failures=[]
           for f in favorite_ledger:
@@ -635,13 +658,15 @@ jobs:
               "roll_bearing_legendary_definitions":len(roll_hashes),
               "fixed_legendary_definitions":len(fixed_hashes),
               "exotic_definitions":len(exotic_hashes),
-              "low_tier_weapon_definitions_ledger_only":len(low_tier),
+              "low_tier_weapon_definitions":len(low_tier),
+              "low_tier_rules_generated":low_tier_generated,
               "generated_positive_rules":generated_positive,
               "generated_negative_rules":generated_negative,
               "missing_roll_bearing_legendary_hashes":len(missing_roll),
               "missing_roll_bearing_negative_fallbacks":len(missing_roll_fallback),
               "missing_fixed_legendary_hashes":len(missing_fixed),
               "missing_exotic_hashes":len(missing_exotic),
+              "missing_low_tier_hashes":len(missing_low_tier),
               "favorite_failures":len(favorite_failures),
               "ordering_failures":len(generated_order_fail),
               "community_preservation_failures":len(community_fail),
@@ -651,10 +676,6 @@ jobs:
               "duplicate_signatures":len(duplicates),
               "direct_profile_checks":direct_checks,
           }
-
-          # Add low-tier rows to manifest ledger only.
-          for rec in low_tier:
-              coverage_rows.append({**{k:rec[k] for k in ("weapon_hash","name","type","tier","availability")},"roll_bearing":bool(rec["trait_columns"]),"covered_before_v1":rec["weapon_hash"] in by_hash,"generated_positive_rules":0,"has_negative_fallback":False})
 
           # Write outputs.
           wishlist_path=pathlib.Path("foxarmory-2026-return-d2dim.v1.0.txt")
@@ -676,6 +697,7 @@ jobs:
               "missing_roll_fallback":missing_roll_fallback,
               "missing_fixed":missing_fixed,
               "missing_exotic":missing_exotic,
+              "missing_low_tier":missing_low_tier,
               "favorite_failures":favorite_failures,
               "ordering_failures":generated_order_fail,
               "community_preservation_failures":community_fail,
@@ -690,7 +712,7 @@ jobs:
 
           report=f"""# Fox Armory 2026 Return — v1.0 Release Report
 
-          **Status:** release candidate generated on `release/v1.0-20261006`
+          **Status:** full-catalog release candidate generated on `release/v1.0-full-catalog-20261006`
           **Manifest:** {MANIFEST_VERSION}
 
           ## Scope
@@ -700,7 +722,7 @@ jobs:
           - Roll-bearing Legendary definitions: **{len(roll_hashes)}**
           - Fixed Legendary definitions: **{len(fixed_hashes)}**
           - Exotic definitions: **{len(exotic_hashes)}**
-          - Low-tier weapon definitions recorded in the ledger only: **{len(low_tier)}**
+          - Low-tier weapon definitions explicitly rated: **{len(low_tier)}**
 
           ## Personalization
 
@@ -716,6 +738,7 @@ jobs:
           - Missing Legendary fallbacks: **{len(missing_roll_fallback)}**
           - Missing fixed Legendary hashes: **{len(missing_fixed)}**
           - Missing Exotic hashes: **{len(missing_exotic)}**
+          - Missing low-tier weapon hashes: **{len(missing_low_tier)}**
 
           ## Integrity
 
@@ -736,7 +759,7 @@ jobs:
           print(json.dumps(summary,indent=2))
 
           hard_fail = (
-              missing_roll or missing_roll_fallback or missing_fixed or missing_exotic or
+              missing_roll or missing_roll_fallback or missing_fixed or missing_exotic or missing_low_tier or
               favorite_failures or generated_order_fail or community_fail or pvp_fail or
               generated_community_fail or malformed or duplicates
           )
