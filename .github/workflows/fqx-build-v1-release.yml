@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Download verified Destiny manifest
         run: |
@@ -688,7 +690,7 @@ jobs:
 
           report=f"""# Fox Armory 2026 Return — v1.0 Release Report
 
-          **Status:** release candidate generated on \`release/v1.0-20261006\`
+          **Status:** release candidate generated on `release/v1.0-20261006`
           **Manifest:** {MANIFEST_VERSION}
 
           ## Scope
@@ -706,7 +708,7 @@ jobs:
 
           Newly generated definitions use type priors plus smoothed perk and pair residuals learned from the curated positive catalogue. Fox profile adjustments are then applied. These are explicitly Estimated scores. Manifest-only inference is confidence-capped: source-indicated definitions cannot exceed 92E and availability-unverified definitions cannot exceed 86E without stronger evidence.
 
-          No community score is fabricated. Generated rules use \`CPVE:NA\` / \`CPVP:NA\`.
+          No community score is fabricated. Generated rules use `CPVE:NA` / `CPVP:NA`.
 
           ## Completeness
 
