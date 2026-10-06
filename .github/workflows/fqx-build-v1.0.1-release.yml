@@ -1,0 +1,93 @@
+name: FQX Build v1.0.1 DIM Notes Fix
+
+on:
+  push:
+    branches:
+      - work/v1.0.1-dim-notes-20261006
+    paths:
+      - "tools/v1.0.1/**"
+      - ".github/workflows/fqx-build-v1.0.1-release.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify v1.0 base and build v1.0.1
+        run: |
+          set -euo pipefail
+          BASE_SHA="08063a43baccaf360d7551ffcd51475d50a7fdc4"
+          git fetch origin master
+          CURRENT_MASTER="$(git rev-parse origin/master)"
+          test "$CURRENT_MASTER" = "$BASE_SHA"
+
+          mkdir -p build
+          git show "$BASE_SHA:foxarmory-2026-return-d2dim.txt" > build/v1.0-source.txt
+          python tools/v1.0.1/serialize_dim_notes.py             build/v1.0-source.txt             build/foxarmory-2026-return-d2dim.v1.0.1.txt             --audit build/fqx_v1.0.1_note_serialization_audit.json             --report build/report_fqx-destiny-2_v1.0.1-dim-note-fix_20261006.md
+
+      - name: Publish clean release branch
+        run: |
+          set -euo pipefail
+          git fetch origin master
+          git checkout -B release/v1.0.1 origin/master
+
+          cp build/foxarmory-2026-return-d2dim.v1.0.1.txt foxarmory-2026-return-d2dim.txt
+          cp build/foxarmory-2026-return-d2dim.v1.0.1.txt foxarmory-2026-return-d2dim.v1.0.1.txt
+
+          mkdir -p tools/v1.0.1 history/v1.0.1
+          git show work/v1.0.1-dim-notes-20261006:tools/v1.0.1/serialize_dim_notes.py > tools/v1.0.1/serialize_dim_notes.py
+          cp build/fqx_v1.0.1_note_serialization_audit.json history/v1.0.1/
+          cp build/report_fqx-destiny-2_v1.0.1-dim-note-fix_20261006.md history/v1.0.1/
+
+          CANDIDATE_SHA="$(python - <<'PY'
+          import json
+          print(json.load(open("build/fqx_v1.0.1_note_serialization_audit.json"))["candidate_sha256"])
+          PY
+          )"
+
+          cat > history/v1.0.1/README.md <<EOF
+          # v1.0.1 — DIM-safe wishlist note serialization
+
+          **Status:** release candidate
+          **Date:** 2026-10-06
+          **Base v1.0 commit:** 08063a43baccaf360d7551ffcd51475d50a7fdc4
+          **Wishlist SHA-256:** $CANDIDATE_SHA
+
+          v1.0.1 is a serialization-only maintenance release. DIM's current wishlist parser stops #notes text at the first pipe character. v1.0 used pipes between metadata fields, so the UI exposed only the first field. v1.0.1 replaces note-field pipes with semicolons and updates score-model:v1.0 to score-model:v1.0.1.
+
+          Item hashes, positive/negative state, perk lists, scores, classifications, ordering, and catalog coverage are unchanged from v1.0.
+          EOF
+
+          python - <<'PY'
+          from pathlib import Path
+          p=Path("history/README.md")
+          s=p.read_text()
+          row="| v1.0.1 | DIM note serialization maintenance release | release/v1.0.1; base v1.0 commit 08063a43baccaf360d7551ffcd51475d50a7fdc4 | Cabinet live-release archive | see history/v1.0.1/README.md |\n"
+          marker="\n## Reconstruction policy"
+          if row not in s:
+              s=s.replace(marker, "\n"+row+marker)
+          p.write_text(s)
+          PY
+
+          git config user.name "FQX Wishlist Release"
+          git config user.email "actions@users.noreply.github.com"
+          git add foxarmory-2026-return-d2dim.txt foxarmory-2026-return-d2dim.v1.0.1.txt history tools/v1.0.1
+          git commit -m "Release Fox Armory 2026 Return v1.0.1"
+          git push origin HEAD:refs/heads/release/v1.0.1 --force
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fqx-d2dim-v1.0.1-release-candidate
+          path: |
+            build/foxarmory-2026-return-d2dim.v1.0.1.txt
+            build/fqx_v1.0.1_note_serialization_audit.json
+            build/report_fqx-destiny-2_v1.0.1-dim-note-fix_20261006.md
+          if-no-files-found: error
+          retention-days: 3
