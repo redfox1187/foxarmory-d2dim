@@ -1,4 +1,4 @@
-name: FQX Tag v1.0
+name: FQX Tag v1.0.1
 
 on:
   push:
@@ -19,14 +19,15 @@ jobs:
         with:
           ref: master
           fetch-depth: 0
-      - name: Pin v1.0 release tag
+      - name: Pin v1.0.1 release tag
         run: |
+          set -euo pipefail
           git fetch --tags origin
-          if git ls-remote --exit-code --tags origin refs/tags/v1.0 >/dev/null 2>&1; then
-            echo "v1.0 tag already exists; leaving it untouched."
+          if git ls-remote --exit-code --tags origin refs/tags/v1.0.1 >/dev/null 2>&1; then
+            echo "v1.0.1 tag already exists; leaving it untouched."
             exit 0
           fi
           git config user.name "FQX Wishlist Release"
           git config user.email "actions@users.noreply.github.com"
-          git tag -a v1.0 -m "Fox Armory 2026 Return v1.0" 08063a43baccaf360d7551ffcd51475d50a7fdc4
-          git push origin refs/tags/v1.0
+          git tag -a v1.0.1 -m "Fox Armory 2026 Return v1.0.1" 28c8386c09dd33c907dc0223d5661bf1e88695da
+          git push origin refs/tags/v1.0.1
