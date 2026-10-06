@@ -1,0 +1,47 @@
+name: FQX Package Live v1.0
+
+on:
+  push:
+    branches:
+      - work/fqx-manifest-slice-20261006
+    paths:
+      - ".github/workflows/fqx-package-live-v1.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 1
+
+      - name: Verify live and archived v1.0 are identical
+        run: |
+          cmp foxarmory-2026-return-d2dim.txt foxarmory-2026-return-d2dim.v1.0.txt
+          sha256sum foxarmory-2026-return-d2dim.txt
+          grep -q '"candidate_sha256": "b6c4b1ce4f2381745cb718924dae3abea00b890e654fe44a51fb57b16e682a35"' fqx_v1_release_audit.json
+
+      - name: Assemble Cabinet package
+        run: |
+          mkdir package
+          cp foxarmory-2026-return-d2dim.txt package/
+          cp foxarmory-2026-return-d2dim.v1.0.txt package/
+          cp fqx_v1_release_audit.json package/
+          cp D2_v1_Coverage_Ledger_20261006.csv package/
+          cp D2_v1_Scoring_Ledger_20261006.csv package/
+          cp report_fqx-destiny-2_v1.0-release_20261006.md package/
+          cp history/README.md package/version-provenance.md
+          cp history/v0.9/README.md package/v0.9-provenance.md
+          cp history/v0.9/audit-summary.json package/v0.9-audit-summary.json
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fqx-d2dim-v1.0-live-release
+          path: package/
+          if-no-files-found: error
+          retention-days: 3
