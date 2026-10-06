@@ -1,0 +1,2209 @@
+weapon_hash,name,type,tier,availability,roll_bearing,covered_before_v1,generated_positive_rules,has_negative_fallback
+3319810952,Husk of the Pit,Auto Rifle,Common,source-indicated,False,False,0,False
+1619016919,Khvostov 7G-02,Auto Rifle,Common,source-indicated,False,True,0,False
+4024037919,Origin Story,Auto Rifle,Common,availability-unverified,False,False,0,False
+2209451511,Pariah,Auto Rifle,Common,source-indicated,False,False,0,False
+2734369894,Stay Away,Grenade Launcher,Common,source-indicated,False,False,0,False
+2553946496,Headstrong,Hand Cannon,Common,source-indicated,False,False,0,False
+2553946497,Helios HC1,Hand Cannon,Common,source-indicated,False,False,0,False
+3569842567,Lost and Found,Pulse Rifle,Common,source-indicated,False,False,0,False
+3550697748,Thistle and Yew,Scout Rifle,Common,source-indicated,False,False,0,False
+1977926913,Stubborn Oak,Shotgun,Common,source-indicated,False,False,0,False
+3792720684,Spiderbite-1si,Sidearm,Common,source-indicated,False,False,0,False
+1699493316,The Last Dance,Sidearm,Common,availability-unverified,False,False,0,False
+53159280,Traveler's Chosen,Sidearm,Common,availability-unverified,False,False,0,False
+53159281,Traveler's Chosen (Damaged),Sidearm,Common,source-indicated,False,False,0,False
+254156943,Dead Zone Rifle,Sniper Rifle,Common,source-indicated,False,False,0,False
+772531208,Etude-12,Submachine Gun,Common,source-indicated,False,False,0,False
+1195725819,Sorrow MG2,Submachine Gun,Common,source-indicated,False,False,0,False
+2683682447,Traitor's Fate,Sword,Common,availability-unverified,False,False,0,False
+1912669214,Centrifuse,Auto Rifle,Exotic,source-indicated,False,True,0,False
+1541131350,Cerberus+1,Auto Rifle,Exotic,source-indicated,False,True,0,False
+3698448090,Choir of One,Auto Rifle,Exotic,source-indicated,False,True,0,False
+4124984448,Hard Light,Auto Rifle,Exotic,source-indicated,False,True,0,False
+4129629253,Khvostov 7G-0X,Auto Rifle,Exotic,source-indicated,False,True,0,False
+4068264807,Monte Carlo,Auto Rifle,Exotic,source-indicated,False,True,0,False
+1034055198,Necrochasm,Auto Rifle,Exotic,source-indicated,False,False,1,False
+4293613902,Quicksilver Storm,Auto Rifle,Exotic,source-indicated,False,True,0,False
+2856683562,SUROS Regime,Auto Rifle,Exotic,source-indicated,True,True,0,False
+1345867570,Sweet Business,Auto Rifle,Exotic,source-indicated,False,True,0,False
+776191470,Tommy's Matchbook,Auto Rifle,Exotic,source-indicated,False,True,0,False
+1685137410,Heirloom,Combat Bow,Exotic,source-indicated,False,False,1,False
+4174431791,Hierarchy of Needs,Combat Bow,Exotic,source-indicated,False,True,0,False
+3588934839,Le Monarque,Combat Bow,Exotic,source-indicated,False,True,0,False
+2591746970,Leviathan's Breath,Combat Bow,Exotic,source-indicated,False,True,0,False
+3260753130,Ticuu's Divination,Combat Bow,Exotic,source-indicated,False,True,0,False
+814876685,Trinity Ghoul,Combat Bow,Exotic,source-indicated,False,True,0,False
+3659414143,Verglas Curve,Combat Bow,Exotic,source-indicated,False,True,0,False
+814876684,Wish-Ender,Combat Bow,Exotic,source-indicated,False,True,0,False
+2910326942,Wish-Keeper,Combat Bow,Exotic,source-indicated,False,True,0,False
+2415517654,Bastion,Fusion Rifle,Exotic,source-indicated,False,True,0,False
+2200470033,Cull's Shadow,Fusion Rifle,Exotic,source-indicated,False,False,1,False
+374573733,Delicate Tomb,Fusion Rifle,Exotic,source-indicated,False,True,0,False
+417164956,Jötunn,Fusion Rifle,Exotic,source-indicated,False,True,0,False
+4190156464,Merciless,Fusion Rifle,Exotic,source-indicated,False,True,0,False
+2069224589,One Thousand Voices,Fusion Rifle,Exotic,source-indicated,False,False,1,False
+2208405142,Telesto,Fusion Rifle,Exotic,source-indicated,False,True,0,False
+3561203890,Tessellation,Fusion Rifle,Exotic,source-indicated,False,True,0,False
+4289226715,Vex Mythoclast,Fusion Rifle,Exotic,source-indicated,False,False,1,False
+2535142413,Edge of Action,Glaive,Exotic,source-indicated,False,True,0,False
+542203595,Edge of Concurrence,Glaive,Exotic,source-indicated,False,True,0,False
+14194600,Edge of Intent,Glaive,Exotic,source-indicated,False,True,0,False
+3118061005,Vexcalibur,Glaive,Exotic,source-indicated,False,True,0,False
+3118061004,Winterbite,Glaive,Exotic,source-indicated,False,True,0,False
+2350354266,Alethonym,Grenade Launcher,Exotic,source-indicated,False,True,0,False
+2376481550,Anarchy,Grenade Launcher,Exotic,source-indicated,False,True,0,False
+46125926,Dead Messenger,Grenade Launcher,Exotic,source-indicated,True,True,0,False
+2812324401,Dead Messenger,Grenade Launcher,Exotic,source-indicated,False,False,1,False
+3821409356,Ex Diris,Grenade Launcher,Exotic,source-indicated,False,True,0,False
+3549153978,Fighting Lion,Grenade Launcher,Exotic,source-indicated,False,True,0,False
+2812324400,Parasite,Grenade Launcher,Exotic,source-indicated,False,True,0,False
+370712896,Salvation's Grip,Grenade Launcher,Exotic,source-indicated,False,True,0,False
+3899270607,The Colony,Grenade Launcher,Exotic,source-indicated,False,True,0,False
+3549153979,The Prospector,Grenade Launcher,Exotic,source-indicated,False,True,0,False
+2357297366,Witherhoard,Grenade Launcher,Exotic,source-indicated,False,True,0,False
+347366834,Ace of Spades,Hand Cannon,Exotic,source-indicated,False,True,0,False
+3437746471,Crimson,Hand Cannon,Exotic,source-indicated,False,True,0,False
+3524313097,Eriana's Vow,Hand Cannon,Exotic,source-indicated,False,True,0,False
+648595258,Graviton Spike,Hand Cannon,Exotic,source-indicated,False,False,1,False
+3856705927,Hawkmoon,Hand Cannon,Exotic,source-indicated,True,True,0,False
+3512014804,Lumina,Hand Cannon,Exotic,source-indicated,False,True,0,False
+204878059,Malfeasance,Hand Cannon,Exotic,source-indicated,False,True,0,False
+2907129556,Sturm,Hand Cannon,Exotic,source-indicated,False,True,0,False
+2907129557,Sunshot,Hand Cannon,Exotic,source-indicated,False,True,0,False
+1364093401,The Last Word,Hand Cannon,Exotic,source-indicated,False,True,0,False
+3973202132,Thorn,Hand Cannon,Exotic,source-indicated,False,True,0,False
+253843484,Turncoat,Hand Cannon,Exotic,source-indicated,False,True,0,False
+2130065553,Arbalest,Linear Fusion Rifle,Exotic,source-indicated,False,True,0,False
+3284383335,Euphony,Linear Fusion Rifle,Exotic,source-indicated,False,False,1,False
+2197778303,Fafnir,Linear Fusion Rifle,Exotic,source-indicated,False,True,0,False
+331231237,Finality's Auger,Linear Fusion Rifle,Exotic,source-indicated,False,False,1,False
+3761898871,Lorentz Driver,Linear Fusion Rifle,Exotic,source-indicated,False,True,0,False
+4036115577,Sleeper Simulant,Linear Fusion Rifle,Exotic,source-indicated,False,True,0,False
+2044500762,The Queenbreaker,Linear Fusion Rifle,Exotic,source-indicated,True,True,0,False
+449318888,Deterministic Chaos,Machine Gun,Exotic,source-indicated,False,True,0,False
+1763584999,Grand Overture,Machine Gun,Exotic,source-indicated,False,True,0,False
+2084878005,Heir Apparent,Machine Gun,Exotic,source-indicated,False,True,0,False
+4284533075,Service of Luzaku,Machine Gun,Exotic,source-indicated,False,False,1,False
+3325463374,Thunderlord,Machine Gun,Exotic,source-indicated,False,True,0,False
+1395261499,Xenophage,Machine Gun,Exotic,source-indicated,False,True,0,False
+2816212794,Bad Juju,Pulse Rifle,Exotic,source-indicated,False,True,0,False
+3505113722,Collective Obligation,Pulse Rifle,Exotic,source-indicated,False,False,1,False
+3628991658,Graviton Lance,Pulse Rifle,Exotic,source-indicated,False,True,0,False
+1736135946,New Malpais,Pulse Rifle,Exotic,source-indicated,False,False,1,False
+1594120904,No Time to Explain,Pulse Rifle,Exotic,source-indicated,False,True,0,False
+400096939,Outbreak Perfected,Pulse Rifle,Exotic,source-indicated,False,True,0,False
+3824673936,Outbreak Perfected,Pulse Rifle,Exotic,source-indicated,True,True,0,False
+427899681,Red Death Reformed,Pulse Rifle,Exotic,source-indicated,False,True,0,False
+1473821207,Revision Zero,Pulse Rifle,Exotic,source-indicated,True,True,0,False
+3628991659,Vigilance Wing,Pulse Rifle,Exotic,source-indicated,False,True,0,False
+2232171099,Deathbringer,Rocket Launcher,Exotic,source-indicated,False,True,0,False
+17096506,Dragon's Breath,Rocket Launcher,Exotic,source-indicated,False,True,0,False
+2399110176,Eyes of Tomorrow,Rocket Launcher,Exotic,source-indicated,False,False,1,False
+1363886209,Gjallarhorn,Rocket Launcher,Exotic,source-indicated,False,True,0,False
+1508896098,The Wardcliff Coil,Rocket Launcher,Exotic,source-indicated,False,True,0,False
+1201830623,Truth,Rocket Launcher,Exotic,source-indicated,False,True,0,False
+2694576561,Two-Tailed Fox,Rocket Launcher,Exotic,source-indicated,False,True,0,False
+1202007252,Whirling Ovation,Rocket Launcher,Exotic,source-indicated,False,False,1,False
+2188764214,Dead Man's Tale,Scout Rifle,Exotic,source-indicated,True,True,0,False
+3654674561,Dead Man's Tale,Scout Rifle,Exotic,source-indicated,True,True,0,False
+1331482397,MIDA Multi-Tool,Scout Rifle,Exotic,source-indicated,False,True,0,False
+3413074534,Polaris Lance,Scout Rifle,Exotic,source-indicated,False,True,0,False
+4255268456,Skyburner's Oath,Scout Rifle,Exotic,source-indicated,False,True,0,False
+4017959782,Symmetry,Scout Rifle,Exotic,source-indicated,False,True,0,False
+3844694310,The Jade Rabbit,Scout Rifle,Exotic,source-indicated,False,True,0,False
+2973900274,Third Iteration,Scout Rifle,Exotic,source-indicated,False,False,1,False
+1802135586,Touch of Malice,Scout Rifle,Exotic,source-indicated,False,False,1,False
+940371471,Wicked Implement,Scout Rifle,Exotic,source-indicated,False,True,0,False
+3371017761,Conditional Finality,Shotgun,Exotic,source-indicated,False,False,1,False
+3460576091,Duality,Shotgun,Exotic,source-indicated,False,True,0,False
+1744115122,Legend of Acrius,Shotgun,Exotic,availability-unverified,False,False,1,False
+3580904580,Legend of Acrius,Shotgun,Exotic,source-indicated,False,True,0,False
+3413860063,Lord of Wolves,Shotgun,Exotic,source-indicated,False,True,0,False
+1047932517,Slayer's Fang,Shotgun,Exotic,source-indicated,False,False,1,False
+3413860062,The Chaperone,Shotgun,Exotic,source-indicated,False,True,0,False
+1665952087,The Fourth Horseman,Shotgun,Exotic,source-indicated,False,True,0,False
+3580904581,Tractor Cannon,Shotgun,Exotic,source-indicated,False,True,0,False
+3886719505,Buried Bloodline,Sidearm,Exotic,source-indicated,False,False,1,False
+603721696,Cryosthesia 77K,Sidearm,Exotic,source-indicated,False,True,0,False
+3824106094,Devil's Ruin,Sidearm,Exotic,source-indicated,False,True,0,False
+3121540812,Final Warning,Sidearm,Exotic,source-indicated,False,True,0,False
+2179048386,Forerunner,Sidearm,Exotic,source-indicated,False,True,0,False
+2362471601,Rat King,Sidearm,Exotic,source-indicated,False,True,0,False
+1853180924,Traveler's Chosen,Sidearm,Exotic,source-indicated,False,True,0,False
+1234150730,Trespasser,Sidearm,Exotic,source-indicated,False,True,0,False
+3141979347,Borealis,Sniper Rifle,Exotic,source-indicated,False,True,0,False
+2603483885,Cloudstrike,Sniper Rifle,Exotic,source-indicated,False,True,0,False
+3141979346,D.A.R.C.I.,Sniper Rifle,Exotic,source-indicated,False,True,0,False
+1111334348,Ice Breaker,Sniper Rifle,Exotic,source-indicated,False,False,1,False
+3211806999,Izanagi's Burden,Sniper Rifle,Exotic,source-indicated,False,True,0,False
+2581676735,New Land Beyond,Sniper Rifle,Exotic,source-indicated,False,True,0,False
+2905188646,Still Hunt,Sniper Rifle,Exotic,source-indicated,False,True,0,False
+1891561814,Whisper of the Worm,Sniper Rifle,Exotic,source-indicated,False,False,1,False
+1983149589,Whisper of the Worm,Sniper Rifle,Exotic,source-indicated,True,True,0,False
+1481594633,Barrow-Dyad,Submachine Gun,Exotic,source-indicated,True,False,1,False
+46524085,Osteo Striga,Submachine Gun,Exotic,source-indicated,False,True,0,False
+3089417789,Riskrunner,Submachine Gun,Exotic,source-indicated,False,True,0,False
+3110698812,Tarrabah,Submachine Gun,Exotic,source-indicated,False,True,0,False
+2286143274,The Huckleberry,Submachine Gun,Exotic,source-indicated,False,True,0,False
+219145368,The Manticore,Submachine Gun,Exotic,source-indicated,False,True,0,False
+3766045777,Black Talon,Sword,Exotic,source-indicated,False,True,0,False
+1681583613,Ergo Sum,Sword,Exotic,source-indicated,False,True,0,False
+3664831848,Heartshadow,Sword,Exotic,source-indicated,False,True,0,False
+3049715579,Praxic Blade,Sword,Exotic,source-indicated,False,False,1,False
+3487253372,The Lament,Sword,Exotic,source-indicated,False,True,0,False
+1753923263,Wolfsbane,Sword,Exotic,source-indicated,False,False,1,False
+1864563948,Worldline Zero,Sword,Exotic,source-indicated,False,True,0,False
+1833195496,Ager's Scepter,Trace Rifle,Exotic,source-indicated,False,True,0,False
+1345867571,Coldheart,Trace Rifle,Exotic,source-indicated,False,True,0,False
+4103414242,Divinity,Trace Rifle,Exotic,source-indicated,False,True,0,False
+3725585710,Lodestar,Trace Rifle,Exotic,source-indicated,False,True,0,False
+4207066264,Microcosm,Trace Rifle,Exotic,source-indicated,False,False,1,False
+19024058,Prometheus Lens,Trace Rifle,Exotic,source-indicated,False,True,0,False
+1363238943,Ruinous Effigy,Trace Rifle,Exotic,source-indicated,False,True,0,False
+1441805468,The Navigator,Trace Rifle,Exotic,source-indicated,False,True,0,False
+1852863732,Wavesplitter,Trace Rifle,Exotic,source-indicated,False,True,0,False
+833898322,Abyss Defiant,Auto Rifle,Legendary,source-indicated,True,True,0,True
+3782662983,Abyss Defiant (Adept),Auto Rifle,Legendary,source-indicated,True,True,0,True
+621450049,Adamantite,Auto Rifle,Legendary,availability-unverified,True,True,0,True
+2987244302,Adamantite,Auto Rifle,Legendary,availability-unverified,True,True,0,True
+3229982889,Adamantite,Auto Rifle,Legendary,source-indicated,True,True,0,True
+601574723,Adamantite (Adept),Auto Rifle,Legendary,availability-unverified,True,True,0,True
+3485029080,Adamantite (Adept),Auto Rifle,Legendary,source-indicated,True,True,0,True
+424291879,Age-Old Bond,Auto Rifle,Legendary,availability-unverified,True,True,0,True
+601592879,Age-Old Bond,Auto Rifle,Legendary,source-indicated,True,False,5,True
+1411560894,Ahab Char,Auto Rifle,Legendary,source-indicated,True,False,5,True
+2119346509,Ammit AR2,Auto Rifle,Legendary,source-indicated,True,True,0,True
+38064944,Arc Logic,Auto Rifle,Legendary,source-indicated,True,True,0,True
+2723909519,Arc Logic,Auto Rifle,Legendary,source-indicated,True,False,5,True
+20935540,Arctic Haze,Auto Rifle,Legendary,source-indicated,True,True,0,True
+2187337757,Arctic Haze,Auto Rifle,Legendary,source-indicated,True,True,0,True
+702001725,Auric Disabler,Auto Rifle,Legendary,source-indicated,True,True,0,True
+528834068,BrayTech Werewolf,Auto Rifle,Legendary,source-indicated,True,False,5,True
+2869466318,BrayTech Werewolf,Auto Rifle,Legendary,availability-unverified,True,False,5,True
+3558681245,BrayTech Werewolf,Auto Rifle,Legendary,availability-unverified,True,False,5,True
+1752585070,BrayTech Winter Wolf,Auto Rifle,Legendary,source-indicated,True,False,2,True
+324382200,Breakneck,Auto Rifle,Legendary,source-indicated,False,False,1,False
+2026755633,Breakneck,Auto Rifle,Legendary,source-indicated,True,True,0,True
+2065366343,Breakneck,Auto Rifle,Legendary,source-indicated,True,False,5,True
+771811871,Chroma Rush,Auto Rifle,Legendary,source-indicated,True,True,0,True
+1119734784,Chroma Rush,Auto Rifle,Legendary,source-indicated,True,True,0,True
+2598420927,Chroma Rush,Auto Rifle,Legendary,source-indicated,True,True,0,True
+1337707096,Chrysura Melo,Auto Rifle,Legendary,source-indicated,True,False,5,True
+1750388538,Chrysura Melo,Auto Rifle,Legendary,availability-unverified,True,True,0,True
+927567426,Come to Pass,Auto Rifle,Legendary,source-indicated,True,True,0,True
+355382946,Coronach-22,Auto Rifle,Legendary,source-indicated,True,True,0,True
+2579693381,Cusp Sempiternal,Auto Rifle,Legendary,source-indicated,True,True,0,True
+1850748385,DECATUR 02,Auto Rifle,Legendary,source-indicated,True,True,0,True
+540880995,Dark Decider,Auto Rifle,Legendary,availability-unverified,True,True,0,True
+1144014195,Dark Decider,Auto Rifle,Legendary,source-indicated,True,True,0,True
+1942069133,Dark Decider,Auto Rifle,Legendary,source-indicated,False,False,1,False
+89693562,Duty Bound,Auto Rifle,Legendary,availability-unverified,True,True,0,True
+260532765,Duty Bound,Auto Rifle,Legendary,source-indicated,True,True,0,True
+435216110,Duty Bound,Auto Rifle,Legendary,source-indicated,True,False,5,True
+1457979868,Duty Bound,Auto Rifle,Legendary,source-indicated,True,False,2,True
+1135050595,Duty Bound (Adept),Auto Rifle,Legendary,source-indicated,True,False,5,True
+3319810953,Eidolon Ally,Auto Rifle,Legendary,source-indicated,False,False,1,False
+1839565992,Ether Doctor,Auto Rifle,Legendary,source-indicated,True,False,5,True
+2857870254,Everburning Glitz,Auto Rifle,Legendary,source-indicated,True,True,0,True
+4113452819,Fair Judgment,Auto Rifle,Legendary,source-indicated,True,False,5,True
+4176873718,Fair Judgment,Auto Rifle,Legendary,source-indicated,True,True,0,True
+1390080550,False Promises,Auto Rifle,Legendary,source-indicated,True,True,0,True
+3143732432,False Promises,Auto Rifle,Legendary,source-indicated,True,True,0,True
+2778013407,Firefright,Auto Rifle,Legendary,source-indicated,True,True,0,True
+1137768695,Foregone Conclusion,Auto Rifle,Legendary,source-indicated,False,False,1,False
+1286686760,Gahlran's Right Hand,Auto Rifle,Legendary,source-indicated,True,False,5,True
+3778520451,Galliard-42,Auto Rifle,Legendary,source-indicated,False,False,1,False
+1775804198,Galliard-42 XN7568,Auto Rifle,Legendary,source-indicated,True,False,5,True
+2505533224,Ghost Primus,Auto Rifle,Legendary,source-indicated,True,False,2,True
+970034755,Giver's Blessing,Auto Rifle,Legendary,source-indicated,True,True,0,True
+214545213,Gnawing Hunger,Auto Rifle,Legendary,source-indicated,True,True,0,True
+821154603,Gnawing Hunger,Auto Rifle,Legendary,source-indicated,True,True,0,True
+472847207,Guiding Star,Auto Rifle,Legendary,source-indicated,False,False,1,False
+1518042134,Halfdan-D,Auto Rifle,Legendary,source-indicated,True,False,5,True
+3778520450,Halfdan-D,Auto Rifle,Legendary,source-indicated,False,False,1,False
+1789347249,Hazard of the Cast,Auto Rifle,Legendary,source-indicated,True,False,5,True
+1788603939,Herod-C,Auto Rifle,Legendary,source-indicated,True,True,0,True
+2065366342,Herod-C,Auto Rifle,Legendary,source-indicated,True,False,5,True
+1842303080,Hollow Earth,Auto Rifle,Legendary,source-indicated,False,False,1,False
+177568179,Horror Story,Auto Rifle,Legendary,source-indicated,True,True,0,True
+2884070594,Horror Story,Auto Rifle,Legendary,availability-unverified,True,False,5,True
+3829285960,Horror Story,Auto Rifle,Legendary,availability-unverified,True,False,5,True
+2725426834,Intercalary,Auto Rifle,Legendary,source-indicated,True,False,5,True
+3778520449,Jiangshi AR4,Auto Rifle,Legendary,source-indicated,False,False,1,False
+4209476803,Khvostov 7G-02,Auto Rifle,Legendary,source-indicated,True,True,0,True
+4014434381,Kibou AR3,Auto Rifle,Legendary,source-indicated,False,False,1,False
+2852052802,Krait,Auto Rifle,Legendary,source-indicated,True,True,0,True
+1884897339,Lethal Abundance,Auto Rifle,Legendary,source-indicated,True,True,0,True
+2189073092,Lethal Abundance,Auto Rifle,Legendary,availability-unverified,True,True,0,True
+3428407746,Lethal Abundance,Auto Rifle,Legendary,source-indicated,True,True,0,True
+2328531378,Lodbrok-C,Auto Rifle,Legendary,source-indicated,True,False,5,True
+1650442173,Loquitor IV,Auto Rifle,Legendary,source-indicated,False,False,1,False
+3336215727,Martyr's Make,Auto Rifle,Legendary,source-indicated,False,False,1,False
+3920811074,Medley-45,Auto Rifle,Legendary,source-indicated,False,False,1,False
+819441402,Misfit,Auto Rifle,Legendary,source-indicated,True,False,5,True
+1801007332,No Hesitation,Auto Rifle,Legendary,source-indicated,True,True,0,True
+3188460622,Null Calamity 9,Auto Rifle,Legendary,source-indicated,False,False,1,False
+3678653083,Old Sterling,Auto Rifle,Legendary,source-indicated,True,True,0,True
+1644162710,Origin Story,Auto Rifle,Legendary,source-indicated,False,False,1,False
+2188356726,Origin Story,Auto Rifle,Legendary,source-indicated,True,False,5,True
+2826850739,Origin Story,Auto Rifle,Legendary,source-indicated,True,True,0,True
+1369487074,Orimund's Anvil,Auto Rifle,Legendary,source-indicated,False,False,1,False
+392008588,Perpetualis,Auto Rifle,Legendary,source-indicated,True,True,0,True
+1327432221,Perseverance,Auto Rifle,Legendary,source-indicated,False,False,1,False
+1952163498,Pluperfect,Auto Rifle,Legendary,source-indicated,True,False,5,True
+2203881482,Pluperfect,Auto Rifle,Legendary,source-indicated,True,True,0,True
+491078457,Positive Outlook,Auto Rifle,Legendary,source-indicated,True,True,0,True
+1832481283,Positive Outlook,Auto Rifle,Legendary,availability-unverified,True,True,0,True
+3393130645,Positive Outlook,Auto Rifle,Legendary,source-indicated,False,False,1,False
+3625635456,Positive Outlook,Auto Rifle,Legendary,source-indicated,True,True,0,True
+880829467,Prosecutor,Auto Rifle,Legendary,source-indicated,True,True,0,True
+1091550016,Prosecutor,Auto Rifle,Legendary,source-indicated,True,False,5,True
+1909527966,Prosecutor,Auto Rifle,Legendary,source-indicated,True,False,2,True
+2129814338,Prosecutor,Auto Rifle,Legendary,availability-unverified,True,True,0,True
+3483591058,Prosecutor,Auto Rifle,Legendary,availability-unverified,True,True,0,True
+749483159,Prosecutor (Adept),Auto Rifle,Legendary,availability-unverified,True,True,0,True
+4025177550,Prosecutor (Adept),Auto Rifle,Legendary,source-indicated,True,True,0,True
+1802315656,Reckless Oracle,Auto Rifle,Legendary,availability-unverified,True,True,0,True
+1992309064,Reckless Oracle,Auto Rifle,Legendary,source-indicated,True,True,0,True
+3385326721,Reckless Oracle,Auto Rifle,Legendary,source-indicated,True,False,5,True
+4158265643,Reckless Oracle,Auto Rifle,Legendary,source-indicated,True,True,0,True
+2370525224,Reghusk's Pledge,Auto Rifle,Legendary,source-indicated,True,True,0,True
+705774642,Restoration VIII,Auto Rifle,Legendary,source-indicated,False,False,1,False
+3583275737,Ros Arago IV,Auto Rifle,Legendary,source-indicated,True,True,0,True
+484515708,Rufus's Fury,Auto Rifle,Legendary,source-indicated,True,False,5,True
+342514437,Rufus's Fury (Adept),Auto Rifle,Legendary,source-indicated,True,False,5,True
+602618796,Scathelocke,Auto Rifle,Legendary,source-indicated,True,False,5,True
+3332538050,Scathelocke,Auto Rifle,Legendary,source-indicated,True,True,0,True
+3762467078,Scathelocke,Auto Rifle,Legendary,source-indicated,False,False,1,False
+1561006927,Seventh Seraph Carbine,Auto Rifle,Legendary,source-indicated,True,False,5,True
+2560370239,Seventh Seraph Carbine,Auto Rifle,Legendary,source-indicated,True,True,0,True
+4070357005,Seventh Seraph Carbine,Auto Rifle,Legendary,source-indicated,True,True,0,True
+2322926844,Shadow Price,Auto Rifle,Legendary,source-indicated,True,True,0,True
+2633186522,Shadow Price,Auto Rifle,Legendary,availability-unverified,True,True,0,True
+3142989221,Shadow Price,Auto Rifle,Legendary,source-indicated,True,False,5,True
+1056103557,Shadow Price (Adept),Auto Rifle,Legendary,source-indicated,True,False,5,True
+2147010335,Shadow Price (Adept),Auto Rifle,Legendary,availability-unverified,True,False,5,True
+193009988,Snipehunt Mk. 47,Auto Rifle,Legendary,source-indicated,True,True,0,True
+2587567543,Snipehunt Mk. 47,Auto Rifle,Legendary,availability-unverified,True,True,0,True
+3762467077,Solemn Hymn,Auto Rifle,Legendary,source-indicated,False,False,1,False
+775830132,Sorrow's Verse,Auto Rifle,Legendary,source-indicated,True,False,5,True
+2496875173,Sorrow's Verse,Auto Rifle,Legendary,source-indicated,True,True,0,True
+2557966895,Sorrow's Verse,Auto Rifle,Legendary,availability-unverified,True,False,5,True
+771811870,Steelfeather Repeater,Auto Rifle,Legendary,source-indicated,True,False,5,True
+1251729046,Steelfeather Repeater,Auto Rifle,Legendary,source-indicated,True,False,5,True
+1248372789,Sweet Sorrow,Auto Rifle,Legendary,source-indicated,True,True,0,True
+1099433612,The Doubt,Auto Rifle,Legendary,source-indicated,False,False,1,False
+1690783811,The Forward Path,Auto Rifle,Legendary,source-indicated,True,False,5,True
+1884897338,The Forward Path,Auto Rifle,Legendary,source-indicated,True,True,0,True
+2014642399,The Forward Path,Auto Rifle,Legendary,source-indicated,False,False,1,False
+507038823,The Last Breath,Auto Rifle,Legendary,source-indicated,True,False,5,True
+1503609584,The Last Breath,Auto Rifle,Legendary,source-indicated,True,False,2,True
+2492081469,The Number,Auto Rifle,Legendary,source-indicated,True,False,5,True
+3854359821,The Number,Auto Rifle,Legendary,source-indicated,False,False,1,False
+93253474,The Ringing Nail,Auto Rifle,Legendary,source-indicated,True,False,5,True
+3326135421,The Ringing Nail,Auto Rifle,Legendary,source-indicated,True,True,0,True
+4206550094,The Ringing Nail,Auto Rifle,Legendary,availability-unverified,True,True,0,True
+866434750,The Riposte,Auto Rifle,Legendary,source-indicated,True,True,0,True
+3754408118,The Riposte,Auto Rifle,Legendary,source-indicated,True,True,0,True
+1820994983,The Summoner,Auto Rifle,Legendary,source-indicated,True,True,0,True
+1907698332,The Summoner,Auto Rifle,Legendary,source-indicated,True,False,5,True
+2884908760,The Summoner,Auto Rifle,Legendary,source-indicated,True,True,0,True
+1292594730,The Summoner (Adept),Auto Rifle,Legendary,source-indicated,True,True,0,True
+3514144928,The Summoner (Adept),Auto Rifle,Legendary,source-indicated,True,False,5,True
+640114618,Tigerspite,Auto Rifle,Legendary,source-indicated,True,False,5,True
+1709137958,Tigerspite,Auto Rifle,Legendary,source-indicated,True,False,5,True
+2465372924,Tigerspite,Auto Rifle,Legendary,source-indicated,True,True,0,True
+2863808104,Trendsetter,Auto Rifle,Legendary,source-indicated,True,False,5,True
+3762467076,Uriel's Gift,Auto Rifle,Legendary,source-indicated,False,False,1,False
+3863882743,Uriel's Gift,Auto Rifle,Legendary,source-indicated,True,False,5,True
+2460368549,VS Pyroelectric Propellant,Auto Rifle,Legendary,source-indicated,True,True,0,True
+4232480042,VS Pyroelectric Propellant,Auto Rifle,Legendary,availability-unverified,True,True,0,True
+1518042135,Valakadyn,Auto Rifle,Legendary,source-indicated,True,False,5,True
+3762467079,Valakadyn,Auto Rifle,Legendary,source-indicated,False,False,1,False
+3685470415,Veiled Threat,Auto Rifle,Legendary,source-indicated,True,True,0,True
+1863583117,Zealous Ideal,Auto Rifle,Legendary,source-indicated,True,True,0,True
+649691506,A Good Shout,Combat Bow,Legendary,availability-unverified,True,True,0,True
+3615748501,A Good Shout,Combat Bow,Legendary,source-indicated,True,True,0,True
+3621336854,Accrued Redemption,Combat Bow,Legendary,source-indicated,True,True,0,True
+4095896073,Accrued Redemption,Combat Bow,Legendary,source-indicated,True,False,5,True
+2291392465,Anamnesis,Combat Bow,Legendary,source-indicated,True,True,0,True
+3417731926,Anamnesis,Combat Bow,Legendary,availability-unverified,True,True,0,True
+1536325168,Anamnesis (Adept),Combat Bow,Legendary,source-indicated,True,True,0,True
+3949253499,Anamnesis (Adept),Combat Bow,Legendary,availability-unverified,True,True,0,True
+720351795,Arsenic Bite-4b,Combat Bow,Legendary,source-indicated,True,True,0,True
+1621657423,Biting Winds,Combat Bow,Legendary,source-indicated,True,False,5,True
+2485400469,Biting Winds,Combat Bow,Legendary,source-indicated,True,True,0,True
+2271714488,Convened Recurve,Combat Bow,Legendary,availability-unverified,True,False,5,True
+3667861447,Convened Recurve,Combat Bow,Legendary,source-indicated,True,False,5,True
+1399109800,Fel Taradiddle,Combat Bow,Legendary,source-indicated,True,True,0,True
+591672323,Fortunate Star,Combat Bow,Legendary,availability-unverified,True,True,0,True
+2326578623,Fortunate Star,Combat Bow,Legendary,source-indicated,True,True,0,True
+2631466936,Fortunate Star,Combat Bow,Legendary,source-indicated,True,True,0,True
+1584643826,Hush,Combat Bow,Legendary,source-indicated,False,False,1,False
+3638723317,Hush,Combat Bow,Legendary,source-indicated,True,True,0,True
+3962575203,Hush,Combat Bow,Legendary,source-indicated,True,True,0,True
+1175295126,Hushed Whisper,Combat Bow,Legendary,source-indicated,True,False,5,True
+3574168117,Hushed Whisper,Combat Bow,Legendary,availability-unverified,True,False,5,True
+3460122497,Imperial Needle,Combat Bow,Legendary,source-indicated,True,False,5,True
+784540300,King Orfeo,Combat Bow,Legendary,availability-unverified,True,True,0,True
+784540301,King Orfeo,Combat Bow,Legendary,availability-unverified,True,True,0,True
+784540302,King Orfeo,Combat Bow,Legendary,availability-unverified,True,True,0,True
+784540303,King Orfeo,Combat Bow,Legendary,availability-unverified,True,True,0,True
+3481382332,King Orfeo,Combat Bow,Legendary,source-indicated,True,True,0,True
+3710082365,Lethophobia,Combat Bow,Legendary,source-indicated,True,True,0,True
+2513965917,Lunulata-4b,Combat Bow,Legendary,source-indicated,True,True,0,True
+2838279629,Mercury-A,Combat Bow,Legendary,source-indicated,True,True,0,True
+2848549302,Neoptolemus II,Combat Bow,Legendary,source-indicated,True,True,0,True
+720351794,No Turning Back,Combat Bow,Legendary,source-indicated,True,False,2,True
+1770490683,Non-Denouement,Combat Bow,Legendary,source-indicated,True,True,0,True
+1039915310,Non-Denouement (Adept),Combat Bow,Legendary,source-indicated,True,True,0,True
+1553681400,Opaque Hourglass,Combat Bow,Legendary,source-indicated,True,False,5,True
+888872889,Point of the Stag,Combat Bow,Legendary,availability-unverified,True,True,0,True
+911019136,Point of the Stag,Combat Bow,Legendary,availability-unverified,True,True,0,True
+3434944005,Point of the Stag,Combat Bow,Legendary,source-indicated,True,False,4,True
+3465233192,Point of the Stag,Combat Bow,Legendary,source-indicated,True,True,0,True
+192784503,Pre Astyanax IV,Combat Bow,Legendary,availability-unverified,True,True,0,True
+471764396,Pre Astyanax IV,Combat Bow,Legendary,source-indicated,True,True,0,True
+2932922810,Pre Astyanax IV,Combat Bow,Legendary,source-indicated,True,False,5,True
+496556698,Pre Astyanax IV (Adept),Combat Bow,Legendary,availability-unverified,True,False,5,True
+2063217087,Pre Astyanax IV (Adept),Combat Bow,Legendary,source-indicated,True,True,0,True
+45643573,Raconteur,Combat Bow,Legendary,source-indicated,True,True,0,True
+2591241074,Strident Whistle,Combat Bow,Legendary,source-indicated,True,False,5,True
+1724104236,Submersion,Combat Bow,Legendary,availability-unverified,True,False,5,True
+3524386983,Submersion,Combat Bow,Legendary,source-indicated,True,True,0,True
+3410721600,Subtle Calamity,Combat Bow,Legendary,source-indicated,True,False,5,True
+421573768,The Spiteful Fang,Combat Bow,Legendary,source-indicated,True,False,5,True
+1094998581,The Spiteful Fang,Combat Bow,Legendary,source-indicated,True,True,0,True
+1704597062,The Spiteful Fang,Combat Bow,Legendary,availability-unverified,True,True,0,True
+2009106091,The Vow,Combat Bow,Legendary,source-indicated,False,True,0,False
+3849444474,Tripwire Canary,Combat Bow,Legendary,source-indicated,True,True,0,True
+2721249463,Tyranny of Heaven,Combat Bow,Legendary,source-indicated,True,False,5,True
+3388655311,Tyranny of Heaven,Combat Bow,Legendary,availability-unverified,True,True,0,True
+232928045,Under Your Skin,Combat Bow,Legendary,source-indicated,True,True,0,True
+839344841,Vengeful Whisper,Combat Bow,Legendary,availability-unverified,True,True,0,True
+1054567917,Vengeful Whisper,Combat Bow,Legendary,source-indicated,True,True,0,True
+211938782,Whispering Slab,Combat Bow,Legendary,source-indicated,True,False,5,True
+690341468,Whispering Slab,Combat Bow,Legendary,source-indicated,True,True,0,True
+1574601402,Whistler's Whim,Combat Bow,Legendary,availability-unverified,True,False,5,True
+3165143747,Whistler's Whim,Combat Bow,Legendary,source-indicated,True,False,5,True
+161675590,Whistler's Whim (Adept),Combat Bow,Legendary,source-indicated,True,False,5,True
+711889599,Whistler's Whim (Adept),Combat Bow,Legendary,availability-unverified,True,False,5,True
+3472875143,Wolftone Draw,Combat Bow,Legendary,source-indicated,True,False,5,True
+1540621132,Accelerando-42,Fusion Rifle,Legendary,availability-unverified,True,True,0,True
+3610531207,Accelerando-42,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+1834313033,Afterlight,Fusion Rifle,Legendary,availability-unverified,True,True,0,True
+3228630258,Afterlight,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+861521336,Afterlight (Adept),Fusion Rifle,Legendary,availability-unverified,True,True,0,True
+3953163559,Afterlight (Adept),Fusion Rifle,Legendary,source-indicated,True,True,0,True
+963710795,Aurvandil FR6,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+3786215462,Aurvandil FR6,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+3867373351,Axial Lacuna,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+933455006,Burden of Guilt,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+976459525,Burden of Guilt,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2002522739,Burden of Guilt (Adept),Fusion Rifle,Legendary,source-indicated,True,False,5,True
+2481881293,Cartesian Coordinate,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2502422772,Cartesian Coordinate,Fusion Rifle,Legendary,source-indicated,False,False,1,False
+3719824177,Cartesian Coordinate,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+3005879472,Conjecture TSc,Fusion Rifle,Legendary,source-indicated,False,False,1,False
+856316142,Coriolis Force,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+3512349612,Coriolis Force,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+1773600468,Critical Sass,Fusion Rifle,Legendary,source-indicated,False,False,1,False
+891996636,Cruoris FR4,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+768621510,Deliverance,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+2943293195,Deliverance (Adept),Fusion Rifle,Legendary,source-indicated,True,False,5,True
+219610523,Dream Breaker,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+2931957300,Dream Breaker,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+4105447487,Elatha FR4,Fusion Rifle,Legendary,source-indicated,False,False,1,False
+4106983932,Elatha FR4,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+2398848320,Erentil FR4,Fusion Rifle,Legendary,source-indicated,False,False,1,False
+3027844941,Erentil FR4,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+679281855,Exile's Curse,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+1117787139,Exile's Curse,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+276080079,Exile's Curse (Adept),Fusion Rifle,Legendary,source-indicated,True,False,5,True
+3241217409,Finite Maybe,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+1706206669,Gallant Charge,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+1030895163,Glacioclasm,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+1183116657,Glacioclasm,Fusion Rifle,Legendary,availability-unverified,True,True,0,True
+2728851518,Glacioclasm,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+3573686365,Glacioclasm,Fusion Rifle,Legendary,availability-unverified,True,False,5,True
+342027677,Hollow Words,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+607191995,Hollow Words,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+3044460004,Iota Draconis,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+1289796511,Iterative Loop,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+1994645182,Likely Suspect,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2423071981,Lionfish-4fr,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+580961571,Loaded Question,Fusion Rifle,Legendary,source-indicated,False,True,0,False
+852069910,Loaded Question,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+3125454907,Loaded Question,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2914913838,Loaded Question (Adept),Fusion Rifle,Legendary,source-indicated,True,True,0,True
+253196586,Main Ingredient,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+2901221332,Main Ingredient,Fusion Rifle,Legendary,availability-unverified,True,False,5,True
+3445437901,Main Ingredient,Fusion Rifle,Legendary,source-indicated,False,False,1,False
+4046741099,Main Ingredient,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+3969066556,Midha's Reckoning,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+3904516037,Midha's Reckoning (Harrowed),Fusion Rifle,Legendary,source-indicated,True,True,0,True
+3201200906,Monody-44,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2502422774,Nox Echo III,Fusion Rifle,Legendary,source-indicated,False,False,1,False
+2366022261,Nox Perennial V,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2767393525,Nox Perennial V,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+74733286,Nox Sidereal IV,Fusion Rifle,Legendary,availability-unverified,True,True,0,True
+2875763009,Nox Sidereal IV,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+4105447486,Nox Veneris II,Fusion Rifle,Legendary,source-indicated,False,False,1,False
+1644680957,Null Composure,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2150643740,Null Composure,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+3613444087,Null Composure,Fusion Rifle,Legendary,availability-unverified,True,False,5,True
+852069911,PLUG ONE.1,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+1289000550,PLUG ONE.1,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+3293524502,PLUG ONE.1,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+534775659,PLUG ONE.1 (Adept),Fusion Rifle,Legendary,source-indicated,True,False,5,True
+3106557243,PLUG ONE.1 (Adept),Fusion Rifle,Legendary,source-indicated,True,False,5,True
+293709640,Pressurized Precision,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+1084190509,Pressurized Precision,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+618554398,Proelium FR3,Fusion Rifle,Legendary,source-indicated,False,False,1,False
+3027844940,Proelium FR3,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+1824586582,Resounding,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+3273807888,Resounding,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+1323862250,Riptide,Fusion Rifle,Legendary,availability-unverified,True,True,0,True
+2297554989,Riptide,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2715240478,Riptide,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+1720503118,Royal Executioner,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2558925366,Scatter Signal,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2502422773,Shock and Awe,Fusion Rifle,Legendary,source-indicated,False,False,1,False
+4114929480,Snorri FR5,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+1225851434,TAHOMA 01,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+3591141932,Techeun Force,Fusion Rifle,Legendary,availability-unverified,True,True,0,True
+4094657108,Techeun Force,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+2274706510,Tempered Dynamo,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+2753269585,Tempered Dynamo,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+2925315757,Tempered Dynamo,Fusion Rifle,Legendary,availability-unverified,True,False,5,True
+76739872,The Beacon,Fusion Rifle,Legendary,availability-unverified,True,False,5,True
+2161618499,The Beacon,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+4288031461,The Emperor's Envy,Fusion Rifle,Legendary,source-indicated,True,False,2,True
+2263839058,The Epicurean,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+4124357815,The Epicurean,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+3347946548,The Eremite,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2290416,The Wizened Rebuke,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+293709641,The Wizened Rebuke,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+930590127,The Wizened Rebuke,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+1999697514,The Wizened Rebuke,Fusion Rifle,Legendary,availability-unverified,True,False,5,True
+2961807684,The Wizened Rebuke,Fusion Rifle,Legendary,source-indicated,False,False,1,False
+1006783454,Timelines' Vertex,Fusion Rifle,Legendary,source-indicated,False,False,1,False
+3055192515,Timelines' Vertex,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+3258665412,Trinary System,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+93061497,VS Gravitic Arrest,Fusion Rifle,Legendary,availability-unverified,True,True,0,True
+3102162710,VS Gravitic Arrest,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2209003210,Zealot's Reward,Fusion Rifle,Legendary,source-indicated,True,False,5,True
+2720651699,Zealot's Reward,Fusion Rifle,Legendary,source-indicated,True,True,0,True
+1845372864,Albedo Wing,Glaive,Legendary,availability-unverified,True,False,5,True
+2274629609,Albedo Wing,Glaive,Legendary,availability-unverified,True,False,5,True
+2680976411,Albedo Wing,Glaive,Legendary,source-indicated,True,False,5,True
+267672635,Backfang,Glaive,Legendary,source-indicated,True,True,0,True
+1277470844,Backfang,Glaive,Legendary,source-indicated,True,False,5,True
+1942143745,Ecliptic Distaff,Glaive,Legendary,source-indicated,True,True,0,True
+3001205424,Ecliptic Distaff,Glaive,Legendary,source-indicated,True,True,0,True
+535198113,Forthcoming Deviance,Glaive,Legendary,source-indicated,True,True,0,True
+3123651616,Forthcoming Deviance (Adept),Glaive,Legendary,source-indicated,True,True,0,True
+1685406703,Greasy Luck,Glaive,Legendary,availability-unverified,True,True,0,True
+1757202961,Greasy Luck,Glaive,Legendary,availability-unverified,True,True,0,True
+2934305134,Greasy Luck,Glaive,Legendary,source-indicated,True,True,0,True
+4274165888,Greasy Luck,Glaive,Legendary,source-indicated,True,True,0,True
+1050582210,Greasy Luck (Adept),Glaive,Legendary,availability-unverified,True,True,0,True
+3210739171,Greasy Luck (Adept),Glaive,Legendary,source-indicated,True,True,0,True
+2978226043,Judgment of Kelgorath,Glaive,Legendary,source-indicated,True,True,0,True
+2534546147,Lubrae's Ruin,Glaive,Legendary,source-indicated,True,True,0,True
+1466006054,Lubrae's Ruin (Adept),Glaive,Legendary,source-indicated,True,True,0,True
+254636484,Nezarec's Whisper,Glaive,Legendary,source-indicated,True,True,0,True
+2201323795,Rake Angle,Glaive,Legendary,source-indicated,True,True,0,True
+2298039571,Rake Angle,Glaive,Legendary,source-indicated,True,True,0,True
+3997086838,Rake Angle (Adept),Glaive,Legendary,source-indicated,True,True,0,True
+1541324871,Refusal of the Call,Glaive,Legendary,availability-unverified,True,True,0,True
+2671849376,Refusal of the Call,Glaive,Legendary,availability-unverified,True,True,0,True
+3269398063,Refusal of the Call,Glaive,Legendary,source-indicated,True,True,0,True
+25228802,Refusal of the Call (Adept),Glaive,Legendary,source-indicated,True,True,0,True
+2755584425,Refusal of the Call (Adept),Glaive,Legendary,availability-unverified,True,True,0,True
+2595497736,The Enigma,Glaive,Legendary,source-indicated,True,True,0,True
+617566156,The Heron,Glaive,Legendary,availability-unverified,True,True,0,True
+617566157,The Heron,Glaive,Legendary,availability-unverified,True,True,0,True
+617566158,The Heron,Glaive,Legendary,availability-unverified,True,True,0,True
+617566159,The Heron,Glaive,Legendary,availability-unverified,True,True,0,True
+2246386812,The Heron,Glaive,Legendary,source-indicated,True,True,0,True
+4005780578,Unexpected Resurgence,Glaive,Legendary,source-indicated,True,False,5,True
+1141586039,Unexpected Resurgence (Adept),Glaive,Legendary,source-indicated,True,False,5,True
+896923850,Acantha-D,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+1757129747,Acantha-D XK8434,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+413901114,Acosmic,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+425681240,Acosmic,Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+1106017703,Acosmic,Grenade Launcher,Legendary,availability-unverified,True,False,5,True
+407621213,Berenger's Memory,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+1983332562,Berenger's Memory,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+2599338625,Bitter/Sweet,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+2453357042,Blast Battue,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+311852248,Bushwhacker,Grenade Launcher,Legendary,availability-unverified,False,False,1,False
+2066434718,Canis Major,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+2966714447,Canis Major,Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+2738601016,Cataphract GL3,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+3805679279,Cataphract GL3,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+874623537,Cataphract GL3 (Adept),Grenade Launcher,Legendary,source-indicated,True,True,0,True
+1489452902,Courageous Surrender,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+3565520715,Crowd Pleaser,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+616582330,Cry Mutiny,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+768696858,Cry Mutiny,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+981718087,Deafening Whisper,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+1311684613,Dimensional Hypotrochoid,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+713132408,Doomsday,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+736901634,Doomsday,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+218335759,Edge Transit,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+568611923,Edge Transit,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+2228325504,Edge Transit,Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+3736001863,Edge Transit,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+198068259,Empty Vessel,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+4255586669,Empty Vessel,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+4096943616,Explosive Personality,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+3977654524,Festival Flight,Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+4019651319,Festival Flight,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+1983332560,Flash and Thunder,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+568611921,Forbearance,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+613334176,Forbearance,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+2480074702,Forbearance,Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+3736001860,Forbearance,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+4038592169,Forbearance (Adept),Grenade Launcher,Legendary,source-indicated,True,True,0,True
+1572604081,Gizmo Weft,Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+4069880346,Gizmo Weft,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+1606497639,Harsh Language,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+657927352,Hullabaloo,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+2449096504,Hullabaloo,Grenade Launcher,Legendary,availability-unverified,True,False,5,True
+2666273249,Hullabaloo,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+3886263130,I Am Alive,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+304659313,Ignition Code,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+2761869150,Ignition Code,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+1443049976,Interference VI,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+2257180473,Interference VI,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+2972949637,Koraxis's Distress,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+495442100,Koraxis's Distress (Adept),Grenade Launcher,Legendary,source-indicated,True,True,0,True
+1745368385,Lingering Dread,Grenade Launcher,Legendary,source-indicated,True,False,4,True
+2026087437,Lingering Dread,Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+2599338624,Liturgy,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+3377522331,Liturgy,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+1197771438,Lost Signal,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+3482299617,Love and Death,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+3690523502,Love and Death,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+867154247,Marsilion-C,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+2584830733,Martyr's Retribution,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+3850168899,Martyr's Retribution,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+3165547384,Memory Interdict,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+3329842376,Memory Interdict,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+1685533876,Motif-41,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+492673102,New Pacific Epitaph,Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+1125217994,New Pacific Epitaph,Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+2059741649,New Pacific Epitaph,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+2988180391,New Pacific Epitaph,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+233402416,New Pacific Epitaph (Adept),Grenade Launcher,Legendary,source-indicated,True,True,0,True
+3185151619,New Pacific Epitaph (Adept),Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+1870979911,Orewing's Maul,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+2108920981,Orewing's Maul,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+1983332561,Orthrus,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+2223968549,Ouster Engine,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+3718184802,Ouster Engine,Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+4146673634,Outrageous Fortune,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+4146702548,Outrageous Fortune,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+3849810018,Pardon Our Dust,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+2316331767,Permafrost,Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+2922964484,Permafrost,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+195440257,Play of the Game,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+2621637518,Play of the Game,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+268260373,Prodigal Return,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+1835232052,Psychopomp,Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+3840794631,Psychopomp,Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+4028298892,Psychopomp,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+704410186,Psychopomp (Adept),Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+2553380021,Psychopomp (Adept),Grenade Launcher,Legendary,source-indicated,True,True,0,True
+268260372,Regnant,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+2979965244,Romantic Death,Grenade Launcher,Legendary,availability-unverified,True,False,5,True
+2979965245,Romantic Death,Grenade Launcher,Legendary,availability-unverified,True,False,5,True
+2979965246,Romantic Death,Grenade Launcher,Legendary,availability-unverified,True,False,5,True
+2979965247,Romantic Death,Grenade Launcher,Legendary,availability-unverified,True,False,5,True
+4169082039,Romantic Death,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+1692109318,Salvager's Salvo,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+2060863616,Salvager's Salvo,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+2461640837,Salvager's Salvo,Grenade Launcher,Legendary,availability-unverified,True,False,5,True
+4213221671,Sunrise GL4,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+433905699,Swarm of the Raven,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+1972985595,Swarm of the Raven,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+2721157927,Tarnation,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+301362380,Terran Wind,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+807192446,The Day's Fury,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+3177074192,The Ever-Present,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+40394833,The Militia's Birthright,Grenade Launcher,Legendary,availability-unverified,True,False,5,True
+1854753405,The Militia's Birthright,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+3745974521,The Militia's Birthright,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+2378101424,The Militia's Birthright (Adept),Grenade Launcher,Legendary,availability-unverified,True,False,5,True
+4162642204,The Militia's Birthright (Adept),Grenade Launcher,Legendary,source-indicated,True,False,5,True
+568611922,The Mountaintop,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+3736001861,The Mountaintop,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+3993415705,The Mountaintop,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+4043921923,The Mountaintop,Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+1720373217,The Permanent Truth,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+4146673635,Theodolite,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+301362381,Through Fire and Flood,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+447296102,Truthteller,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+1946491241,Truthteller,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+3252697558,Truthteller,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+491956886,Tusk of the Boar,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+1218113510,Tusk of the Boar,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+3568377122,Typhon GL5,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+1151688091,Undercurrent,Grenade Launcher,Legendary,availability-unverified,True,False,5,True
+3686538757,Undercurrent,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+672957262,Undercurrent (Adept),Grenade Launcher,Legendary,availability-unverified,True,False,5,True
+817909300,Undercurrent (Adept),Grenade Launcher,Legendary,source-indicated,True,False,5,True
+1762785662,VS Chill Inhibitor,Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+2452936817,VS Chill Inhibitor,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+1762785663,VS Velocity Baton,Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+2452936816,VS Velocity Baton,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+578459533,Wendigo GL3,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+1854753404,Wendigo GL3,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+3183283212,Wendigo GL3,Grenade Launcher,Legendary,availability-unverified,True,False,5,True
+4021098353,Wendigo GL3,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+555148853,Wendigo GL3 (Adept),Grenade Launcher,Legendary,availability-unverified,True,False,5,True
+3915197957,Wendigo GL3 (Adept),Grenade Launcher,Legendary,source-indicated,True,False,5,True
+2039776723,Wicked Sister,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+2168486467,Wicked Sister,Grenade Launcher,Legendary,source-indicated,False,False,1,False
+1332123064,Wild Style,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+4021098352,Wild Style,Grenade Launcher,Legendary,source-indicated,True,False,5,True
+959037361,Wild Style (Adept),Grenade Launcher,Legendary,source-indicated,True,False,5,True
+408862798,Wilderflight,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+1206729100,Wilderflight,Grenade Launcher,Legendary,source-indicated,True,True,0,True
+2306182339,Wilderflight,Grenade Launcher,Legendary,availability-unverified,True,False,5,True
+2982006965,Wilderflight,Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+559523765,Wilderflight (Adept),Grenade Launcher,Legendary,source-indicated,True,True,0,True
+2477408004,Wilderflight (Adept),Grenade Launcher,Legendary,availability-unverified,True,True,0,True
+2071412133,A Cold Sweat,Hand Cannon,Legendary,source-indicated,True,False,2,True
+1406475890,Agamid,Hand Cannon,Legendary,source-indicated,False,False,1,False
+4124362340,Agape,Hand Cannon,Legendary,source-indicated,True,False,5,True
+48643186,Ancient Gospel,Hand Cannon,Legendary,source-indicated,True,False,5,True
+963574173,Ancient Gospel,Hand Cannon,Legendary,source-indicated,True,False,5,True
+6857689,Annual Skate,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2145476623,Annual Skate,Hand Cannon,Legendary,source-indicated,False,False,1,False
+3981920134,Aureus Neutralizer,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2429822977,Austringer,Hand Cannon,Legendary,source-indicated,True,False,5,True
+3055790362,Austringer,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2145476620,Bad News,Hand Cannon,Legendary,source-indicated,False,False,1,False
+2824241403,Bad News XF4354,Hand Cannon,Legendary,source-indicated,True,False,5,True
+153979397,Better Devils,Hand Cannon,Legendary,source-indicated,True,False,5,True
+1048266744,Better Devils,Hand Cannon,Legendary,source-indicated,False,False,1,False
+2106353446,Better Devils,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+4059111041,Better Devils,Hand Cannon,Legendary,source-indicated,True,False,5,True
+4152016199,Better Devils,Hand Cannon,Legendary,source-indicated,True,True,0,True
+496728945,Bold Endings,Hand Cannon,Legendary,source-indicated,True,True,0,True
+1046651176,Bottom Dollar,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2953199259,Bottom Dollar,Hand Cannon,Legendary,source-indicated,True,False,5,True
+372697604,Cantata-57,Hand Cannon,Legendary,source-indicated,True,True,0,True
+1331824604,Combined Action,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2263462407,Corundum Hammer,Hand Cannon,Legendary,source-indicated,True,True,0,True
+198854575,Crimil's Dagger,Hand Cannon,Legendary,source-indicated,True,True,0,True
+1617917863,Crimil's Dagger,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3649055823,Crimil's Dagger,Hand Cannon,Legendary,source-indicated,False,False,1,False
+4292849692,Crimil's Dagger,Hand Cannon,Legendary,source-indicated,True,False,5,True
+2888266564,Crisis Inverted,Hand Cannon,Legendary,source-indicated,True,False,5,True
+575830664,D.F.A.,Hand Cannon,Legendary,source-indicated,True,False,5,True
+739029153,D.F.A.,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2920548486,D.F.A.,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+4238497225,D.F.A.,Hand Cannon,Legendary,source-indicated,True,False,2,True
+2006308129,D.F.A. (Adept),Hand Cannon,Legendary,source-indicated,True,False,5,True
+1351035691,Daedalus Code,Hand Cannon,Legendary,source-indicated,False,False,1,False
+582335600,Dire Promise,Hand Cannon,Legendary,source-indicated,False,False,1,False
+2742838701,Dire Promise,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2112909414,Duke Mk. 44,Hand Cannon,Legendary,source-indicated,True,False,5,True
+1123421440,Epochal Integration,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3851394887,Epochal Integration,Hand Cannon,Legendary,source-indicated,True,True,0,True
+548809020,Exalted Truth,Hand Cannon,Legendary,source-indicated,True,False,5,True
+2776092653,Exalted Truth,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3102421004,Exalted Truth,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+3436626079,Exalted Truth,Hand Cannon,Legendary,source-indicated,True,True,0,True
+1201528146,Exalted Truth (Adept),Hand Cannon,Legendary,source-indicated,True,True,0,True
+1705843397,Exalted Truth (Adept),Hand Cannon,Legendary,source-indicated,True,False,5,True
+3920882229,Exalted Truth (Adept),Hand Cannon,Legendary,availability-unverified,True,False,5,True
+2823644677,Exuviae,Hand Cannon,Legendary,source-indicated,True,True,0,True
+235827225,Eyasluna,Hand Cannon,Legendary,availability-unverified,True,True,0,True
+386864872,Eyasluna,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2171478765,Fatebringer,Hand Cannon,Legendary,source-indicated,True,True,0,True
+4184168210,Fatebringer,Hand Cannon,Legendary,source-indicated,True,True,0,True
+1216319404,Fatebringer (Timelost),Hand Cannon,Legendary,source-indicated,True,True,0,True
+4219826183,Fatebringer (Timelost),Hand Cannon,Legendary,source-indicated,True,True,0,True
+701922966,Finite Impactor,Hand Cannon,Legendary,source-indicated,False,False,1,False
+1917334929,Finite Impactor,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3813153080,Finite Impactor,Hand Cannon,Legendary,source-indicated,True,False,5,True
+1141547457,Frontier's Cry,Hand Cannon,Legendary,source-indicated,True,False,5,True
+3203303472,Frontier's Cry,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3216383791,Home for the Lost,Hand Cannon,Legendary,source-indicated,False,False,1,False
+3866356643,IKELOS_HC_v1.0.1,Hand Cannon,Legendary,source-indicated,True,False,2,True
+1200824700,IKELOS_HC_v1.0.2,Hand Cannon,Legendary,source-indicated,True,False,5,True
+1731355324,IKELOS_HC_v1.0.3,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2041617874,IRONWOOD 03,Hand Cannon,Legendary,source-indicated,True,True,0,True
+1973107014,Igneous Hammer,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2351180975,Igneous Hammer,Hand Cannon,Legendary,source-indicated,True,False,5,True
+2776092652,Igneous Hammer,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2314610827,Igneous Hammer (Adept),Hand Cannon,Legendary,source-indicated,True,False,5,True
+2527666306,Igneous Hammer (Adept),Hand Cannon,Legendary,source-indicated,True,False,5,True
+3860697510,Imset HC4,Hand Cannon,Legendary,source-indicated,False,False,1,False
+410996590,Jack Queen King 3,Hand Cannon,Legendary,source-indicated,True,False,5,True
+3285365666,Jack Queen King 3,Hand Cannon,Legendary,source-indicated,False,False,1,False
+1476654960,Judgment,Hand Cannon,Legendary,source-indicated,True,False,5,True
+1567585973,Judgment,Hand Cannon,Legendary,source-indicated,True,False,5,True
+1773934241,Judgment,Hand Cannon,Legendary,availability-unverified,True,True,0,True
+2226572694,Judgment,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2850415209,Judgment,Hand Cannon,Legendary,source-indicated,True,False,2,True
+2969415423,Judgment,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+1987644603,Judgment (Adept),Hand Cannon,Legendary,availability-unverified,True,True,0,True
+3329218848,Judgment (Adept),Hand Cannon,Legendary,availability-unverified,True,True,0,True
+1875512595,Kept Confidence,Hand Cannon,Legendary,source-indicated,True,True,0,True
+334964261,Kindled Orchid,Hand Cannon,Legendary,availability-unverified,True,True,0,True
+2575506895,Kindled Orchid,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3961462214,Kindled Orchid,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2957542878,Living Memory,Hand Cannon,Legendary,source-indicated,False,False,1,False
+868076517,Loud Lullaby,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3924212056,Loud Lullaby,Hand Cannon,Legendary,source-indicated,True,False,5,True
+153979396,Luna's Howl,Hand Cannon,Legendary,source-indicated,False,True,0,False
+2033531688,Luna's Howl,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2763843899,Luna's Howl,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3757612024,Luna's Howl,Hand Cannon,Legendary,availability-unverified,True,True,0,True
+734476286,Maahes HC4,Hand Cannon,Legendary,source-indicated,True,False,5,True
+1246793994,Maahes HC4,Hand Cannon,Legendary,source-indicated,True,True,0,True
+979721268,Malediction,Hand Cannon,Legendary,source-indicated,True,False,5,True
+3337727085,Malediction,Hand Cannon,Legendary,source-indicated,True,True,0,True
+1128225405,Midnight Coup,Hand Cannon,Legendary,source-indicated,True,False,2,True
+2033531689,Midnight Coup,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2499720827,Midnight Coup,Hand Cannon,Legendary,availability-unverified,True,True,0,True
+2763843898,Midnight Coup,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3860697508,Minuet-42,Hand Cannon,Legendary,source-indicated,False,False,1,False
+1872906663,Modified B-7 Pistol,Hand Cannon,Legendary,availability-unverified,True,True,0,True
+3146657388,Modified B-7 Pistol,Hand Cannon,Legendary,source-indicated,True,True,0,True
+1288422452,Mos Athanor IV,Hand Cannon,Legendary,availability-unverified,True,True,0,True
+4118334987,Mos Athanor IV,Hand Cannon,Legendary,source-indicated,True,True,0,True
+70083888,Nation of Beasts,Hand Cannon,Legendary,availability-unverified,True,True,0,True
+654370424,Nation of Beasts,Hand Cannon,Legendary,source-indicated,True,True,0,True
+468276817,Nature of the Beast,Hand Cannon,Legendary,source-indicated,False,False,1,False
+1835747805,Nature of the Beast,Hand Cannon,Legendary,source-indicated,True,True,0,True
+153979399,Not Forgotten,Hand Cannon,Legendary,source-indicated,False,True,0,False
+2693941407,Older Sister III,Hand Cannon,Legendary,source-indicated,False,False,1,False
+2138599001,Optative,Hand Cannon,Legendary,source-indicated,True,False,5,True
+2817683783,Optative,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3496887154,Phoneutria Fera,Hand Cannon,Legendary,source-indicated,True,False,5,True
+3804242792,Phoneutria Fera,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+3804242793,Phoneutria Fera,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+3804242794,Phoneutria Fera,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+3804242795,Phoneutria Fera,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+3281285075,Posterity,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3860697509,Pribina-D,Hand Cannon,Legendary,source-indicated,False,False,1,False
+4211534763,Pribina-D,Hand Cannon,Legendary,source-indicated,True,False,5,True
+2671639706,Pure Poetry,Hand Cannon,Legendary,source-indicated,True,False,5,True
+882778888,Rose,Hand Cannon,Legendary,source-indicated,True,True,0,True
+1041028434,Rose,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2429822976,Rose,Hand Cannon,Legendary,source-indicated,False,False,1,False
+2034215657,Round Robin,Hand Cannon,Legendary,source-indicated,True,True,0,True
+1242785638,Sarpedon-D,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3318545829,Sarpedon-D,Hand Cannon,Legendary,availability-unverified,True,True,0,True
+59060498,Service Revolver,Hand Cannon,Legendary,availability-unverified,True,True,0,True
+834081972,Service Revolver,Hand Cannon,Legendary,source-indicated,True,False,5,True
+2171006181,Service Revolver,Hand Cannon,Legendary,source-indicated,False,False,1,False
+3796682229,Service Revolver,Hand Cannon,Legendary,source-indicated,True,True,0,True
+1555959830,Seventh Seraph Officer Revolver,Hand Cannon,Legendary,source-indicated,True,False,5,True
+3037520408,Seventh Seraph Officer Revolver,Hand Cannon,Legendary,source-indicated,True,False,5,True
+3490736392,Seventh Seraph Officer Revolver,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2145476622,Shattered Peace,Hand Cannon,Legendary,source-indicated,False,False,1,False
+2350330520,Sightline Survey,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3163473092,Sixth Sense,Hand Cannon,Legendary,source-indicated,True,False,5,True
+4032097588,Sixth Sense,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+4032097589,Sixth Sense,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+4032097590,Sixth Sense,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+4032097591,Sixth Sense,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+1041028435,Solemn Lie,Hand Cannon,Legendary,source-indicated,True,True,0,True
+4116518582,Solemn Remembrance,Hand Cannon,Legendary,source-indicated,True,True,0,True
+586671776,Something New,Hand Cannon,Legendary,source-indicated,True,True,0,True
+1705150753,Something New,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+1856262127,Something New,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2877020298,Something New,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+3240434620,Something New,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+810474119,Spare Rations,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3116356268,Spare Rations,Hand Cannon,Legendary,source-indicated,True,False,5,True
+3236112986,Spare Rations,Hand Cannon,Legendary,source-indicated,True,False,5,True
+310708513,Survivor's Epitaph,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2152350211,Survivor's Epitaph,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+4059111040,Survivor's Epitaph,Hand Cannon,Legendary,source-indicated,True,False,5,True
+3890055324,Targeted Redaction,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2112909415,Ten Paces,Hand Cannon,Legendary,source-indicated,True,False,5,True
+2817949113,The Defiant,Hand Cannon,Legendary,source-indicated,False,False,1,False
+1706536806,The Old Fashioned,Hand Cannon,Legendary,source-indicated,False,False,1,False
+3569802112,The Old Fashioned,Hand Cannon,Legendary,source-indicated,True,False,5,True
+432476743,The Palindrome,Hand Cannon,Legendary,source-indicated,True,True,0,True
+739029152,The Palindrome,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2876244791,The Palindrome,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3303271523,The Palindrome,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+1481892490,The Palindrome (Adept),Hand Cannon,Legendary,source-indicated,True,False,5,True
+4077588826,The Palindrome (Adept),Hand Cannon,Legendary,source-indicated,True,True,0,True
+1189790632,The Steady Hand,Hand Cannon,Legendary,source-indicated,False,False,1,False
+2220884262,The Steady Hand,Hand Cannon,Legendary,source-indicated,True,False,5,True
+1178886909,Thin Line,Hand Cannon,Legendary,source-indicated,True,False,5,True
+1605599021,Triple Laureate,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2908653246,Triple Laureate,Hand Cannon,Legendary,availability-unverified,True,True,0,True
+408440598,True Prophecy,Hand Cannon,Legendary,source-indicated,False,False,1,False
+960948343,True Prophecy,Hand Cannon,Legendary,source-indicated,True,False,5,True
+2742838700,True Prophecy,Hand Cannon,Legendary,source-indicated,True,True,0,True
+810474118,Trust,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2850664015,Trust,Hand Cannon,Legendary,source-indicated,True,True,0,True
+4077196130,Trust,Hand Cannon,Legendary,source-indicated,True,False,5,True
+2462965802,Uncivil Discourse,Hand Cannon,Legendary,availability-unverified,True,True,0,True
+3146657389,Uncivil Discourse,Hand Cannon,Legendary,source-indicated,True,True,0,True
+388390591,Unloved,Hand Cannon,Legendary,source-indicated,True,True,0,True
+2485881870,Unloved,Hand Cannon,Legendary,availability-unverified,True,True,0,True
+1622998472,Vulpecula,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3245446311,Vulpecula,Hand Cannon,Legendary,availability-unverified,True,True,0,True
+334171687,Waking Vigil,Hand Cannon,Legendary,source-indicated,True,True,0,True
+1727550459,Waking Vigil,Hand Cannon,Legendary,source-indicated,True,False,5,True
+3723679465,Waking Vigil,Hand Cannon,Legendary,source-indicated,True,True,0,True
+233423981,Warden's Law,Hand Cannon,Legendary,source-indicated,True,False,5,True
+1821529912,Warden's Law,Hand Cannon,Legendary,availability-unverified,True,False,5,True
+2152484073,Warden's Law,Hand Cannon,Legendary,source-indicated,True,False,5,True
+2363113134,Warden's Law,Hand Cannon,Legendary,source-indicated,True,False,5,True
+267089201,Warden's Law (Adept),Hand Cannon,Legendary,availability-unverified,True,True,0,True
+3250744600,Warden's Law (Adept),Hand Cannon,Legendary,source-indicated,True,False,5,True
+3285365667,West of Sunfall 7,Hand Cannon,Legendary,source-indicated,False,False,1,False
+120706239,Word of Crota,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3926103986,Word of Crota (Adept),Hand Cannon,Legendary,source-indicated,True,True,0,True
+1803480512,Yesterday's Question,Hand Cannon,Legendary,source-indicated,True,False,5,True
+2300143112,Yesterday's Question,Hand Cannon,Legendary,source-indicated,True,False,5,True
+2378785953,Yesterday's Question (Adept),Hand Cannon,Legendary,source-indicated,True,False,5,True
+431721920,Zaouli's Bane,Hand Cannon,Legendary,source-indicated,True,True,0,True
+3066945855,Zaouli's Bane,Hand Cannon,Legendary,availability-unverified,True,True,0,True
+3647341740,Zaouli's Bane,Hand Cannon,Legendary,source-indicated,True,True,0,True
+291092617,Zaouli's Bane (Harrowed),Hand Cannon,Legendary,source-indicated,True,True,0,True
+3926153598,Boomslang-4fr,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+1491665733,Briar's Contempt,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2890082420,Briar's Contempt (Adept),Linear Fusion Rifle,Legendary,source-indicated,True,False,5,True
+999767358,Cataclysmic,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2886339027,Cataclysmic (Adept),Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2714022207,Corsair's Wrath,Linear Fusion Rifle,Legendary,source-indicated,True,False,5,True
+3005879473,Crooked Fang-4fr,Linear Fusion Rifle,Legendary,source-indicated,False,False,1,False
+3419149443,Crooked Fang-4fr,Linear Fusion Rifle,Legendary,source-indicated,True,False,5,True
+1813667283,Dead-Ender,Linear Fusion Rifle,Legendary,source-indicated,False,False,1,False
+1501688142,Doomed Petitioner,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+615373993,Eyes Unveiled,Linear Fusion Rifle,Legendary,availability-unverified,True,True,0,True
+727781522,Eyes Unveiled,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+4147428506,Eyes Unveiled,Linear Fusion Rifle,Legendary,availability-unverified,True,True,0,True
+282549639,Eyes Unveiled (Adept),Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+4173311704,Eyes Unveiled (Adept),Linear Fusion Rifle,Legendary,availability-unverified,True,True,0,True
+2272041093,Fire and Forget,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2697058914,Komodo-4FR,Linear Fusion Rifle,Legendary,source-indicated,True,False,4,True
+1439354195,Laser Painter,Linear Fusion Rifle,Legendary,source-indicated,True,False,5,True
+3221722018,Laser Painter,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+946443267,Line in the Sand,Linear Fusion Rifle,Legendary,source-indicated,True,False,5,True
+2450049485,Line in the Sand,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+3909683950,Man o' War,Linear Fusion Rifle,Legendary,source-indicated,False,False,1,False
+270610849,Mistral Lift,Linear Fusion Rifle,Legendary,availability-unverified,True,True,0,True
+766122634,Mistral Lift,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+3483485727,Mistral Lift,Linear Fusion Rifle,Legendary,source-indicated,True,False,5,True
+1399243961,Reed's Regret,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+3267997292,Reed's Regret,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2475355656,Reed's Regret (Adept),Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+1184309824,Sailspy Pitchglass,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+1207321710,Scintillation,Linear Fusion Rifle,Legendary,source-indicated,True,False,5,True
+2591257541,Scintillation,Linear Fusion Rifle,Legendary,source-indicated,True,False,5,True
+1492522228,Scintillation (Adept),Linear Fusion Rifle,Legendary,source-indicated,True,False,5,True
+2862666249,Stormchaser,Linear Fusion Rifle,Legendary,source-indicated,True,False,5,True
+3652506829,Stormchaser,Linear Fusion Rifle,Legendary,availability-unverified,True,True,0,True
+3615421669,Suspectum-4fr,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+1911060537,Taipan-4fr,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+2502422775,Tarantula,Linear Fusion Rifle,Legendary,source-indicated,False,False,1,False
+3335343363,Tarantula,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+3075224551,Threaded Needle,Linear Fusion Rifle,Legendary,source-indicated,True,True,0,True
+1952295804,Willful Hamartia,Linear Fusion Rifle,Legendary,source-indicated,True,False,5,True
+1600633250,21% Delirium,Machine Gun,Legendary,source-indicated,False,False,1,False
+3001598094,21% Delirium,Machine Gun,Legendary,source-indicated,True,False,5,True
+3211332727,A Fine Memorial,Machine Gun,Legendary,source-indicated,True,False,5,True
+3325778512,A Fine Memorial,Machine Gun,Legendary,source-indicated,True,False,5,True
+91672792,Archon's Thunder,Machine Gun,Legendary,source-indicated,True,False,5,True
+1967303408,Archon's Thunder,Machine Gun,Legendary,source-indicated,True,False,5,True
+2896109856,Archon's Thunder,Machine Gun,Legendary,source-indicated,True,False,5,True
+66875353,Avalanche,Machine Gun,Legendary,source-indicated,True,False,5,True
+495940989,Avalanche,Machine Gun,Legendary,availability-unverified,True,True,0,True
+1845978721,Avalanche,Machine Gun,Legendary,availability-unverified,True,False,5,True
+4220529694,Avalanche,Machine Gun,Legendary,source-indicated,True,False,5,True
+1496419775,Bane of Sorrow,Machine Gun,Legendary,source-indicated,True,False,5,True
+2601084711,Bane of Sorrow,Machine Gun,Legendary,availability-unverified,True,True,0,True
+3779290676,Bane of Sorrow,Machine Gun,Legendary,source-indicated,True,True,0,True
+954563454,Bitter End,Machine Gun,Legendary,source-indicated,True,True,0,True
+1716620044,Chain of Command,Machine Gun,Legendary,source-indicated,True,True,0,True
+3105930175,Chain of Command,Machine Gun,Legendary,source-indicated,True,True,0,True
+2187717691,Circular Logic,Machine Gun,Legendary,source-indicated,True,True,0,True
+2528793321,Circular Logic,Machine Gun,Legendary,source-indicated,True,True,0,True
+4230965989,Commemoration,Machine Gun,Legendary,source-indicated,True,True,0,True
+471518543,Corrective Measure,Machine Gun,Legendary,source-indicated,True,True,0,True
+3654744298,Corrective Measure,Machine Gun,Legendary,source-indicated,True,True,0,True
+2334480463,Corrective Measure (Timelost),Machine Gun,Legendary,source-indicated,True,True,0,True
+3796510434,Corrective Measure (Timelost),Machine Gun,Legendary,source-indicated,True,True,0,True
+1120206506,DIABLERETS 06,Machine Gun,Legendary,source-indicated,True,True,0,True
+1484294659,Dawn Far Off,Machine Gun,Legendary,availability-unverified,True,True,0,True
+2770617440,Dawn Far Off,Machine Gun,Legendary,availability-unverified,True,True,0,True
+847329160,Edgewise,Machine Gun,Legendary,source-indicated,True,False,3,True
+105306149,Eleatic Principle,Machine Gun,Legendary,source-indicated,True,True,0,True
+1642384931,Fixed Odds,Machine Gun,Legendary,source-indicated,True,False,5,True
+2194955522,Fixed Odds,Machine Gun,Legendary,source-indicated,True,True,0,True
+211732170,Hammerhead,Machine Gun,Legendary,availability-unverified,True,True,0,True
+603242241,Hammerhead,Machine Gun,Legendary,source-indicated,True,False,5,True
+850999853,Hammerhead,Machine Gun,Legendary,availability-unverified,True,True,0,True
+1346714574,Hammerhead,Machine Gun,Legendary,source-indicated,True,True,0,True
+1896309757,Hammerhead,Machine Gun,Legendary,source-indicated,True,True,0,True
+4233375372,Marcato-45,Machine Gun,Legendary,source-indicated,True,True,0,True
+820890091,Planck's Stride,Machine Gun,Legendary,source-indicated,True,True,0,True
+3605603507,Pro Memoria,Machine Gun,Legendary,source-indicated,True,True,0,True
+751880654,Qua Furor V,Machine Gun,Legendary,source-indicated,True,True,0,True
+337893613,Qua Vinctus IV,Machine Gun,Legendary,source-indicated,True,True,0,True
+4176551594,Qua Vinctus IV,Machine Gun,Legendary,availability-unverified,True,True,0,True
+1975125963,Qua Xaphan V,Machine Gun,Legendary,source-indicated,True,False,5,True
+1321506184,Qullim's Terminus,Machine Gun,Legendary,source-indicated,True,True,0,True
+3248429089,Qullim's Terminus (Harrowed),Machine Gun,Legendary,source-indicated,True,True,0,True
+1572896086,Recurrent Impact,Machine Gun,Legendary,source-indicated,True,True,0,True
+3103325054,Retrofit Escapade,Machine Gun,Legendary,source-indicated,True,True,0,True
+2582755344,Seventh Seraph SAW,Machine Gun,Legendary,source-indicated,True,False,5,True
+2584201248,Seventh Seraph SAW,Machine Gun,Legendary,source-indicated,True,True,0,True
+2434225986,Shattered Cipher,Machine Gun,Legendary,source-indicated,True,True,0,True
+2828278545,Song of Ir Yût,Machine Gun,Legendary,source-indicated,True,True,0,True
+407511664,Song of Ir Yût (Adept),Machine Gun,Legendary,source-indicated,True,True,0,True
+412251536,Speleologist,Machine Gun,Legendary,source-indicated,True,True,0,True
+47772649,THE SWARM,Machine Gun,Legendary,availability-unverified,True,True,0,True
+2759590322,THE SWARM,Machine Gun,Legendary,source-indicated,True,False,5,True
+566740455,THE SWARM (Adept),Machine Gun,Legendary,source-indicated,True,False,5,True
+3836861464,THE SWARM (Adept),Machine Gun,Legendary,availability-unverified,True,False,5,True
+3132669561,Temporal Clause,Machine Gun,Legendary,source-indicated,True,True,0,True
+3369545945,Temporal Clause,Machine Gun,Legendary,source-indicated,True,False,5,True
+487205709,Terminus Horizon,Machine Gun,Legendary,availability-unverified,True,False,5,True
+2730671571,Terminus Horizon,Machine Gun,Legendary,availability-unverified,True,True,0,True
+3814261872,Terminus Horizon,Machine Gun,Legendary,source-indicated,True,True,0,True
+3984556130,Terminus Horizon,Machine Gun,Legendary,source-indicated,True,True,0,True
+2210806903,Terminus Horizon (Adept),Machine Gun,Legendary,source-indicated,True,True,0,True
+4267192886,Terminus Horizon (Adept),Machine Gun,Legendary,availability-unverified,True,True,0,True
+642545454,Thermal Erosion,Machine Gun,Legendary,source-indicated,True,True,0,True
+1766088024,Thermal Erosion,Machine Gun,Legendary,source-indicated,True,False,5,True
+1079872540,Ulterior Observation,Machine Gun,Legendary,source-indicated,True,True,0,True
+906840740,Unwavering Duty,Machine Gun,Legendary,source-indicated,True,True,0,True
+3489054606,Unwavering Duty,Machine Gun,Legendary,source-indicated,True,True,0,True
+3624844116,Unwavering Duty,Machine Gun,Legendary,availability-unverified,True,True,0,True
+2759251821,Unwavering Duty (Adept),Machine Gun,Legendary,availability-unverified,True,True,0,True
+3444632029,Unwavering Duty (Adept),Machine Gun,Legendary,source-indicated,True,True,0,True
+768610585,Watchful Eye,Machine Gun,Legendary,availability-unverified,True,True,0,True
+1757177186,Watchful Eye,Machine Gun,Legendary,source-indicated,True,True,0,True
+3058845782,Watchful Eye,Machine Gun,Legendary,source-indicated,True,False,5,True
+737409399,Watchful Eye (Adept),Machine Gun,Legendary,source-indicated,True,True,0,True
+2856225832,Watchful Eye (Adept),Machine Gun,Legendary,availability-unverified,True,True,0,True
+1167153950,Adhortative,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+2993554824,Adhortative,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+1513927139,Agenda 5,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+1178397318,Agrona PR4,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+3614211586,Aisha's Care,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+3969379530,Aisha's Care,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+3332125295,Aisha's Care (Adept),Pulse Rifle,Legendary,source-indicated,True,False,5,True
+2023002233,All or Nothing,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+3984776322,All or Nothing,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+1674742470,Autumn Wind,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+2150012407,Autumn Wind,Pulse Rifle,Legendary,availability-unverified,True,False,5,True
+2459087496,Autumn Wind,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+3110377595,Autumn Wind,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+1178397319,Battle Scar,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+1525080480,Battle Scar,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+2099894368,Battle Scar,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+747743637,Belisarius-D,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+2313726158,Belisarius-D,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+52683113,Blast Furnace,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+2372514508,Blast Furnace,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+2533990645,Blast Furnace,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+2631356658,Blast Furnace,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+3843477312,Blast Furnace,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+2708806099,BxR-55 Battler,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+767170345,Bygones,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+2199554524,Bygones,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+2712244741,Bygones,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+339343291,Cadenza-43,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+501329015,Chattering Bone,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+568515759,Chattering Bone,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+830651379,Chattering Bone,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+4157371152,Chattering Bone,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+1280933460,Claws of the Wolf,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+1505862304,Claws of the Wolf,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+3634548599,Claws of the Wolf,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+324584913,Cold Denial,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+558794124,Cold Denial,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+1216130969,Cold Denial,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+2126178511,Corrasion,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+233635202,Cruel Mercy,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+4011513985,Cruel Mercy,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+2347178967,Cruel Mercy (Adept),Pulse Rifle,Legendary,source-indicated,True,True,0,True
+325519402,Darkest Before,Pulse Rifle,Legendary,source-indicated,True,False,2,True
+435821040,Darkest Before,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+2481758391,Darkest Before,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+2831259642,Darkest Before,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+3016891299,Different Times,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+1751893422,Disparity,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+1513927137,Disrespectful Stare,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+381446446,Elsie's Rifle,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+2372514509,Elsie's Rifle,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+3851176026,Elsie's Rifle,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+1523647826,Eternal Slumber,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+1291586825,Eystein-D,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+3199662972,Eystein-D,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+1076810832,Forge's Pledge,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+4138174248,Go Figure,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+1621558458,Gridskipper,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+3176697589,Gridskipper,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+3433930495,Gridskipper,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+2870169846,Hailing Confusion,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+4236134153,Hailing Confusion,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+4145119417,Heart of Time,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+2873508409,High Tyrant,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+216983039,Horror's Least,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+827835657,Horror's Least,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+1018012078,Horror's Least,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+1071542914,Horror's Least,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+1924276978,Horror's Least (Adept),Pulse Rifle,Legendary,source-indicated,True,False,5,True
+228424224,Impromptu-49,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+3325744914,Inaugural Address,Pulse Rifle,Legendary,source-indicated,True,False,2,True
+161537637,Infinite Paths 8,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+3176697588,Infinite Paths 8,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+3233390913,Infinite Paths 8,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+3428521585,Insidious,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+786352912,Insidious (Adept),Pulse Rifle,Legendary,source-indicated,True,True,0,True
+625672050,Jian 7 Rifle,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+1162247618,Jian 7 Rifle,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+62937067,Jorum's Claw,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+622058944,Jorum's Claw,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+3634548598,Jorum's Claw,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+157601190,Joxer's Longsword,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+2150012406,Joxer's Longsword,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+3538003989,Joxer's Longsword,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+689294985,Jurassic Green,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+2261046232,Jurassic Green,Pulse Rifle,Legendary,availability-unverified,True,False,5,True
+2603335652,Jurassic Green,Pulse Rifle,Legendary,availability-unverified,True,False,5,True
+3103255595,Jurassic Green,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+188882152,Last Perdition,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+962412079,Last Perdition,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+3364253967,Last Perdition,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+3813721211,Last Thursday,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+1760543913,Legal Action II,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+3409645497,Legal Action II,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+1513927138,Lincoln Green,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+161537636,Machina Dei 4,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+210065223,Magnum Shepherd,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+42435996,Mint Retrograde,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+1715391576,Mint Retrograde,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+3285784871,Mint Retrograde,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+339343290,Nergal PR4,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+1400385226,New Purpose,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+1780464822,New Purpose,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+34731066,Nightshade,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+339163900,Nightshade,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+792755504,Nightshade,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+1559068369,Nightshade,Pulse Rifle,Legendary,availability-unverified,True,False,5,True
+1974641289,Nightshade,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+859869931,Nullify,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+892183998,Nullify (Adept),Pulse Rifle,Legendary,source-indicated,True,True,0,True
+324584912,Ogma PR6,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+2342054803,Ogma PR6,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+299665907,Outlast,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+1678205741,Outlast,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+1098171824,Oversoul Edict,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+578105049,Oversoul Edict (Adept),Pulse Rifle,Legendary,source-indicated,True,True,0,True
+3635821806,Phyllotactic Spiral,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+2097055732,Piece of Mind,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+208088207,Premonition,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+1969802090,Premonition,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+135971347,Psi Aeterna IV,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+3556730800,Psi Aeterna IV,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+358788212,Psi Hermetic V,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+1161276682,Redrix's Broadsword,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+191996029,Redrix's Claymore,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+747743636,Redrix's Estoc,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+3218364298,Redrix's Estoc,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+435821041,Relentless,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+1187594590,Relentless,Pulse Rifle,Legendary,source-indicated,True,False,2,True
+2831259643,Relentless,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+3681280908,Relentless,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+3733988413,Relentless,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+1066598837,Relentless (Adept),Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+1827058652,Relentless (Adept),Pulse Rifle,Legendary,source-indicated,True,True,0,True
+159056377,Requiem-45,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+3376406418,Right Side of Wrong,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+2241507890,Sacred Provenance,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+2408405461,Sacred Provenance,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+2563668388,Scalar Potential,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+2221264583,Smite of Merain,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+3407395594,Smite of Merain (Harrowed),Pulse Rifle,Legendary,source-indicated,True,False,5,True
+2050789284,Stars in Shadow,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+3602242905,Stars in Shadow,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+1123433952,Stay Frosty,Pulse Rifle,Legendary,availability-unverified,True,False,5,True
+1891321753,Stay Frosty,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+2812100428,Stay Frosty,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+3910523587,Stay Frosty,Pulse Rifle,Legendary,availability-unverified,True,False,5,True
+1513927136,Swift Ride,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+1386601612,Swift Ride XE8375,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+2856514843,Syncopation-53,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+3529780349,The Marine,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+877384,The Martlet,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+3658188704,The Messenger,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+3796795102,The Messenger,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+4277548087,The Messenger,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+364665267,The Messenger (Adept),Pulse Rifle,Legendary,source-indicated,True,False,5,True
+1173780905,The Messenger (Adept),Pulse Rifle,Legendary,source-indicated,True,False,5,True
+3744058588,The Third Axiom,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+4156253727,The Third Axiom,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+4425887,The Time-Worn Spire,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+2204165992,The Time-Worn Spire,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+3593598010,The Time-Worn Spire,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+1587439031,Three Graves,Pulse Rifle,Legendary,source-indicated,False,False,1,False
+3830941962,Vantage Point,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+406384293,Veillantif-D,Pulse Rifle,Legendary,availability-unverified,True,True,0,True
+1361871430,Veillantif-D,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+438540299,Veles-X,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+2276328320,Veles-X,Pulse Rifle,Legendary,source-indicated,True,False,4,True
+1141927949,Yesteryear,Pulse Rifle,Legendary,source-indicated,True,True,0,True
+4028000428,Yesteryear,Pulse Rifle,Legendary,source-indicated,True,False,5,True
+1851777734,Apex Predator,Rocket Launcher,Legendary,availability-unverified,True,True,0,True
+2545083870,Apex Predator,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+725408022,Ascendancy,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+1713388226,Ascendancy,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+991314988,Bad Omens,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+1996201272,Bad Omens,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+412265080,Bellowing Giant,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+1889005379,Bellowing Giant,Rocket Launcher,Legendary,availability-unverified,True,True,0,True
+2186258845,Bellowing Giant,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+1903182562,Blowout,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+417474226,Blue Shift,Rocket Launcher,Legendary,source-indicated,False,False,1,False
+1929278169,BrayTech Osprey,Rocket Launcher,Legendary,source-indicated,False,False,1,False
+3667553455,BrayTech Osprey,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+1064132738,BrayTech Osprey (Adept),Rocket Launcher,Legendary,source-indicated,True,False,5,True
+1392429335,Broadsword Launcher,Rocket Launcher,Legendary,source-indicated,False,False,1,False
+1959650777,Bump in the Night,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+2149166938,Classical-42,Rocket Launcher,Legendary,source-indicated,False,False,1,False
+2496242052,Code Duello,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+291447487,Cold Comfort,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+839786290,Cold Comfort,Rocket Launcher,Legendary,availability-unverified,True,False,5,True
+2287287549,Cold Comfort,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+2760833884,Cold Comfort,Rocket Launcher,Legendary,availability-unverified,True,True,0,True
+1817605554,Cold Comfort (Adept),Rocket Launcher,Legendary,source-indicated,True,True,0,True
+2126543269,Cold Comfort (Adept),Rocket Launcher,Legendary,availability-unverified,True,True,0,True
+2149166939,Countess SA/2,Rocket Launcher,Legendary,source-indicated,False,False,1,False
+1151307006,Crowning Duologue,Rocket Launcher,Legendary,availability-unverified,True,False,5,True
+3256453690,Crowning Duologue,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+4106757302,Crowning Duologue,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+391069235,Crux Celeritas IV,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+2846261712,Crux Celeritas IV,Rocket Launcher,Legendary,availability-unverified,True,False,5,True
+1719687748,Crux Termination IV,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+137879537,Curtain Call,Rocket Launcher,Legendary,source-indicated,False,False,1,False
+694275488,Cynosure,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+2511482352,Cynosure,Rocket Launcher,Legendary,availability-unverified,True,True,0,True
+2827141087,Cynosure,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+4195186942,Faith-Keeper,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+2725894221,Folded Root,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+3184457500,Folded Root,Rocket Launcher,Legendary,availability-unverified,True,False,5,True
+3184457501,Folded Root,Rocket Launcher,Legendary,availability-unverified,True,False,5,True
+3184457502,Folded Root,Rocket Launcher,Legendary,availability-unverified,True,False,5,True
+3184457503,Folded Root,Rocket Launcher,Legendary,availability-unverified,True,False,5,True
+2155534128,Haliaetus,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+2136808079,Heretic,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+3067821200,Heretic,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+4224667951,Heretic's Fervor,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+2265407516,Hezen Vengeance,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+4050645223,Hezen Vengeance,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+1921159786,Hezen Vengeance (Timelost),Rocket Launcher,Legendary,source-indicated,True,False,5,True
+3623686757,Hezen Vengeance (Timelost),Rocket Launcher,Legendary,source-indicated,True,True,0,True
+417474224,Hoosegow,Rocket Launcher,Legendary,source-indicated,False,False,1,False
+3669616453,Hoosegow,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+2817798849,Hoosegow XE5837,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+474671201,Micromort,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+602331464,Micromort,Rocket Launcher,Legendary,availability-unverified,True,False,5,True
+602331465,Micromort,Rocket Launcher,Legendary,availability-unverified,True,False,5,True
+602331466,Micromort,Rocket Launcher,Legendary,availability-unverified,True,False,5,True
+602331467,Micromort,Rocket Launcher,Legendary,availability-unverified,True,False,5,True
+3748713779,Morrigan-D,Rocket Launcher,Legendary,source-indicated,False,False,1,False
+417474225,Mos Epoch III,Rocket Launcher,Legendary,source-indicated,False,False,1,False
+1529450902,Mos Epoch III,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+3489657138,Palmyra-B,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+3748713778,Pentatonic-48,Rocket Launcher,Legendary,source-indicated,False,False,1,False
+4095462486,Pit Launcher,Rocket Launcher,Legendary,source-indicated,False,False,1,False
+1289324202,Pyroclastic Flow,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+3161496501,Pyroclastic Flow,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+3175851496,Red Herring,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+308332265,Roar of the Bear,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+2231910050,Roar of the Bear,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+2881109029,Roar of the Bear,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+4009352833,Roar of the Bear,Rocket Launcher,Legendary,availability-unverified,True,False,5,True
+2448907086,Royal Entry,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+2544285846,Scipio-D,Rocket Launcher,Legendary,source-indicated,False,False,1,False
+2922749929,Semiotician,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+136525518,Shining Sphere,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+432716552,Shining Sphere,Rocket Launcher,Legendary,source-indicated,False,False,1,False
+3691881271,Sins of the Past,Rocket Launcher,Legendary,source-indicated,True,False,2,True
+1738552769,Sleepless,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+2140635451,Sleepless,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+3740842661,Sleepless,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+42351395,Subzero Salvo,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+978122008,Subzero Salvo,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+4041111172,The Button,Rocket Launcher,Legendary,source-indicated,False,False,1,False
+1692372662,The Hothead,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+3960301269,The Hothead,Rocket Launcher,Legendary,availability-unverified,True,True,0,True
+4255171531,The Hothead,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+1866778462,The Hothead (Adept),Rocket Launcher,Legendary,source-indicated,True,True,0,True
+1090936013,The When and Where,Rocket Launcher,Legendary,source-indicated,True,True,0,True
+2792181427,Tiebreaker,Rocket Launcher,Legendary,source-indicated,False,False,1,False
+958384347,Tomorrow's Answer,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+1940352487,Tomorrow's Answer,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+3009199534,Tomorrow's Answer,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+303107619,Tomorrow's Answer (Adept),Rocket Launcher,Legendary,source-indicated,True,False,5,True
+1366917989,Tomorrow's Answer (Adept),Rocket Launcher,Legendary,source-indicated,True,False,5,True
+1411084669,Zenobia-D,Rocket Launcher,Legendary,source-indicated,False,False,1,False
+3776129137,Zenobia-D,Rocket Launcher,Legendary,source-indicated,True,False,5,True
+3156551029,Admetus-D,Scout Rifle,Legendary,source-indicated,True,False,5,True
+3776430252,Admetus-D,Scout Rifle,Legendary,source-indicated,True,True,0,True
+1531295694,Adverse Possession IX,Scout Rifle,Legendary,source-indicated,False,False,1,False
+1890332078,Adverse Possession IX,Scout Rifle,Legendary,source-indicated,True,True,0,True
+2638190703,Aisha's Embrace,Scout Rifle,Legendary,source-indicated,True,True,0,True
+3709368142,Aisha's Embrace,Scout Rifle,Legendary,source-indicated,True,True,0,True
+3245493570,Aisha's Embrace (Adept),Scout Rifle,Legendary,source-indicated,True,False,5,True
+525750263,Black Scorpion-4sr,Scout Rifle,Legendary,source-indicated,True,False,5,True
+925326394,Black Scorpion-4sr,Scout Rifle,Legendary,source-indicated,False,False,1,False
+717150101,BrayTech RWP Mk. II,Scout Rifle,Legendary,source-indicated,False,False,1,False
+2779821308,Brya's Love,Scout Rifle,Legendary,source-indicated,True,True,0,True
+1885753222,Call to Serve,Scout Rifle,Legendary,source-indicated,False,False,1,False
+2338088853,Calusea Noblesse,Scout Rifle,Legendary,source-indicated,True,False,5,True
+3906942101,Conspirator,Scout Rifle,Legendary,source-indicated,True,False,2,True
+577528837,Contingency Plan,Scout Rifle,Legendary,source-indicated,True,True,0,True
+2625782213,Contingency Plan,Scout Rifle,Legendary,source-indicated,False,False,1,False
+2034817450,Distant Relation,Scout Rifle,Legendary,source-indicated,True,False,5,True
+2278995296,Does Not Compute,Scout Rifle,Legendary,source-indicated,True,False,5,True
+4193877020,Does Not Compute,Scout Rifle,Legendary,source-indicated,False,False,1,False
+1937552980,Doom of Chelchis,Scout Rifle,Legendary,source-indicated,True,True,0,True
+1184692845,Doom of Chelchis (Harrowed),Scout Rifle,Legendary,source-indicated,True,True,0,True
+1927800278,Eternal Blazon,Scout Rifle,Legendary,source-indicated,False,False,1,False
+3514096004,Eternal Blazon,Scout Rifle,Legendary,source-indicated,True,True,0,True
+1432682459,Fang of Ir Yût,Scout Rifle,Legendary,source-indicated,True,True,0,True
+128782990,Fang of Ir Yût (Adept),Scout Rifle,Legendary,source-indicated,True,True,0,True
+1197073834,Forced Memorializer,Scout Rifle,Legendary,source-indicated,True,False,5,True
+273396910,Frontier Justice,Scout Rifle,Legendary,source-indicated,False,False,1,False
+3005104939,Frostmire's Hex,Scout Rifle,Legendary,source-indicated,False,False,1,False
+472169727,Garden Progeny 1,Scout Rifle,Legendary,source-indicated,False,False,1,False
+222606050,Glissando-47,Scout Rifle,Legendary,source-indicated,True,True,0,True
+3156551028,Glissando-47,Scout Rifle,Legendary,source-indicated,True,False,5,True
+3435238843,Good Counsel IX,Scout Rifle,Legendary,source-indicated,False,False,1,False
+2625782212,Haunted Earth,Scout Rifle,Legendary,source-indicated,False,False,1,False
+205225492,Hung Jury SR4,Scout Rifle,Legendary,availability-unverified,True,True,0,True
+697459665,Hung Jury SR4,Scout Rifle,Legendary,source-indicated,True,True,0,True
+772231794,Hung Jury SR4,Scout Rifle,Legendary,availability-unverified,True,True,0,True
+1453235079,Hung Jury SR4,Scout Rifle,Legendary,source-indicated,True,True,0,True
+3832743906,Hung Jury SR4,Scout Rifle,Legendary,source-indicated,True,True,0,True
+4281371574,Hung Jury SR4,Scout Rifle,Legendary,availability-unverified,True,False,5,True
+681067419,Hung Jury SR4 (Adept),Scout Rifle,Legendary,availability-unverified,True,False,5,True
+2883684343,Hung Jury SR4 (Adept),Scout Rifle,Legendary,source-indicated,True,True,0,True
+4074251943,Hung Jury SR4 (Adept),Scout Rifle,Legendary,availability-unverified,True,True,0,True
+2045811635,Imperative,Scout Rifle,Legendary,source-indicated,True,True,0,True
+2314999489,Imperative,Scout Rifle,Legendary,source-indicated,True,False,5,True
+2776506837,Inbound Surveillance,Scout Rifle,Legendary,source-indicated,True,True,0,True
+1851521408,Jararaca-3sr,Scout Rifle,Legendary,source-indicated,True,True,0,True
+4090134063,Jurisprudent,Scout Rifle,Legendary,source-indicated,True,False,5,True
+542573208,Last Rite,Scout Rifle,Legendary,source-indicated,True,True,0,True
+3708636616,Last Rite,Scout Rifle,Legendary,source-indicated,True,False,5,True
+3156551031,Live Fire,Scout Rifle,Legendary,source-indicated,True,False,5,True
+3612142623,Live Fire,Scout Rifle,Legendary,source-indicated,True,True,0,True
+8293111,Long Arm,Scout Rifle,Legendary,availability-unverified,True,True,0,True
+14929251,Long Arm,Scout Rifle,Legendary,availability-unverified,True,True,0,True
+3418719964,Long Arm,Scout Rifle,Legendary,source-indicated,True,False,5,True
+4249949938,Long Arm,Scout Rifle,Legendary,source-indicated,True,True,0,True
+3692140710,Long Arm (Adept),Scout Rifle,Legendary,availability-unverified,True,True,0,True
+4239378215,Long Arm (Adept),Scout Rifle,Legendary,source-indicated,True,True,0,True
+925326393,Manannan SR4,Scout Rifle,Legendary,source-indicated,False,False,1,False
+3434629515,Metronome-52,Scout Rifle,Legendary,source-indicated,False,False,1,False
+3425561386,Motion to Compel,Scout Rifle,Legendary,source-indicated,True,False,2,True
+996109059,Nameless Midnight,Scout Rifle,Legendary,source-indicated,True,True,0,True
+1957301533,Nameless Midnight,Scout Rifle,Legendary,source-indicated,True,True,0,True
+1960218487,Nameless Midnight,Scout Rifle,Legendary,source-indicated,False,False,1,False
+3040742682,Nameless Midnight,Scout Rifle,Legendary,source-indicated,True,False,5,True
+3470514298,Nameless Midnight,Scout Rifle,Legendary,availability-unverified,True,False,5,True
+2639921391,Nature Reclaimed,Scout Rifle,Legendary,source-indicated,True,True,0,True
+1350102270,Niflheim Frost,Scout Rifle,Legendary,source-indicated,True,False,2,True
+2916547559,Night Watch,Scout Rifle,Legendary,source-indicated,True,False,5,True
+3504336176,Night Watch,Scout Rifle,Legendary,source-indicated,True,False,5,True
+1271275406,No Feelings,Scout Rifle,Legendary,source-indicated,True,True,0,True
+1931556011,No Feelings,Scout Rifle,Legendary,source-indicated,True,True,0,True
+2979764077,No Feelings,Scout Rifle,Legendary,availability-unverified,True,True,0,True
+444627789,Oxygen SR3,Scout Rifle,Legendary,availability-unverified,True,True,0,True
+3907337522,Oxygen SR3,Scout Rifle,Legendary,source-indicated,False,False,1,False
+4104613038,Oxygen SR3,Scout Rifle,Legendary,source-indicated,True,True,0,True
+2249996761,Patron of Lost Causes,Scout Rifle,Legendary,source-indicated,True,True,0,True
+2723241847,Patron of Lost Causes,Scout Rifle,Legendary,source-indicated,True,False,5,True
+3156551030,Patron of Lost Causes,Scout Rifle,Legendary,source-indicated,True,False,5,True
+1019000888,Perses-D,Scout Rifle,Legendary,source-indicated,True,True,0,True
+1342668638,Pleiades Corrector,Scout Rifle,Legendary,source-indicated,False,False,1,False
+3556999246,Pleiades Corrector,Scout Rifle,Legendary,source-indicated,True,True,0,True
+297296830,Pointed Inquiry,Scout Rifle,Legendary,source-indicated,True,True,0,True
+2516360525,Purpose,Scout Rifle,Legendary,source-indicated,True,False,2,True
+3292795429,Randy's Throwing Knife,Scout Rifle,Legendary,source-indicated,True,True,0,True
+3535742959,Randy's Throwing Knife,Scout Rifle,Legendary,source-indicated,True,False,4,True
+3975115486,Randy's Throwing Knife,Scout Rifle,Legendary,availability-unverified,True,False,5,True
+4176824345,Randy's Throwing Knife,Scout Rifle,Legendary,source-indicated,True,False,5,True
+736362511,Red Tape,Scout Rifle,Legendary,source-indicated,True,True,0,True
+3423493037,Red Tape,Scout Rifle,Legendary,source-indicated,True,False,5,True
+2776503072,Royal Chase,Scout Rifle,Legendary,source-indicated,True,True,0,True
+1107446438,Servant Leader,Scout Rifle,Legendary,source-indicated,True,True,0,True
+1885753220,Seven-Six-Five,Scout Rifle,Legendary,source-indicated,False,False,1,False
+3435238842,Song of Justice VI,Scout Rifle,Legendary,source-indicated,False,False,1,False
+4019668921,Staccato-46,Scout Rifle,Legendary,source-indicated,True,True,0,True
+1674692344,Sublimation,Scout Rifle,Legendary,source-indicated,True,False,5,True
+1982711279,Talons of the Eagle,Scout Rifle,Legendary,source-indicated,True,True,0,True
+925326392,Tango-45,Scout Rifle,Legendary,source-indicated,False,False,1,False
+20025671,Tango-45 XK5094,Scout Rifle,Legendary,source-indicated,True,False,5,True
+1389546626,Taraxippos,Scout Rifle,Legendary,source-indicated,True,True,0,True
+2595813005,Taraxippos,Scout Rifle,Legendary,source-indicated,True,False,5,True
+3007479950,Taraxippos,Scout Rifle,Legendary,source-indicated,True,False,5,True
+4148460558,Taraxippos,Scout Rifle,Legendary,availability-unverified,True,False,5,True
+2218569744,Tarnished Mettle,Scout Rifle,Legendary,source-indicated,True,True,0,True
+1366394399,Tears of Contrition,Scout Rifle,Legendary,source-indicated,True,True,0,True
+541053086,Telemachus-C,Scout Rifle,Legendary,source-indicated,False,False,1,False
+3501969491,The Cut and Run,Scout Rifle,Legendary,source-indicated,True,False,5,True
+3826803617,The Dream,Scout Rifle,Legendary,source-indicated,False,False,1,False
+1825472717,The End,Scout Rifle,Legendary,source-indicated,True,False,2,True
+417100299,The Guiding Sight,Scout Rifle,Legendary,source-indicated,True,True,0,True
+1161561386,The Guiding Sight,Scout Rifle,Legendary,availability-unverified,True,False,5,True
+1641430382,The Guiding Sight,Scout Rifle,Legendary,source-indicated,True,True,0,True
+3890960908,The Guiding Sight,Scout Rifle,Legendary,source-indicated,False,False,1,False
+1968410628,The Prophet,Scout Rifle,Legendary,source-indicated,True,True,0,True
+3019024381,The Prophet (Adept),Scout Rifle,Legendary,source-indicated,True,False,5,True
+2478792241,The Scholar,Scout Rifle,Legendary,source-indicated,True,False,5,True
+3790632261,The Scholar,Scout Rifle,Legendary,source-indicated,True,True,0,True
+2386979999,The Scholar (Adept),Scout Rifle,Legendary,source-indicated,True,False,5,True
+1058098236,Timeworn Wayfarer,Scout Rifle,Legendary,source-indicated,True,True,0,True
+1885753223,Tone Patrol,Scout Rifle,Legendary,source-indicated,False,False,1,False
+3799980700,Transfiguration,Scout Rifle,Legendary,source-indicated,True,False,5,True
+3885259140,Transfiguration,Scout Rifle,Legendary,availability-unverified,True,False,5,True
+1392919471,Trustee,Scout Rifle,Legendary,source-indicated,True,True,0,True
+1700366811,Unworthy,Scout Rifle,Legendary,source-indicated,True,True,0,True
+2226158470,Unworthy,Scout Rifle,Legendary,availability-unverified,True,True,0,True
+1159252500,Vacuna SR4,Scout Rifle,Legendary,source-indicated,False,False,1,False
+3186018373,Vision of Confluence,Scout Rifle,Legendary,source-indicated,True,True,0,True
+3444688218,Vision of Confluence,Scout Rifle,Legendary,source-indicated,True,True,0,True
+337578911,Vision of Confluence (Timelost),Scout Rifle,Legendary,source-indicated,True,True,0,True
+690668916,Vision of Confluence (Timelost),Scout Rifle,Legendary,source-indicated,True,False,5,True
+71057630,Voltaic Shade,Scout Rifle,Legendary,source-indicated,True,True,0,True
+355922321,Vouchsafe,Scout Rifle,Legendary,source-indicated,True,True,0,True
+3218302023,Vouchsafe,Scout Rifle,Legendary,source-indicated,True,True,0,True
+3242168339,Vouchsafe,Scout Rifle,Legendary,source-indicated,True,True,0,True
+3957603605,Wrong Side of Right,Scout Rifle,Legendary,source-indicated,True,False,5,True
+1879212552,A Sudden Death,Shotgun,Legendary,source-indicated,True,False,2,True
+1904170910,A Sudden Death,Shotgun,Legendary,availability-unverified,True,True,0,True
+1976481399,A Sudden Death,Shotgun,Legendary,source-indicated,True,True,0,True
+2489016648,A Sudden Death,Shotgun,Legendary,availability-unverified,True,True,0,True
+2855157553,A Sudden Death,Shotgun,Legendary,source-indicated,True,False,5,True
+4097972038,A Sudden Death,Shotgun,Legendary,availability-unverified,True,True,0,True
+1626437786,A Sudden Death (Adept),Shotgun,Legendary,source-indicated,True,True,0,True
+2764074355,A Sudden Death (Adept),Shotgun,Legendary,availability-unverified,True,True,0,True
+1813474267,Arcane Embrace,Shotgun,Legendary,availability-unverified,True,True,0,True
+3328019216,Arcane Embrace,Shotgun,Legendary,availability-unverified,True,True,0,True
+3649985571,Arcane Embrace,Shotgun,Legendary,source-indicated,True,True,0,True
+1697682876,Astral Horizon,Shotgun,Legendary,availability-unverified,True,False,5,True
+2269779982,Astral Horizon,Shotgun,Legendary,source-indicated,True,True,0,True
+2653171213,Astral Horizon,Shotgun,Legendary,source-indicated,True,False,5,True
+532746994,Astral Horizon (Adept),Shotgun,Legendary,availability-unverified,True,False,5,True
+854379020,Astral Horizon (Adept),Shotgun,Legendary,source-indicated,True,False,5,True
+1327264046,Badlander,Shotgun,Legendary,source-indicated,True,False,5,True
+731147179,Baligant,Shotgun,Legendary,source-indicated,False,False,1,False
+3461377698,Baligant XU7743,Shotgun,Legendary,source-indicated,True,False,5,True
+2928437919,Basilisk,Shotgun,Legendary,source-indicated,False,False,1,False
+2353274446,Basso Ostinato,Shotgun,Legendary,source-indicated,True,True,0,True
+2573900604,Basso Ostinato,Shotgun,Legendary,source-indicated,True,True,0,True
+2527058297,Blasphemer,Shotgun,Legendary,source-indicated,True,True,0,True
+2782847179,Blasphemer,Shotgun,Legendary,source-indicated,True,True,0,True
+1529367715,Bonechiller,Shotgun,Legendary,source-indicated,True,False,5,True
+4037745684,Bonechiller,Shotgun,Legendary,source-indicated,True,False,5,True
+233896077,Compass Rose,Shotgun,Legendary,source-indicated,True,True,0,True
+2591111628,Compass Rose,Shotgun,Legendary,source-indicated,True,False,5,True
+2723419129,Compass Rose,Shotgun,Legendary,availability-unverified,True,True,0,True
+4169225313,Compass Rose,Shotgun,Legendary,source-indicated,True,True,0,True
+3738678140,Dead Weight,Shotgun,Legendary,source-indicated,True,True,0,True
+2035738085,Deadlock,Shotgun,Legendary,source-indicated,True,False,5,True
+3926987546,Deadlock,Shotgun,Legendary,source-indicated,True,True,0,True
+1296429091,Deadpan Delivery,Shotgun,Legendary,source-indicated,True,True,0,True
+3582424018,Deadpan Delivery,Shotgun,Legendary,source-indicated,False,False,1,False
+499245245,Ded Gramarye IV,Shotgun,Legendary,source-indicated,True,True,0,True
+870893339,Ded Gramarye IV,Shotgun,Legendary,source-indicated,True,False,5,True
+636912560,Dust Rock Blues,Shotgun,Legendary,source-indicated,True,False,5,True
+3861448240,Emperor's Courtesy,Shotgun,Legendary,source-indicated,True,False,5,True
+218787950,Felwinter's Lie,Shotgun,Legendary,source-indicated,True,True,0,True
+1179141605,Felwinter's Lie,Shotgun,Legendary,source-indicated,True,True,0,True
+515224227,"First In, Last Out",Shotgun,Legendary,source-indicated,False,False,1,False
+3616586446,"First In, Last Out",Shotgun,Legendary,source-indicated,True,True,0,True
+963732595,Fortissimo-11,Shotgun,Legendary,source-indicated,True,False,5,True
+2821430069,Fortissimo-11,Shotgun,Legendary,source-indicated,True,True,0,True
+694500607,Found Verdict,Shotgun,Legendary,source-indicated,True,True,0,True
+3197270240,Found Verdict,Shotgun,Legendary,source-indicated,True,True,0,True
+631439337,Found Verdict (Timelost),Shotgun,Legendary,source-indicated,True,True,0,True
+851296754,Found Verdict (Timelost),Shotgun,Legendary,source-indicated,True,True,0,True
+2993995118,Fractethyst,Shotgun,Legendary,availability-unverified,True,False,5,True
+3184681056,Fractethyst,Shotgun,Legendary,source-indicated,True,True,0,True
+64236626,Good Bone Structure,Shotgun,Legendary,source-indicated,True,False,5,True
+731147178,Good Bone Structure,Shotgun,Legendary,source-indicated,False,False,1,False
+1277015089,Gravity Slingshot,Shotgun,Legendary,source-indicated,False,False,1,False
+94729174,Gunnora's Axe,Shotgun,Legendary,source-indicated,False,False,1,False
+218787951,Gunnora's Axe,Shotgun,Legendary,source-indicated,True,True,0,True
+411397829,Gunnora's Axe,Shotgun,Legendary,source-indicated,True,False,5,True
+487361141,Gunnora's Axe,Shotgun,Legendary,availability-unverified,True,False,5,True
+2326716489,Gunnora's Axe,Shotgun,Legendary,source-indicated,True,False,5,True
+664109750,Hand in Hand,Shotgun,Legendary,source-indicated,True,False,5,True
+731147177,Hawthorne's Field-Forged Shotgun,Shotgun,Legendary,source-indicated,False,False,1,False
+1402874079,Hawthorne's Field-Forged Shotgun,Shotgun,Legendary,source-indicated,True,True,0,True
+1807343361,Hawthorne's Field-Forged Shotgun,Shotgun,Legendary,source-indicated,True,False,5,True
+4248569242,Heritage,Shotgun,Legendary,source-indicated,True,True,0,True
+1887808042,IKELOS_SG_v1.0.1,Shotgun,Legendary,source-indicated,True,False,2,True
+1096206669,IKELOS_SG_v1.0.2,Shotgun,Legendary,source-indicated,True,False,5,True
+1168625549,IKELOS_SG_v1.0.3,Shotgun,Legendary,source-indicated,True,True,0,True
+318443586,Imperial Decree,Shotgun,Legendary,source-indicated,True,True,0,True
+2919334548,Imperial Decree,Shotgun,Legendary,source-indicated,True,False,5,True
+755130877,Last Man Standing,Shotgun,Legendary,source-indicated,True,False,5,True
+4276696963,Last Man Standing,Shotgun,Legendary,source-indicated,True,True,0,True
+4287947559,Last Man Standing,Shotgun,Legendary,source-indicated,True,False,5,True
+3753063346,Legato-11,Shotgun,Legendary,source-indicated,True,True,0,True
+2699423382,MIDA Macro-Tool,Shotgun,Legendary,source-indicated,True,False,5,True
+1518956169,Matador 64,Shotgun,Legendary,source-indicated,True,True,0,True
+2563012876,Matador 64,Shotgun,Legendary,availability-unverified,True,False,5,True
+951529995,Mindbender's Ambition,Shotgun,Legendary,source-indicated,True,False,5,True
+1094005544,Mindbender's Ambition,Shotgun,Legendary,availability-unverified,True,False,5,True
+1586231351,Mindbender's Ambition,Shotgun,Legendary,source-indicated,True,False,5,True
+4117693024,Mindbender's Ambition,Shotgun,Legendary,source-indicated,True,False,5,True
+912150785,Mindbender's Ambition (Adept),Shotgun,Legendary,availability-unverified,True,True,0,True
+2074041946,Mindbender's Ambition (Adept),Shotgun,Legendary,source-indicated,True,False,5,True
+1018777295,Motion to Vacate,Shotgun,Legendary,source-indicated,True,False,2,True
+135029084,Nessa's Oblation,Shotgun,Legendary,source-indicated,True,False,5,True
+522366885,Nessa's Oblation (Adept),Shotgun,Legendary,source-indicated,True,False,5,True
+2531963421,No Reprieve,Shotgun,Legendary,source-indicated,True,True,0,True
+1016668089,One Small Step,Shotgun,Legendary,source-indicated,True,True,0,True
+2527058296,One Small Step,Shotgun,Legendary,source-indicated,True,True,0,True
+2217366863,Parcel of Stardust,Shotgun,Legendary,source-indicated,True,False,5,True
+1298672084,Perfect Paradox,Shotgun,Legendary,source-indicated,True,True,0,True
+2248667690,Perfect Paradox,Shotgun,Legendary,source-indicated,False,False,1,False
+3393519051,Perfect Paradox,Shotgun,Legendary,source-indicated,True,True,0,True
+4108648762,Perfect Paradox,Shotgun,Legendary,source-indicated,True,True,0,True
+367772693,Precipial,Shotgun,Legendary,source-indicated,True,False,5,True
+2145441168,Prophet of Doom,Shotgun,Legendary,source-indicated,True,False,5,True
+4020742303,Prophet of Doom,Shotgun,Legendary,source-indicated,True,False,5,True
+1956186483,Pure Recollection,Shotgun,Legendary,source-indicated,True,True,0,True
+838556752,Python,Shotgun,Legendary,source-indicated,True,True,0,True
+4276696962,Python,Shotgun,Legendary,source-indicated,True,False,5,True
+2478247171,Quitclaim Shotgun III,Shotgun,Legendary,source-indicated,False,False,1,False
+4225322581,Ragnhild-D,Shotgun,Legendary,source-indicated,True,True,0,True
+3085559077,Reckless Endangerment,Shotgun,Legendary,source-indicated,True,False,5,True
+3216652511,Reckless Endangerment,Shotgun,Legendary,source-indicated,True,True,0,True
+346136302,Retold Tale,Shotgun,Legendary,source-indicated,True,True,0,True
+871900124,Retold Tale,Shotgun,Legendary,availability-unverified,True,True,0,True
+3442151842,Retold Tale,Shotgun,Legendary,source-indicated,True,False,5,True
+1325579289,Retrofuturist,Shotgun,Legendary,source-indicated,False,False,1,False
+1402766122,Retrofuturist,Shotgun,Legendary,source-indicated,True,False,5,True
+1612781792,Retrofuturist,Shotgun,Legendary,source-indicated,True,True,0,True
+3688176697,Retrofuturist,Shotgun,Legendary,source-indicated,True,False,5,True
+108221785,Riiswalker,Shotgun,Legendary,source-indicated,True,True,0,True
+557165046,Riiswalker,Shotgun,Legendary,source-indicated,True,False,5,True
+1435062001,Riiswalker,Shotgun,Legendary,source-indicated,True,True,0,True
+1764868900,Riiswalker,Shotgun,Legendary,availability-unverified,True,False,5,True
+2913577176,Scavenger's Fate,Shotgun,Legendary,source-indicated,True,True,0,True
+1821724780,Seventh Seraph CQC-12,Shotgun,Legendary,source-indicated,True,True,0,True
+2308010345,Seventh Seraph CQC-12,Shotgun,Legendary,source-indicated,True,True,0,True
+599895591,Sojourner's Tale,Shotgun,Legendary,source-indicated,True,True,0,True
+2130875369,Sojourner's Tale,Shotgun,Legendary,source-indicated,True,True,0,True
+3232203524,Someday,Shotgun,Legendary,source-indicated,True,False,5,True
+2703340117,Somerled-D,Shotgun,Legendary,source-indicated,False,False,1,False
+3868973291,Starscape Null,Shotgun,Legendary,source-indicated,True,False,5,True
+92459755,Supercluster,Shotgun,Legendary,source-indicated,True,True,0,True
+3163900678,Swordbreaker,Shotgun,Legendary,source-indicated,True,False,5,True
+1239700299,Swordbreaker (Adept),Shotgun,Legendary,source-indicated,True,False,5,True
+1028582252,The Comedian,Shotgun,Legendary,source-indicated,True,False,5,True
+2443900757,The Comedian (Adept),Shotgun,Legendary,source-indicated,True,False,5,True
+217140611,The Deicide,Shotgun,Legendary,source-indicated,True,True,0,True
+1517780158,The Deicide,Shotgun,Legendary,source-indicated,True,True,0,True
+3929685100,The Deicide,Shotgun,Legendary,source-indicated,False,False,1,False
+51129316,The Inquisitor,Shotgun,Legendary,source-indicated,True,True,0,True
+1185633760,The Inquisitor,Shotgun,Legendary,source-indicated,True,True,0,True
+2185327324,The Inquisitor,Shotgun,Legendary,availability-unverified,True,False,5,True
+2653171212,The Inquisitor,Shotgun,Legendary,availability-unverified,True,False,5,True
+2307365,The Inquisitor (Adept),Shotgun,Legendary,availability-unverified,True,False,5,True
+825554997,The Inquisitor (Adept),Shotgun,Legendary,availability-unverified,True,False,5,True
+2330860573,The Inquisitor (Adept),Shotgun,Legendary,source-indicated,True,True,0,True
+950894542,Threat Level,Shotgun,Legendary,availability-unverified,True,True,0,True
+1523151869,Threat Level,Shotgun,Legendary,source-indicated,True,True,0,True
+1664372054,Threat Level,Shotgun,Legendary,source-indicated,True,False,5,True
+2957367743,Toil and Trouble,Shotgun,Legendary,source-indicated,True,True,0,True
+2888021252,Trachinus,Shotgun,Legendary,availability-unverified,True,False,5,True
+2888021253,Trachinus,Shotgun,Legendary,availability-unverified,True,False,5,True
+2888021254,Trachinus,Shotgun,Legendary,availability-unverified,True,False,5,True
+2888021255,Trachinus,Shotgun,Legendary,availability-unverified,True,False,5,True
+3635232671,Trachinus,Shotgun,Legendary,source-indicated,True,False,5,True
+1988218406,Unification VII,Shotgun,Legendary,source-indicated,False,False,1,False
+2883484461,Until Its Return,Shotgun,Legendary,source-indicated,True,True,0,True
+2213885190,Unvoiced,Shotgun,Legendary,source-indicated,True,True,0,True
+3360937899,Unvoiced,Shotgun,Legendary,availability-unverified,True,True,0,True
+1679868061,Wastelander M5,Shotgun,Legendary,source-indicated,True,True,0,True
+3190698551,Wishbringer,Shotgun,Legendary,source-indicated,False,False,1,False
+3356526253,Wishbringer,Shotgun,Legendary,source-indicated,True,True,0,True
+1478986057,Without Remorse,Shotgun,Legendary,source-indicated,True,True,0,True
+963732594,Xenoclast IV,Shotgun,Legendary,source-indicated,True,False,5,True
+2891672170,Xenoclast IV,Shotgun,Legendary,source-indicated,True,True,0,True
+2707464805,Zenith of Your Kind,Shotgun,Legendary,source-indicated,True,False,2,True
+1798874854,18 Kelvins,Sidearm,Legendary,source-indicated,True,False,2,True
+1626503676,A Swift Verdict,Sidearm,Legendary,source-indicated,True,False,5,True
+3854037061,A Swift Verdict,Sidearm,Legendary,source-indicated,True,False,2,True
+2198166292,Aberrant Action,Sidearm,Legendary,source-indicated,True,True,0,True
+247984830,Allied Demand,Sidearm,Legendary,source-indicated,True,True,0,True
+982229638,Allied Demand,Sidearm,Legendary,source-indicated,False,False,1,False
+1532276803,Allied Demand,Sidearm,Legendary,availability-unverified,True,False,5,True
+3166250992,Allied Demand,Sidearm,Legendary,source-indicated,True,False,5,True
+1051949956,Anonymous Autumn,Sidearm,Legendary,source-indicated,True,True,0,True
+1644501332,Anonymous Autumn,Sidearm,Legendary,source-indicated,True,True,0,True
+3222518097,Anonymous Autumn,Sidearm,Legendary,source-indicated,True,False,5,True
+1533499360,Athelflad-D,Sidearm,Legendary,source-indicated,False,False,1,False
+1916287826,Boudica-C,Sidearm,Legendary,source-indicated,True,True,0,True
+1291040554,Brass Attacks,Sidearm,Legendary,source-indicated,True,True,0,True
+2121785039,Brass Attacks,Sidearm,Legendary,source-indicated,True,True,0,True
+1289997971,Breachlight,Sidearm,Legendary,source-indicated,True,False,5,True
+2328923181,Breachlight,Sidearm,Legendary,source-indicated,True,True,0,True
+1298815317,Brigand's Law,Sidearm,Legendary,source-indicated,True,True,0,True
+213264394,Buzzard,Sidearm,Legendary,source-indicated,True,False,5,True
+805677041,Buzzard,Sidearm,Legendary,source-indicated,True,False,4,True
+4237970862,Buzzard,Sidearm,Legendary,source-indicated,True,False,5,True
+927835311,Buzzard (Adept),Sidearm,Legendary,source-indicated,True,False,5,True
+2659286158,Compact Defender,Sidearm,Legendary,availability-unverified,True,True,0,True
+2819552809,Compact Defender,Sidearm,Legendary,source-indicated,True,True,0,True
+48361212,Controlling Vision,Sidearm,Legendary,source-indicated,False,False,1,False
+423343404,Controlling Vision,Sidearm,Legendary,source-indicated,True,True,0,True
+1911843790,Dead Man Walking,Sidearm,Legendary,source-indicated,False,False,1,False
+3751622019,Dead Man Walking XX7463,Sidearm,Legendary,source-indicated,True,False,5,True
+3334276333,Death by Scorn,Sidearm,Legendary,source-indicated,True,False,2,True
+2903168058,Division,Sidearm,Legendary,source-indicated,True,True,0,True
+2992463569,Division,Sidearm,Legendary,availability-unverified,True,True,0,True
+2501377328,Division (Adept),Sidearm,Legendary,availability-unverified,True,True,0,True
+3734001727,Division (Adept),Sidearm,Legendary,source-indicated,True,True,0,True
+358190158,Drang,Sidearm,Legendary,source-indicated,True,True,0,True
+2362471600,Drang,Sidearm,Legendary,source-indicated,False,False,1,False
+79075821,Drang (Baroque),Sidearm,Legendary,source-indicated,True,False,5,True
+502356570,Drang (Baroque),Sidearm,Legendary,source-indicated,True,True,0,True
+48361213,Eleventh Hour,Sidearm,Legendary,source-indicated,False,False,1,False
+2607304614,Empirical Evidence,Sidearm,Legendary,source-indicated,True,True,0,True
+1723380073,Enigma's Draw,Sidearm,Legendary,source-indicated,True,True,0,True
+2581162758,Enigma's Draw,Sidearm,Legendary,source-indicated,False,False,1,False
+1533499361,Etana SI4,Sidearm,Legendary,source-indicated,False,False,1,False
+2812672357,Eulogy SI4,Sidearm,Legendary,source-indicated,False,False,1,False
+1763361847,Evening SI4,Sidearm,Legendary,source-indicated,True,True,0,True
+3618823368,Evening SI4,Sidearm,Legendary,availability-unverified,True,True,0,True
+541188001,Farewell,Sidearm,Legendary,source-indicated,True,True,0,True
+1663482635,Faustus Decline,Sidearm,Legendary,source-indicated,True,False,5,True
+2645567209,Fimbulwinter Stitch,Sidearm,Legendary,availability-unverified,True,True,0,True
+3685829362,Fimbulwinter Stitch,Sidearm,Legendary,source-indicated,True,True,0,True
+2566006935,Fioritura-59,Sidearm,Legendary,source-indicated,True,True,0,True
+1552443158,Forgiveness,Sidearm,Legendary,source-indicated,True,True,0,True
+2345794502,Forgiveness,Sidearm,Legendary,source-indicated,True,True,0,True
+2405619467,Forgiveness (Adept),Sidearm,Legendary,source-indicated,True,False,5,True
+1291040555,Heliocentric QSc,Sidearm,Legendary,source-indicated,True,True,0,True
+3998080529,Heliocentric QSc,Sidearm,Legendary,source-indicated,True,True,0,True
+1197486957,High Albedo,Sidearm,Legendary,source-indicated,True,True,0,True
+2662459958,High Albedo,Sidearm,Legendary,source-indicated,True,True,0,True
+2554513694,Indebted Kindness,Sidearm,Legendary,source-indicated,True,True,0,True
+3381450498,Indebted Kindness,Sidearm,Legendary,availability-unverified,True,True,0,True
+414045521,Insurmountable,Sidearm,Legendary,source-indicated,True,True,0,True
+2596736862,Insurmountable,Sidearm,Legendary,source-indicated,True,True,0,True
+227548887,Interregnum XVI,Sidearm,Legendary,source-indicated,False,False,1,False
+1911843791,Last Hope,Sidearm,Legendary,source-indicated,False,False,1,False
+3622137132,Last Hope,Sidearm,Legendary,source-indicated,True,False,5,True
+2084611899,Last of the Legion,Sidearm,Legendary,source-indicated,True,False,2,True
+355893876,Liminal Vigil,Sidearm,Legendary,source-indicated,True,False,5,True
+1460079227,Liminal Vigil,Sidearm,Legendary,availability-unverified,True,True,0,True
+2575844666,Liminal Vigil,Sidearm,Legendary,source-indicated,True,True,0,True
+3138208275,Liminal Vigil,Sidearm,Legendary,availability-unverified,True,True,0,True
+1905934655,Liminal Vigil (Adept),Sidearm,Legendary,source-indicated,True,True,0,True
+3421639790,Liminal Vigil (Adept),Sidearm,Legendary,availability-unverified,True,True,0,True
+843171043,Lonesome,Sidearm,Legendary,source-indicated,True,False,5,True
+2199171672,Lonesome,Sidearm,Legendary,source-indicated,True,False,5,True
+837298567,Lotus-Eater,Sidearm,Legendary,availability-unverified,True,True,0,True
+924095500,Lotus-Eater,Sidearm,Legendary,source-indicated,True,True,0,True
+3922217119,Lotus-Eater,Sidearm,Legendary,source-indicated,True,True,0,True
+2697143634,Lotus-Eater (Adept),Sidearm,Legendary,source-indicated,True,True,0,True
+1911843789,Minimum Distance,Sidearm,Legendary,source-indicated,False,False,1,False
+231031173,Mykel's Reverence,Sidearm,Legendary,source-indicated,True,False,5,True
+1986287028,Mykel's Reverence (Adept),Sidearm,Legendary,source-indicated,True,False,5,True
+806021398,Peace by Consensus,Sidearm,Legendary,source-indicated,False,False,1,False
+247984829,Peacebond,Sidearm,Legendary,source-indicated,True,True,0,True
+829330711,Peacebond,Sidearm,Legendary,availability-unverified,True,True,0,True
+3437370193,Peacebond,Sidearm,Legendary,source-indicated,True,True,0,True
+378498222,Punching Out,Sidearm,Legendary,source-indicated,True,True,0,True
+1409524486,Punching Out,Sidearm,Legendary,availability-unverified,True,True,0,True
+1469372193,Punching Out,Sidearm,Legendary,source-indicated,True,True,0,True
+1687353095,Redback-5si,Sidearm,Legendary,source-indicated,True,True,0,True
+4049127142,Returned Memory,Sidearm,Legendary,source-indicated,True,True,0,True
+5159537,Senuna SI6,Sidearm,Legendary,source-indicated,True,True,0,True
+453798564,Seventh Seraph SI-2,Sidearm,Legendary,source-indicated,True,True,0,True
+3937866388,Seventh Seraph SI-2,Sidearm,Legendary,source-indicated,True,False,5,True
+1843044399,Smuggler's Word,Sidearm,Legendary,source-indicated,True,False,5,True
+819358961,Spoiler Alert,Sidearm,Legendary,source-indicated,False,False,1,False
+2588048270,Spoiler Alert,Sidearm,Legendary,source-indicated,True,True,0,True
+4045298482,Spoiler Alert,Sidearm,Legendary,source-indicated,True,False,5,True
+1084788061,Swift Solstice,Sidearm,Legendary,source-indicated,False,False,1,False
+3947966653,The Call,Sidearm,Legendary,source-indicated,True,True,0,True
+65611680,The Fool's Remedy,Sidearm,Legendary,source-indicated,True,True,0,True
+3424403076,The Fool's Remedy,Sidearm,Legendary,source-indicated,False,False,1,False
+409551876,The Keening,Sidearm,Legendary,source-indicated,True,True,0,True
+2839128618,The Keening,Sidearm,Legendary,availability-unverified,True,True,0,True
+3902351469,The Keening,Sidearm,Legendary,source-indicated,True,True,0,True
+2009277538,The Last Dance,Sidearm,Legendary,source-indicated,True,False,5,True
+3967155859,The Last Dance,Sidearm,Legendary,source-indicated,False,False,1,False
+4045298483,The Last Dance,Sidearm,Legendary,source-indicated,True,False,5,True
+1911843788,The Rattler,Sidearm,Legendary,source-indicated,False,False,1,False
+293505772,The Vision,Sidearm,Legendary,source-indicated,False,False,1,False
+2414141462,The Vision,Sidearm,Legendary,source-indicated,True,True,0,True
+1648316470,Timecard,Sidearm,Legendary,availability-unverified,False,False,1,False
+247984828,Tinasha's Mastery,Sidearm,Legendary,source-indicated,True,True,0,True
+480368036,Tinasha's Mastery,Sidearm,Legendary,source-indicated,True,True,0,True
+1843044398,Translation Theory,Sidearm,Legendary,source-indicated,True,False,5,True
+2091737595,Traveler's Judgment 5,Sidearm,Legendary,source-indicated,False,False,1,False
+4149758318,Traveler's Judgment 5,Sidearm,Legendary,source-indicated,True,True,0,True
+738446555,Unfall,Sidearm,Legendary,source-indicated,True,True,0,True
+1533499362,Urchin-3si,Sidearm,Legendary,source-indicated,False,False,1,False
+2812672356,Vertical Orbit QSm,Sidearm,Legendary,source-indicated,False,False,1,False
+3334276332,Vestian Dynasty,Sidearm,Legendary,source-indicated,False,False,1,False
+1648948519,1000 Yard Stare,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+4164201232,1000 Yard Stare,Sniper Rifle,Legendary,availability-unverified,True,False,5,True
+1769847435,A Distant Pull,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+3312073052,A Single Clap,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+423677697,ALLEN 05,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+891765152,Adored,Sniper Rifle,Legendary,availability-unverified,True,True,0,True
+1405095983,Adored,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+4184808992,Adored,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+676270382,Albruna-D,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+353884603,Alone as a god,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+3380742308,Alone as a god,Sniper Rifle,Legendary,source-indicated,True,False,2,True
+4278664152,Alone as a god,Sniper Rifle,Legendary,availability-unverified,True,False,5,True
+905092001,Anniella,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+846241149,Apostate,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+2164448701,Apostate,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+1940885628,Archimedes Truth,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+2295941920,Belfry Bounty,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+3107853529,Beloved,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+4190932264,Beloved,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+1403800851,Bite of the Fox,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+2851703775,Bite of the Fox,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+3169616514,Bite of the Fox,Sniper Rifle,Legendary,availability-unverified,True,False,5,True
+4062069077,Conspiracy Honed,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+3666954561,Copperhead-4sn,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+445197843,Critical Anomaly,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+172461430,Critical Anomaly (Adept),Sniper Rifle,Legendary,source-indicated,True,True,0,True
+3228096719,Defiance of Yasmin,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+3503019618,Defiance of Yasmin (Harrowed),Sniper Rifle,Legendary,source-indicated,True,False,5,True
+2738174948,Distant Tumulus,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+2807687156,Distant Tumulus,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+3100452337,Dreaded Venture,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+1873270090,Elegy-49,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+3666954563,Elegy-49,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+2821677368,Embraced Identity,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+3272713429,Eye of Foresight,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+627188188,Eye of Sol,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+1401300690,Eye of Sol,Sniper Rifle,Legendary,availability-unverified,True,False,5,True
+2499834165,Eye of Sol,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+3164743584,Eye of Sol,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+1321626661,Eye of Sol (Adept),Sniper Rifle,Legendary,source-indicated,True,False,5,True
+2059255495,Eye of Sol (Adept),Sniper Rifle,Legendary,availability-unverified,True,False,5,True
+3637570176,Eye of Sol (Adept),Sniper Rifle,Legendary,source-indicated,True,False,5,True
+893527433,Far Future,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+1684914716,Fate Cries Foul,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+3865728990,Father's Sins,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+232119851,Frozen Orbit,Sniper Rifle,Legendary,availability-unverified,True,False,5,True
+1516542120,Frozen Orbit,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+3473290087,Frozen Orbit,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+2233545123,Fugue-55,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+617501162,Gallu RR3,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+2660862359,Gentleman Vagabond,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+847450546,IKELOS_SR_v1.0.1,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+1253087083,IKELOS_SR_v1.0.2,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+2302346155,IKELOS_SR_v1.0.3,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+2673925403,Irukandji,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+1893967086,Keen Thistle,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+2499834164,Keen Thistle,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+3503560035,Keen Thistle (Adept),Sniper Rifle,Legendary,source-indicated,True,True,0,True
+688593230,Lance Ephemeral,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+1106635211,Last Foray,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+4118936670,Last Foray,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+4132072834,Locus Locutus,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+3745990145,Long Shadow,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+1948035256,Luna Regolith III,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+2295941921,Maestro-46,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+3239754990,Maxim XI,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+1280894514,Mechabre,Sniper Rifle,Legendary,availability-unverified,True,True,0,True
+2477980485,Mechabre,Sniper Rifle,Legendary,availability-unverified,True,True,0,True
+3023280734,Mechabre,Sniper Rifle,Legendary,availability-unverified,True,False,5,True
+3871226707,Mechabre,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+2073794990,Mercurial Overreach,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+4257236930,Mercurial Overreach,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+2806569825,Naeem's Lance,Sniper Rifle,Legendary,availability-unverified,True,True,0,True
+4119503981,Naeem's Lance,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+852551895,Occluded Finality,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+3104013318,Occluded Finality,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+3434507093,Occluded Finality,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+147444292,Omniscient Eye,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+3454326177,Omniscient Eye,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+781498181,Persuader,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+2290863050,Persuader,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+4083045006,Persuader,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+3653573172,Praedyth's Revenge,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+3844610113,Praedyth's Revenge,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+1987769101,Praedyth's Revenge (Timelost),Sniper Rifle,Legendary,source-indicated,True,False,5,True
+2362652544,Praedyth's Revenge (Timelost),Sniper Rifle,Legendary,source-indicated,True,True,0,True
+3448712083,Rapid Growth,Sniper Rifle,Legendary,availability-unverified,True,True,0,True
+3856342856,Rapid Growth,Sniper Rifle,Legendary,availability-unverified,True,True,0,True
+593808239,Refurbished A499,Sniper Rifle,Legendary,availability-unverified,True,True,0,True
+3661051060,Refurbished A499,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+654608616,Revoker,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+3312073053,Shepherd's Watch,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+3743729616,Shepherd's Watch,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+1193318082,Shoreline Dissident,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+3312073054,Show of Force,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+4148143418,Show of Force XF4865,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+990416096,Silicon Neuroma,Sniper Rifle,Legendary,source-indicated,True,False,2,True
+3355385170,Silicon Neuroma,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+1387987271,Silicon Neuroma (Adept),Sniper Rifle,Legendary,source-indicated,True,False,5,True
+1115104187,Sole Survivor,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+1150492185,Sole Survivor,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+2920648677,Sole Survivor,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+690412397,Something Something,Sniper Rifle,Legendary,availability-unverified,True,True,0,True
+3421075982,Something Something,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+3818198556,Sovereignty,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+570866107,Succession,Sniper Rifle,Legendary,availability-unverified,True,True,0,True
+2731922624,Succession,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+2990047042,Succession,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+3612338554,Succession,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+1449922174,Tatara Gaze,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+2531614757,Tatara Gaze,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+3595694326,Tatara Gaze,Sniper Rifle,Legendary,availability-unverified,True,False,5,True
+2800870005,The Domino,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+4272442416,The Domino,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+689453941,The Frigid Jackal,Sniper Rifle,Legendary,source-indicated,True,False,2,True
+2325078119,The Helmsman,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+3215649176,The Helmsman,Sniper Rifle,Legendary,availability-unverified,True,True,0,True
+2154059444,The Long Goodbye,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+174804902,The Long Walk,Sniper Rifle,Legendary,source-indicated,True,False,2,True
+3326850591,The Long Walk,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+2535939781,The Mornin' Comes,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+686951703,The Supremacy,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+2884596447,The Supremacy,Sniper Rifle,Legendary,availability-unverified,True,False,5,True
+4067556514,Thoughtless,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+846241148,Tranquility,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+1645386487,Tranquility,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+2566169398,Trophy Hunter,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+4166221755,Trophy Hunter,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+268357178,Twilight Oath,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+1874424704,Twilight Oath,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+3297863558,Twilight Oath,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+42874240,Uzume RR4,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+2065081837,Uzume RR4,Sniper Rifle,Legendary,availability-unverified,True,True,0,True
+2450917538,Uzume RR4,Sniper Rifle,Legendary,availability-unverified,True,False,5,True
+4037675261,Uzume RR4,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+852228780,Uzume RR4 (Adept),Sniper Rifle,Legendary,availability-unverified,True,False,5,True
+1891996599,Uzume RR4 (Adept),Sniper Rifle,Legendary,availability-unverified,True,False,5,True
+3610521673,Uzume RR4 (Adept),Sniper Rifle,Legendary,source-indicated,True,False,5,True
+3666954562,Veleda-D,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+4200122994,Veleda-F,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+3920310144,Volta Bracket,Sniper Rifle,Legendary,source-indicated,True,True,0,True
+1271343896,Widow's Bite,Sniper Rifle,Legendary,source-indicated,True,False,5,True
+3312073055,Widow's Bite,Sniper Rifle,Legendary,source-indicated,False,False,1,False
+140914741,Adjudicator,Submachine Gun,Legendary,source-indicated,True,True,0,True
+1013434963,Adjudicator,Submachine Gun,Legendary,availability-unverified,True,False,5,True
+2094938673,Adjudicator,Submachine Gun,Legendary,source-indicated,True,False,2,True
+1435808083,Antedate,Submachine Gun,Legendary,source-indicated,True,False,5,True
+566976653,Antiope-D,Submachine Gun,Legendary,source-indicated,False,False,1,False
+2561659919,Antiope-D,Submachine Gun,Legendary,source-indicated,True,False,5,True
+2414612777,Atalanta-D,Submachine Gun,Legendary,source-indicated,False,False,1,False
+2422664927,Atalanta-D XG1992,Submachine Gun,Legendary,source-indicated,True,False,5,True
+2105827099,Bad Reputation,Submachine Gun,Legendary,source-indicated,True,False,5,True
+516243773,Beidenhander,Submachine Gun,Legendary,source-indicated,False,False,1,False
+1509167284,Blood Feud,Submachine Gun,Legendary,source-indicated,True,True,0,True
+32287609,Boondoggle Mk. 55,Submachine Gun,Legendary,source-indicated,True,True,0,True
+875848769,Borrowed Time,Submachine Gun,Legendary,source-indicated,True,True,0,True
+1357080535,Breath of the Dragon,Submachine Gun,Legendary,source-indicated,True,False,5,True
+2744715540,Bug-Out Bag,Submachine Gun,Legendary,source-indicated,True,False,5,True
+2832639510,Bug-Out Bag,Submachine Gun,Legendary,source-indicated,True,False,5,True
+3327901954,Bug-Out Bag,Submachine Gun,Legendary,source-indicated,True,True,0,True
+174192097,CALUS Mini-Tool,Submachine Gun,Legendary,source-indicated,True,False,5,True
+2490988246,CALUS Mini-Tool,Submachine Gun,Legendary,source-indicated,True,True,0,True
+1506719573,Cold Front,Submachine Gun,Legendary,source-indicated,True,False,5,True
+2814093983,Cold Front,Submachine Gun,Legendary,availability-unverified,True,False,5,True
+3206190066,Cold Front,Submachine Gun,Legendary,source-indicated,True,False,5,True
+822872238,DEADHORSE 04,Submachine Gun,Legendary,source-indicated,True,True,0,True
+2130249527,Death Adder,Submachine Gun,Legendary,source-indicated,True,False,5,True
+2517599010,Death Adder,Submachine Gun,Legendary,source-indicated,False,False,1,False
+2742490609,Death Adder,Submachine Gun,Legendary,source-indicated,True,True,0,True
+1601177201,Enyo-D,Submachine Gun,Legendary,source-indicated,True,True,0,True
+1459443448,Escape Velocity,Submachine Gun,Legendary,source-indicated,False,False,1,False
+1786797708,Escape Velocity,Submachine Gun,Legendary,source-indicated,True,False,5,True
+1487476133,Every Waking Moment,Submachine Gun,Legendary,source-indicated,True,True,0,True
+4277547616,Every Waking Moment,Submachine Gun,Legendary,source-indicated,True,False,5,True
+4227181568,Exit Strategy,Submachine Gun,Legendary,source-indicated,True,False,4,True
+1097616550,Extraordinary Rendition,Submachine Gun,Legendary,source-indicated,True,True,0,True
+2700862856,Foggy Notion,Submachine Gun,Legendary,source-indicated,False,False,1,False
+1526296434,Forensic Nightmare,Submachine Gun,Legendary,source-indicated,True,True,0,True
+1513993763,Friction Fire,Submachine Gun,Legendary,source-indicated,True,False,5,True
+3341893443,Funnelweb,Submachine Gun,Legendary,source-indicated,True,True,0,True
+72775246,Gunburn,Submachine Gun,Legendary,availability-unverified,True,True,0,True
+3431536253,Gunburn,Submachine Gun,Legendary,source-indicated,True,True,0,True
+105567493,Hard Truths,Submachine Gun,Legendary,source-indicated,True,False,5,True
+1723472487,IKELOS_SMG_v1.0.1,Submachine Gun,Legendary,source-indicated,True,False,2,True
+2222560548,IKELOS_SMG_v1.0.2,Submachine Gun,Legendary,source-indicated,True,True,0,True
+2149683300,IKELOS_SMG_v1.0.3,Submachine Gun,Legendary,source-indicated,True,True,0,True
+1258168956,Imminence,Submachine Gun,Legendary,source-indicated,True,True,0,True
+3951511045,Imminence (Adept),Submachine Gun,Legendary,source-indicated,True,True,0,True
+2611861926,Imminent Storm,Submachine Gun,Legendary,source-indicated,False,False,1,False
+1419158093,"M-17 ""Fast Talker""",Submachine Gun,Legendary,source-indicated,True,True,0,True
+2770035786,"M-17 ""Fast Talker""",Submachine Gun,Legendary,availability-unverified,True,True,0,True
+3089417788,MIDA Mini-Tool,Submachine Gun,Legendary,source-indicated,False,False,1,False
+3946054154,MIDA Mini-Tool,Submachine Gun,Legendary,source-indicated,True,True,0,True
+3234363830,Mirror Imago,Submachine Gun,Legendary,source-indicated,True,True,0,True
+3877448149,Mirror Imago,Submachine Gun,Legendary,availability-unverified,True,True,0,True
+302039451,Mirror Imago (Adept),Submachine Gun,Legendary,source-indicated,True,True,0,True
+4116546788,Mirror Imago (Adept),Submachine Gun,Legendary,availability-unverified,True,True,0,True
+3954531357,Mob Justice,Submachine Gun,Legendary,source-indicated,True,False,2,True
+3950088638,Motion to Suppress,Submachine Gun,Legendary,source-indicated,True,False,2,True
+3026836571,Multimach CCX,Submachine Gun,Legendary,source-indicated,True,True,0,True
+3211624072,Multimach CCX,Submachine Gun,Legendary,source-indicated,True,True,0,True
+3717177717,Multimach CCX,Submachine Gun,Legendary,source-indicated,True,True,0,True
+4265183314,Multimach CCX,Submachine Gun,Legendary,source-indicated,False,False,1,False
+2414612776,New City,Submachine Gun,Legendary,source-indicated,False,False,1,False
+3262192268,No Survivors,Submachine Gun,Legendary,availability-unverified,True,True,0,True
+3625452995,No Survivors,Submachine Gun,Legendary,source-indicated,True,True,0,True
+4193602194,No Survivors,Submachine Gun,Legendary,availability-unverified,True,True,0,True
+4228149269,No Survivors,Submachine Gun,Legendary,source-indicated,True,True,0,True
+189194532,No Survivors (Adept),Submachine Gun,Legendary,source-indicated,True,True,0,True
+1157220231,No Survivors (Adept),Submachine Gun,Legendary,availability-unverified,True,True,0,True
+825495813,Noxious Vetiver,Submachine Gun,Legendary,source-indicated,True,True,0,True
+2579239008,Out of Bounds,Submachine Gun,Legendary,source-indicated,True,True,0,True
+2988121501,Out of Bounds,Submachine Gun,Legendary,source-indicated,True,True,0,True
+3021407779,Out of Bounds,Submachine Gun,Legendary,availability-unverified,True,True,0,True
+2700862858,Out of Options,Submachine Gun,Legendary,source-indicated,False,False,1,False
+3769072067,Parabellum,Submachine Gun,Legendary,source-indicated,True,True,0,True
+3926811686,Parabellum,Submachine Gun,Legendary,source-indicated,True,True,0,True
+3620277039,Peculiar Charm,Submachine Gun,Legendary,source-indicated,True,True,0,True
+2191451996,Perfect Pitch,Submachine Gun,Legendary,source-indicated,True,True,0,True
+3276304504,Perfect Pitch,Submachine Gun,Legendary,source-indicated,True,True,0,True
+566976654,Phosphorus MG4,Submachine Gun,Legendary,source-indicated,False,False,1,False
+2653316158,Pillager,Submachine Gun,Legendary,source-indicated,True,False,5,True
+4100775158,Pizzicato-22,Submachine Gun,Legendary,source-indicated,True,True,0,True
+1066772626,Prolonged Engagement,Submachine Gun,Legendary,availability-unverified,True,False,5,True
+2349907931,Prolonged Engagement,Submachine Gun,Legendary,source-indicated,True,False,5,True
+2624561525,Prolonged Engagement,Submachine Gun,Legendary,source-indicated,True,False,5,True
+190747610,Qua Nilus II,Submachine Gun,Legendary,source-indicated,True,True,0,True
+1587779165,Radiant Stardust,Submachine Gun,Legendary,source-indicated,False,False,1,False
+1081724548,Rapacious Appetite,Submachine Gun,Legendary,source-indicated,True,True,0,True
+2700862859,Red Mamba,Submachine Gun,Legendary,source-indicated,False,False,1,False
+566976652,Resonance-42,Submachine Gun,Legendary,source-indicated,False,False,1,False
+3889907763,Royal Dispensation II,Submachine Gun,Legendary,source-indicated,False,False,1,False
+1524387902,Seraphine Haze,Submachine Gun,Legendary,source-indicated,True,True,0,True
+766323545,Seventh Seraph VY-7,Submachine Gun,Legendary,source-indicated,True,True,0,True
+1719169808,Seventh Seraph VY-7,Submachine Gun,Legendary,source-indicated,True,True,0,True
+2022294213,Shayura's Wrath,Submachine Gun,Legendary,source-indicated,True,True,0,True
+3682803680,Shayura's Wrath,Submachine Gun,Legendary,availability-unverified,True,True,0,True
+3747667917,Shayura's Wrath,Submachine Gun,Legendary,source-indicated,True,True,0,True
+501345268,Shayura's Wrath (Adept),Submachine Gun,Legendary,source-indicated,True,True,0,True
+4023807721,Shayura's Wrath (Adept),Submachine Gun,Legendary,availability-unverified,True,False,5,True
+3991544422,Sol Pariah 6,Submachine Gun,Legendary,source-indicated,False,False,1,False
+1339362514,Stochastic Variable,Submachine Gun,Legendary,source-indicated,False,False,1,False
+2272470786,Stochastic Variable,Submachine Gun,Legendary,source-indicated,True,True,0,True
+1447836603,Subjunctive,Submachine Gun,Legendary,source-indicated,True,True,0,True
+2663204025,Subjunctive,Submachine Gun,Legendary,source-indicated,True,False,5,True
+3886416794,Submission,Submachine Gun,Legendary,source-indicated,True,True,0,True
+1941816543,Submission (Adept),Submachine Gun,Legendary,source-indicated,True,True,0,True
+811403305,Synchronic Roulette,Submachine Gun,Legendary,source-indicated,True,False,5,True
+3752860091,Synchronic Roulette,Submachine Gun,Legendary,source-indicated,True,True,0,True
+3991544423,The Conqueror 2,Submachine Gun,Legendary,source-indicated,False,False,1,False
+1028124540,The Hero's Burden,Submachine Gun,Legendary,source-indicated,True,False,5,True
+1865351684,The Hero's Burden,Submachine Gun,Legendary,source-indicated,True,False,5,True
+2488587246,The Hero's Burden,Submachine Gun,Legendary,availability-unverified,True,True,0,True
+2909905776,The Hero's Burden,Submachine Gun,Legendary,source-indicated,False,False,1,False
+4222913208,The Hero's Burden,Submachine Gun,Legendary,source-indicated,True,True,0,True
+2872063099,The Immortal,Submachine Gun,Legendary,source-indicated,True,True,0,True
+4039572196,The Immortal,Submachine Gun,Legendary,source-indicated,True,True,0,True
+3193598749,The Immortal (Adept),Submachine Gun,Legendary,source-indicated,True,False,5,True
+2433826056,The Quickstep,Submachine Gun,Legendary,source-indicated,False,False,1,False
+1050806815,The Recluse,Submachine Gun,Legendary,source-indicated,True,True,0,True
+3098328572,The Recluse,Submachine Gun,Legendary,availability-unverified,True,True,0,True
+3257283337,The Recluse,Submachine Gun,Legendary,source-indicated,True,True,0,True
+3354242550,The Recluse,Submachine Gun,Legendary,source-indicated,False,False,1,False
+1200414607,The Showrunner,Submachine Gun,Legendary,source-indicated,False,False,1,False
+1999754402,The Showrunner,Submachine Gun,Legendary,source-indicated,True,True,0,True
+55393445,The Title,Submachine Gun,Legendary,source-indicated,True,True,0,True
+294129361,The Title,Submachine Gun,Legendary,source-indicated,True,False,5,True
+655712834,The Title,Submachine Gun,Legendary,source-indicated,True,True,0,True
+3559361670,The Title,Submachine Gun,Legendary,availability-unverified,True,True,0,True
+4106258882,The Title,Submachine Gun,Legendary,availability-unverified,True,True,0,True
+2681395357,Trackless Waste,Submachine Gun,Legendary,source-indicated,True,False,5,True
+673621062,Unending Tempest,Submachine Gun,Legendary,availability-unverified,True,True,0,True
+2510526114,Unending Tempest,Submachine Gun,Legendary,source-indicated,True,True,0,True
+2579239009,Unending Tempest,Submachine Gun,Legendary,source-indicated,True,True,0,True
+234411205,Unforgiven,Submachine Gun,Legendary,source-indicated,True,True,0,True
+3000847393,Unforgiven,Submachine Gun,Legendary,availability-unverified,True,False,5,True
+1229624538,Vikala SMG4,Submachine Gun,Legendary,availability-unverified,True,True,0,True
+3210792817,Vikala SMG4,Submachine Gun,Legendary,source-indicated,True,True,0,True
+149110926,Whatchamacallit,Submachine Gun,Legendary,availability-unverified,True,False,5,True
+357669417,Whatchamacallit,Submachine Gun,Legendary,source-indicated,True,False,5,True
+3959549446,Yarovit MG4,Submachine Gun,Legendary,source-indicated,True,True,0,True
+2965080304,Yeartide Apex,Submachine Gun,Legendary,availability-unverified,True,True,0,True
+3293207827,Yeartide Apex,Submachine Gun,Legendary,source-indicated,True,True,0,True
+250721843,Abide the Return,Sword,Legendary,source-indicated,True,False,5,True
+1291270049,Abide the Return,Sword,Legendary,source-indicated,True,True,0,True
+1644160541,Abide the Return,Sword,Legendary,source-indicated,True,False,5,True
+547165496,Abyssal Edge,Sword,Legendary,source-indicated,True,True,0,True
+2599520828,Abyssal Edge,Sword,Legendary,source-indicated,True,True,0,True
+4221591387,Abyssal Edge,Sword,Legendary,availability-unverified,True,True,0,True
+2712683313,Abyssal Edge (Adept),Sword,Legendary,source-indicated,True,True,0,True
+3054597646,Abyssal Edge (Adept),Sword,Legendary,availability-unverified,True,True,0,True
+1479562935,Aurora Dawn,Sword,Legendary,availability-unverified,True,False,5,True
+2111625436,Aurora Dawn,Sword,Legendary,source-indicated,True,True,0,True
+3366545721,Bequest,Sword,Legendary,source-indicated,True,True,0,True
+2508948099,Caretaker,Sword,Legendary,source-indicated,True,False,5,True
+938936806,Chivalric Fire,Sword,Legendary,source-indicated,True,True,0,True
+3438139008,Chivalric Fire,Sword,Legendary,source-indicated,True,True,0,True
+287042893,Complex Solution,Sword,Legendary,source-indicated,False,False,1,False
+1180270694,Crown-Splitter,Sword,Legendary,source-indicated,False,False,1,False
+2782325302,Crown-Splitter,Sword,Legendary,source-indicated,True,True,0,True
+569799274,Death's Razor,Sword,Legendary,source-indicated,True,False,5,True
+3371413056,Death's Razor,Sword,Legendary,source-indicated,True,False,5,True
+105164264,Double-Edged Answer,Sword,Legendary,source-indicated,True,True,0,True
+3551104348,Double-Edged Answer,Sword,Legendary,source-indicated,False,False,1,False
+2525261820,Dragoncult Sickle,Sword,Legendary,source-indicated,True,False,5,True
+3668817296,Dragoncult Sickle,Sword,Legendary,availability-unverified,True,True,0,True
+2344383760,Eighty-Six,Sword,Legendary,source-indicated,True,True,0,True
+1180270693,Eternity's Edge,Sword,Legendary,source-indicated,False,False,1,False
+2782325301,Eternity's Edge,Sword,Legendary,source-indicated,True,True,0,True
+243425374,Falling Guillotine,Sword,Legendary,availability-unverified,True,True,0,True
+614426548,Falling Guillotine,Sword,Legendary,source-indicated,True,True,0,True
+1815105249,Falling Guillotine,Sword,Legendary,source-indicated,True,True,0,True
+2480871539,Falling Guillotine,Sword,Legendary,source-indicated,True,True,0,True
+4207120603,False Idols,Sword,Legendary,source-indicated,True,True,0,True
+1490571337,Future Safe 10,Sword,Legendary,source-indicated,False,False,1,False
+3637669759,Geodetic HSm,Sword,Legendary,source-indicated,True,True,0,True
+569799275,Goldtusk,Sword,Legendary,source-indicated,True,False,5,True
+3371413057,Goldtusk,Sword,Legendary,source-indicated,True,True,0,True
+276918162,Hagakure,Sword,Legendary,source-indicated,False,False,1,False
+3257091166,Half-Truths,Sword,Legendary,source-indicated,True,True,0,True
+2121132948,Hardline Cut,Sword,Legendary,availability-unverified,True,True,0,True
+2121132949,Hardline Cut,Sword,Legendary,availability-unverified,True,True,0,True
+2121132950,Hardline Cut,Sword,Legendary,availability-unverified,True,True,0,True
+2121132951,Hardline Cut,Sword,Legendary,availability-unverified,True,True,0,True
+3461043766,Hardline Cut,Sword,Legendary,source-indicated,True,True,0,True
+944708986,Hero of Ages,Sword,Legendary,source-indicated,True,True,0,True
+2139640995,Hero of Ages,Sword,Legendary,availability-unverified,True,True,0,True
+2276266837,Honor's Edge,Sword,Legendary,source-indicated,False,False,1,False
+2857348871,Honor's Edge,Sword,Legendary,source-indicated,True,False,5,True
+3794274730,Ill Omen,Sword,Legendary,source-indicated,True,True,0,True
+1018072983,It Stared Back,Sword,Legendary,source-indicated,False,False,1,False
+715338174,Just in Case,Sword,Legendary,source-indicated,True,False,5,True
+1139727256,Just in Case,Sword,Legendary,source-indicated,True,True,0,True
+1456017061,Nasreddin,Sword,Legendary,source-indicated,True,True,0,True
+1979417829,Nasreddin,Sword,Legendary,source-indicated,True,True,0,True
+287042892,Negative Space,Sword,Legendary,source-indicated,False,False,1,False
+3629968765,Negative Space,Sword,Legendary,source-indicated,True,False,5,True
+2729232863,Night Terror,Sword,Legendary,source-indicated,True,True,0,True
+3870811754,Night Terror,Sword,Legendary,source-indicated,True,True,0,True
+1180270692,Quickfang,Sword,Legendary,source-indicated,False,True,0,False
+2782325300,Quickfang,Sword,Legendary,source-indicated,True,True,0,True
+1796949035,Razor's Edge,Sword,Legendary,source-indicated,True,False,5,True
+1313528549,Sola's Scar,Sword,Legendary,source-indicated,True,True,0,True
+4089030727,Sola's Scar,Sword,Legendary,source-indicated,True,True,0,True
+3847137620,Sola's Scar (Adept),Sword,Legendary,source-indicated,True,True,0,True
+4174481098,Steel Sybil Z-14,Sword,Legendary,source-indicated,False,False,1,False
+4230993599,Steel Sybil Z-14,Sword,Legendary,source-indicated,True,False,5,True
+2158575991,Stryker's Sure-Hand,Sword,Legendary,availability-unverified,True,True,0,True
+2490460292,Stryker's Sure-Hand,Sword,Legendary,source-indicated,True,True,0,True
+3704653637,Stryker's Sure-Hand,Sword,Legendary,source-indicated,True,True,0,True
+1085743380,Sullen Claw,Sword,Legendary,source-indicated,True,True,0,True
+3569407878,Summum Bonum,Sword,Legendary,source-indicated,True,False,5,True
+2001697739,Summum Bonum (Adept),Sword,Legendary,source-indicated,True,False,5,True
+1823308496,Synanceia,Sword,Legendary,source-indicated,True,False,5,True
+2765451288,Synanceia,Sword,Legendary,availability-unverified,True,False,5,True
+2765451289,Synanceia,Sword,Legendary,availability-unverified,True,False,5,True
+2765451290,Synanceia,Sword,Legendary,availability-unverified,True,False,5,True
+2765451291,Synanceia,Sword,Legendary,availability-unverified,True,False,5,True
+35794111,Temptation's Hook,Sword,Legendary,source-indicated,True,True,0,True
+1587953057,Temptation's Hook,Sword,Legendary,source-indicated,True,True,0,True
+3977827673,Temptation's Hook,Sword,Legendary,source-indicated,True,True,0,True
+393652859,Terciopelo-4bl,Sword,Legendary,source-indicated,True,True,0,True
+2775462168,Terciopelo-4bl,Sword,Legendary,availability-unverified,True,True,0,True
+3257091167,The Other Half,Sword,Legendary,source-indicated,True,True,0,True
+189854537,The Slammer,Sword,Legendary,availability-unverified,True,True,0,True
+2466028274,The Slammer,Sword,Legendary,source-indicated,True,True,0,True
+2889501828,The Slammer,Sword,Legendary,source-indicated,True,True,0,True
+1354727549,The Slammer (Adept),Sword,Legendary,source-indicated,True,True,0,True
+4066778670,Thin Precipice,Sword,Legendary,source-indicated,True,True,0,True
+569799273,Throne-Cleaver,Sword,Legendary,source-indicated,True,False,5,True
+3371413059,Throne-Cleaver,Sword,Legendary,source-indicated,True,True,0,True
+2683682446,Traitor's Fate,Sword,Legendary,source-indicated,False,False,1,False
+287042894,Unspoken Promise,Sword,Legendary,source-indicated,False,False,1,False
+396910433,Zephyr,Sword,Legendary,source-indicated,True,True,0,True
+601948197,Zephyr,Sword,Legendary,availability-unverified,True,True,0,True
+1911078836,Zephyr,Sword,Legendary,source-indicated,True,True,0,True
+3003492238,Zephyr,Sword,Legendary,availability-unverified,True,True,0,True
+3400256755,Zephyr,Sword,Legendary,availability-unverified,True,True,0,True
+4203034886,Zephyr,Sword,Legendary,source-indicated,False,False,1,False
+1471212226,Acasia's Dejection,Trace Rifle,Legendary,source-indicated,True,True,0,True
+3493494807,Acasia's Dejection (Adept),Trace Rifle,Legendary,source-indicated,True,True,0,True
+437854388,Action Item,Trace Rifle,Legendary,availability-unverified,True,False,5,True
+437854389,Action Item,Trace Rifle,Legendary,availability-unverified,True,False,5,True
+437854390,Action Item,Trace Rifle,Legendary,availability-unverified,True,False,5,True
+437854391,Action Item,Trace Rifle,Legendary,availability-unverified,True,False,5,True
+527989828,Action Item,Trace Rifle,Legendary,source-indicated,True,False,5,True
+4153087276,Appetence,Trace Rifle,Legendary,source-indicated,True,True,0,True
+1886840007,Chronophage,Trace Rifle,Legendary,source-indicated,True,True,0,True
+2323544076,Hollow Denial,Trace Rifle,Legendary,source-indicated,True,True,0,True
+1711056134,Incisor,Trace Rifle,Legendary,source-indicated,True,False,5,True
+4248997900,Incisor,Trace Rifle,Legendary,availability-unverified,True,True,0,True
+2421180981,Incisor (Adept),Trace Rifle,Legendary,availability-unverified,True,False,5,True
+2839600459,Incisor (Adept),Trace Rifle,Legendary,source-indicated,True,False,5,True
+981450701,Keraunios,Trace Rifle,Legendary,availability-unverified,True,True,0,True
+2029899814,Keraunios,Trace Rifle,Legendary,source-indicated,True,False,5,True
+2386208942,Keraunios,Trace Rifle,Legendary,source-indicated,True,True,0,True
+2827764482,Path of Least Resistance,Trace Rifle,Legendary,source-indicated,True,True,0,True
+548958835,Retraced Path,Trace Rifle,Legendary,source-indicated,True,True,0,True
+407150808,Ribbontail,Trace Rifle,Legendary,availability-unverified,True,False,5,True
+407150809,Ribbontail,Trace Rifle,Legendary,availability-unverified,True,False,5,True
+407150810,Ribbontail,Trace Rifle,Legendary,availability-unverified,True,False,5,True
+407150811,Ribbontail,Trace Rifle,Legendary,availability-unverified,True,False,5,True
+3576134513,Ribbontail,Trace Rifle,Legendary,source-indicated,True,False,5,True
+1303313141,Unsworn,Trace Rifle,Legendary,availability-unverified,True,True,0,True
+3462679024,Unsworn,Trace Rifle,Legendary,source-indicated,True,True,0,True
+1968711238,Warlord's Spear,Trace Rifle,Legendary,source-indicated,True,True,0,True
+2351747816,Cuboid ARu,Auto Rifle,Rare,source-indicated,False,False,0,False
+2860172149,Cuboid ARu,Auto Rifle,Rare,source-indicated,False,False,0,False
+2903592984,Lionheart,Auto Rifle,Rare,source-indicated,False,False,0,False
+2903592986,Rebuke AX-GL,Auto Rifle,Rare,availability-unverified,False,False,0,False
+2351747817,Refrain-23,Auto Rifle,Rare,source-indicated,False,False,0,False
+2860172148,Refrain-23,Auto Rifle,Rare,source-indicated,False,False,0,False
+2351747819,Ros Lysis II,Auto Rifle,Rare,source-indicated,False,False,0,False
+2860172150,Ros Lysis II,Auto Rifle,Rare,source-indicated,False,False,0,False
+2351747818,Sand Wasp-3au,Auto Rifle,Rare,source-indicated,False,False,0,False
+2860172151,Sand Wasp-3au,Auto Rifle,Rare,source-indicated,False,False,0,False
+2903592987,Yellowjacket-3au,Auto Rifle,Rare,source-indicated,False,False,0,False
+3651075426,Holless-IV,Combat Bow,Rare,source-indicated,False,False,0,False
+3441197112,Nox Cordis II,Fusion Rifle,Rare,source-indicated,False,False,0,False
+3662200189,Nox Cordis II,Fusion Rifle,Rare,source-indicated,False,False,0,False
+3441197113,Nox Lumen II,Fusion Rifle,Rare,source-indicated,False,False,0,False
+3662200188,Nox Lumen II,Fusion Rifle,Rare,source-indicated,False,False,0,False
+3441197115,Parsec TSu,Fusion Rifle,Rare,source-indicated,False,False,0,False
+3662200190,Parsec TSu,Fusion Rifle,Rare,source-indicated,False,False,0,False
+2936850733,Harsh Language,Grenade Launcher,Rare,source-indicated,False,False,0,False
+1120843238,Plemusa-B,Grenade Launcher,Rare,source-indicated,False,False,0,False
+3493948735,Plemusa-B,Grenade Launcher,Rare,source-indicated,False,False,0,False
+1120843239,Stampede Mk.32,Grenade Launcher,Rare,source-indicated,False,False,0,False
+3493948734,Stampede Mk.32,Grenade Launcher,Rare,source-indicated,False,False,0,False
+653875715,Allegro-34,Hand Cannon,Rare,source-indicated,False,False,0,False
+2591586260,Allegro-34,Hand Cannon,Rare,source-indicated,False,False,0,False
+653875714,Azimuth DSu,Hand Cannon,Rare,source-indicated,False,False,0,False
+2591586261,Azimuth DSu,Hand Cannon,Rare,source-indicated,False,False,0,False
+653875712,Ballyhoo Mk.27,Hand Cannon,Rare,source-indicated,False,False,0,False
+2591586263,Ballyhoo Mk.27,Hand Cannon,Rare,source-indicated,False,False,0,False
+1595336070,Guseva-C,Hand Cannon,Rare,source-indicated,False,False,0,False
+653875713,Lamia HC2,Hand Cannon,Rare,source-indicated,False,False,0,False
+2591586262,Lamia HC2,Hand Cannon,Rare,source-indicated,False,False,0,False
+1595336071,Presto-48,Hand Cannon,Rare,availability-unverified,False,False,0,False
+1502662697,King Cobra-4fr,Linear Fusion Rifle,Rare,source-indicated,False,False,0,False
+3117873459,Exitus Mk.I,Machine Gun,Rare,source-indicated,False,False,0,False
+1669771781,Agrona PR2,Pulse Rifle,Rare,source-indicated,False,False,0,False
+1678957658,Agrona PR2,Pulse Rifle,Rare,source-indicated,False,False,0,False
+1669771783,Bayesian MSu,Pulse Rifle,Rare,source-indicated,False,False,0,False
+1678957656,Bayesian MSu,Pulse Rifle,Rare,source-indicated,False,False,0,False
+1669771780,Encore-25,Pulse Rifle,Rare,source-indicated,False,False,0,False
+1678957659,Encore-25,Pulse Rifle,Rare,source-indicated,False,False,0,False
+3627718345,Nanty Narker,Pulse Rifle,Rare,source-indicated,False,False,0,False
+1669771782,Psi Cirrus II,Pulse Rifle,Rare,source-indicated,False,False,0,False
+1678957657,Psi Cirrus II,Pulse Rifle,Rare,source-indicated,False,False,0,False
+1877183765,Cup-Bearer SA/2,Rocket Launcher,Rare,source-indicated,False,False,0,False
+4221925398,Cup-Bearer SA/2,Rocket Launcher,Rare,source-indicated,False,False,0,False
+1877183764,Reginar-B,Rocket Launcher,Rare,source-indicated,False,False,0,False
+4221925399,Reginar-B,Rocket Launcher,Rare,source-indicated,False,False,0,False
+372212741,Weaver-C,Rocket Launcher,Rare,source-indicated,False,False,0,False
+1650626964,Armillary PSu,Scout Rifle,Rare,source-indicated,False,False,0,False
+3906357379,Armillary PSu,Scout Rifle,Rare,source-indicated,False,False,0,False
+1650626965,Black Tiger-2sr,Scout Rifle,Rare,source-indicated,False,False,0,False
+3906357378,Black Tiger-2sr,Scout Rifle,Rare,source-indicated,False,False,0,False
+1650626967,Madrugada SR2,Scout Rifle,Rare,source-indicated,False,False,0,False
+3906357376,Madrugada SR2,Scout Rifle,Rare,source-indicated,False,False,0,False
+2842493170,Sonata-48,Scout Rifle,Rare,source-indicated,False,False,0,False
+2842493171,Trax Dynia,Scout Rifle,Rare,source-indicated,False,False,0,False
+1650626966,Trax Lysis II,Scout Rifle,Rare,source-indicated,False,False,0,False
+3906357377,Trax Lysis II,Scout Rifle,Rare,source-indicated,False,False,0,False
+1457394911,Badlands Mk.24,Shotgun,Rare,source-indicated,False,False,0,False
+1995011456,Badlands Mk.24,Shotgun,Rare,source-indicated,False,False,0,False
+1457394910,Botheration Mk.28,Shotgun,Rare,source-indicated,False,False,0,False
+1995011457,Botheration Mk.28,Shotgun,Rare,source-indicated,False,False,0,False
+1457394908,Fussed Dark Mk.21,Shotgun,Rare,source-indicated,False,False,0,False
+1995011459,Fussed Dark Mk.21,Shotgun,Rare,source-indicated,False,False,0,False
+3556971406,Requiem-43,Shotgun,Rare,source-indicated,False,False,0,False
+711899775,Dissonance-34,Sidearm,Rare,source-indicated,False,False,0,False
+3809805228,Dissonance-34,Sidearm,Rare,source-indicated,False,False,0,False
+711899774,Requiem SI2,Sidearm,Rare,source-indicated,False,False,0,False
+3809805229,Requiem SI2,Sidearm,Rare,source-indicated,False,False,0,False
+711899773,Roderic-C,Sidearm,Rare,source-indicated,False,False,0,False
+3809805230,Roderic-C,Sidearm,Rare,source-indicated,False,False,0,False
+711899772,Vinegaroon-2si,Sidearm,Rare,source-indicated,False,False,0,False
+3809805231,Vinegaroon-2si,Sidearm,Rare,source-indicated,False,False,0,False
+1177293327,Aachen-LR2,Sniper Rifle,Rare,source-indicated,False,False,0,False
+4157959958,Aachen-LR2,Sniper Rifle,Rare,source-indicated,False,False,0,False
+1177293326,Damietta-LR2,Sniper Rifle,Rare,source-indicated,False,False,0,False
+4157959959,Damietta-LR2,Sniper Rifle,Rare,source-indicated,False,False,0,False
+1177293325,Tongeren-LR3,Sniper Rifle,Rare,source-indicated,False,False,0,False
+4157959956,Tongeren-LR3,Sniper Rifle,Rare,source-indicated,False,False,0,False
+1281822858,Furina-2mg,Submachine Gun,Rare,source-indicated,False,False,0,False
+3383958217,Furina-2mg,Submachine Gun,Rare,source-indicated,False,False,0,False
+1281822859,Harmony-21,Submachine Gun,Rare,source-indicated,False,False,0,False
+3383958216,Harmony-21,Submachine Gun,Rare,source-indicated,False,False,0,False
+1281822857,Philippis-B,Submachine Gun,Rare,source-indicated,False,False,0,False
+3383958218,Philippis-B,Submachine Gun,Rare,source-indicated,False,False,0,False
+1281822856,Protostar CSu,Submachine Gun,Rare,source-indicated,False,False,0,False
+3383958219,Protostar CSu,Submachine Gun,Rare,source-indicated,False,False,0,False
+1195725817,Sondok-C,Submachine Gun,Rare,source-indicated,False,False,0,False
+1195725818,Whip Scorpion-3mg,Submachine Gun,Rare,source-indicated,False,False,0,False
+1447973651,Future Imperfect,Sword,Rare,source-indicated,False,False,0,False
+2891976012,Future Imperfect,Sword,Rare,source-indicated,False,False,0,False
+1447973650,Rest for the Wicked,Sword,Rare,source-indicated,False,False,0,False
+2891976013,Rest for the Wicked,Sword,Rare,source-indicated,False,False,0,False
+2694044461,Cydonia-AR1,Auto Rifle,Uncommon,source-indicated,False,False,0,False
+2694044460,Home Again,Auto Rifle,Uncommon,source-indicated,False,False,0,False
+2694044463,Jiangshi AR1,Auto Rifle,Uncommon,source-indicated,False,False,0,False
+2694044462,SUROS Throwback,Auto Rifle,Uncommon,source-indicated,False,False,0,False
+1393021133,Equinox Tsu,Fusion Rifle,Uncommon,source-indicated,False,False,0,False
+1393021135,Nox Calyx II,Fusion Rifle,Uncommon,source-indicated,False,False,0,False
+1393021134,Nox Reve II,Fusion Rifle,Uncommon,source-indicated,False,False,0,False
+2936850734,Gareth-C,Grenade Launcher,Uncommon,source-indicated,False,False,0,False
+3246523828,Hadrian-A,Grenade Launcher,Uncommon,source-indicated,False,False,0,False
+3246523831,Para Torus I,Grenade Launcher,Uncommon,source-indicated,False,False,0,False
+2936850735,Penumbra GSm,Grenade Launcher,Uncommon,source-indicated,False,False,0,False
+3246523829,Resilient People,Grenade Launcher,Uncommon,source-indicated,False,False,0,False
+3185293914,Minuet-12,Hand Cannon,Uncommon,source-indicated,False,False,0,False
+3185293912,Mos Ultima II,Hand Cannon,Uncommon,source-indicated,False,False,0,False
+3185293913,One Earth,Hand Cannon,Uncommon,source-indicated,False,False,0,False
+3185293915,Picayune Mk. 33,Hand Cannon,Uncommon,source-indicated,False,False,0,False
+2213848861,Cadenza-11,Pulse Rifle,Uncommon,source-indicated,False,False,0,False
+2213848863,Psi Ferox II,Pulse Rifle,Uncommon,source-indicated,False,False,0,False
+2213848860,Psi Termina II,Pulse Rifle,Uncommon,source-indicated,False,False,0,False
+2213848862,Standing Tall,Pulse Rifle,Uncommon,source-indicated,False,False,0,False
+3627718344,Triumph DX-PR,Pulse Rifle,Uncommon,source-indicated,False,False,0,False
+2037589099,Butler RS/2,Rocket Launcher,Uncommon,source-indicated,False,False,0,False
+3361694401,Fare-Thee-Well,Scout Rifle,Uncommon,source-indicated,False,False,0,False
+3361694403,Inverness-SR2,Scout Rifle,Uncommon,source-indicated,False,False,0,False
+3361694402,Sea Scorpion-1sr,Scout Rifle,Uncommon,source-indicated,False,False,0,False
+3361694400,Trax Arda II,Scout Rifle,Uncommon,source-indicated,False,False,0,False
+4138415949,Ded Acumen II,Shotgun,Uncommon,source-indicated,False,False,0,False
+4138415950,Ded Nemoris II,Shotgun,Uncommon,source-indicated,False,False,0,False
+4138415948,Hand in Hand,Shotgun,Uncommon,source-indicated,False,False,0,False
+1310413524,Recital-17,Sidearm,Uncommon,source-indicated,False,False,0,False
+1310413525,Victoire SI2,Sidearm,Uncommon,source-indicated,False,False,0,False
+2605790033,Luna Nullis II,Sniper Rifle,Uncommon,source-indicated,False,False,0,False
+2605790034,Trondheim-LR2,Sniper Rifle,Uncommon,source-indicated,False,False,0,False
+2605790032,Troubadour,Sniper Rifle,Uncommon,source-indicated,False,False,0,False
+531591353,Daystar SMG2,Submachine Gun,Uncommon,source-indicated,False,False,0,False
+531591352,Forte-15,Submachine Gun,Uncommon,source-indicated,False,False,0,False
+1270948323,Nasreddin,Sword,Uncommon,source-indicated,False,False,0,False
