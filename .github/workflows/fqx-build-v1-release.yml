@@ -26,12 +26,15 @@ jobs:
       - name: Build and audit v1.0
         shell: python
         run: |
-          import csv, glob, json, math, pathlib, re, sqlite3, statistics, collections, hashlib
+          import csv, glob, json, math, pathlib, re, sqlite3, statistics, collections, hashlib, subprocess
 
           VERSION="v1.0"
           MANIFEST_VERSION="244213.26.06.29.2000-1-bnet.65864"
-          SOURCE_FILE=pathlib.Path("foxarmory-2026-return-d2dim.txt")
-          source=SOURCE_FILE.read_text(encoding="utf-8")
+          BASE_SOURCE_SHA="aab86043519861c2dfcf738c3801dec0ca45b04b"
+          source=subprocess.check_output(
+              ["git","show",f"{BASE_SOURCE_SHA}:foxarmory-2026-return-d2dim.txt"],
+              text=True, encoding="utf-8"
+          )
           source_lines=source.splitlines()
 
           rule_re=re.compile(r'^dimwishlist:item=(-?)(\d+)&perks=([^#]*)#notes:(.*)$')
