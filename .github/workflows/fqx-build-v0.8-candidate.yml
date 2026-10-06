@@ -34,7 +34,7 @@ jobs:
           for raw in pathlib.Path("tools/favorite-candidates/catalog-positive-fit-v0.1.txt").read_text(encoding="utf-8").splitlines():
               if not raw or raw.startswith("#"): continue
               wh,perks,newpve,bonus=raw.split("|",3)
-              catalog_map[(int(wh),tuple(int(x) for x in perks.split(",") if x))]={"PVE":int(re.match(r'(\\d+)',newpve).group(1)),"bonus":int(bonus)}
+              catalog_map[(int(wh),tuple(int(x) for x in perks.split(",") if x))]={"PVE":int(re.match(r'(\d+)',newpve).group(1)),"bonus":int(bonus)}
 
           catalog_updated=0
           rewritten=[]
@@ -183,7 +183,9 @@ jobs:
 
           favorite_hashes={a["weapon_hash"] for a in audit_leg}|{a["weapon_hash"] for a in audit_ex}
           summary={
-              "candidate_version":"v0.7-candidate",
+              "candidate_version":"v0.8-candidate",
+              "catalog_prediction_rules":len(catalog_map),
+              "catalog_rules_updated":catalog_updated,
               "legendary_rules":len(audit_leg),
               "legendary_hashes":len({a["weapon_hash"] for a in audit_leg}),
               "exotic_rules":len(audit_ex),
@@ -197,17 +199,19 @@ jobs:
               "source_lines":len(lines),
               "candidate_lines":len(out_lines),
           }
+          if catalog_updated != len(catalog_map):
+              failures.append({"reason":"catalog_update_count_mismatch","expected":len(catalog_map),"actual":catalog_updated})
           pathlib.Path("foxarmory-2026-return-d2dim.v0.8-candidate.txt").write_text("\n".join(out_lines)+"\n",encoding="utf-8")
-          pathlib.Path("fqx_v07_candidate_audit.json").write_text(json.dumps({"summary":summary,"failures":failures,"score_failures":score_failures,"malformed":malformed,"legendary_rules":audit_leg,"exotic_rules":audit_ex},indent=2),encoding="utf-8")
+          pathlib.Path("fqx_v08_candidate_audit.json").write_text(json.dumps({"summary":summary,"failures":failures,"score_failures":score_failures,"malformed":malformed,"legendary_rules":audit_leg,"exotic_rules":audit_ex},indent=2),encoding="utf-8")
           print(json.dumps(summary,indent=2))
           if failures or score_failures or malformed: raise SystemExit("v0.8 candidate audit failed")
 
-      - name: Upload v0.7 candidate
+      - name: Upload v0.8 candidate
         uses: actions/upload-artifact@v4
         with:
           name: fqx-d2dim-v0.8-candidate
           path: |
             foxarmory-2026-return-d2dim.v0.7-candidate.txt
-            fqx_v07_candidate_audit.json
+            fqx_v08_candidate_audit.json
           if-no-files-found: error
           retention-days: 1
