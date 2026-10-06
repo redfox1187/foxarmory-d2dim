@@ -1,0 +1,19 @@
+{
+  "candidate_version": "v1.0.1",
+  "base_v1_commit": "08063a43baccaf360d7551ffcd51475d50a7fdc4",
+  "source_sha256": "b6c4b1ce4f2381745cb718924dae3abea00b890e654fe44a51fb57b16e682a35",
+  "candidate_sha256": "bd432eb283dbe9ef30c0940fc1b84634c09e76407e081de4367271b3c844eb34",
+  "source_rules": 11130,
+  "candidate_rules": 11130,
+  "source_rules_with_pipe_in_notes": 11130,
+  "candidate_rules_with_pipe_in_notes": 0,
+  "signature_differences": 0,
+  "semantic_differences": 0,
+  "header_version_ok": true,
+  "firefright_full_note_visible_to_dim_parser": true,
+  "firefright_notes": "CPVE:50; PVE:76E; CPVP:50; PVP:63E; match:fox-favorite; evidence:favorite; source:fox-owned; score-model:v1.0.1",
+  "failures": {
+    "signature_differences": [],
+    "semantic_differences": []
+  }
+}
