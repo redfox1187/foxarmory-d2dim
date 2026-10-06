@@ -4087,3 +4087,151 @@ weapon_hash,name,type,tier,scope,perks,PVE,PVP,validation,availability,basis
 3049715579,Praxic Blade,Sword,Exotic,exotic-item,,92,65,E,source-indicated,type prior + exotic item-level allowance + Fox profile governance
 1753923263,Wolfsbane,Sword,Exotic,exotic-item,,92,65,E,source-indicated,type prior + exotic item-level allowance + Fox profile governance
 4207066264,Microcosm,Trace Rifle,Exotic,exotic-item,,89,68,E,source-indicated,type prior + exotic item-level allowance + Fox profile governance
+3319810952,Husk of the Pit,Auto Rifle,Common,low-tier-item,,55,40,E,source-indicated,type prior minus 28-point low-tier retention penalty; item-level
+4024037919,Origin Story,Auto Rifle,Common,low-tier-item,,55,40,E,availability-unverified,type prior minus 28-point low-tier retention penalty; item-level
+2209451511,Pariah,Auto Rifle,Common,low-tier-item,,55,40,E,source-indicated,type prior minus 28-point low-tier retention penalty; item-level
+2734369894,Stay Away,Grenade Launcher,Common,low-tier-item,,59,38,E,source-indicated,type prior minus 28-point low-tier retention penalty; item-level
+2553946496,Headstrong,Hand Cannon,Common,low-tier-item,,52,48,E,source-indicated,type prior minus 28-point low-tier retention penalty; item-level
+2553946497,Helios HC1,Hand Cannon,Common,low-tier-item,,52,48,E,source-indicated,type prior minus 28-point low-tier retention penalty; item-level
+3569842567,Lost and Found,Pulse Rifle,Common,low-tier-item,,53,45,E,source-indicated,type prior minus 28-point low-tier retention penalty; item-level
+3550697748,Thistle and Yew,Scout Rifle,Common,low-tier-item,,54,42,E,source-indicated,type prior minus 28-point low-tier retention penalty; item-level
+1977926913,Stubborn Oak,Shotgun,Common,low-tier-item,,52,43,E,source-indicated,type prior minus 28-point low-tier retention penalty; item-level
+3792720684,Spiderbite-1si,Sidearm,Common,low-tier-item,,54,43,E,source-indicated,type prior minus 28-point low-tier retention penalty; item-level
+1699493316,The Last Dance,Sidearm,Common,low-tier-item,,54,43,E,availability-unverified,type prior minus 28-point low-tier retention penalty; item-level
+53159280,Traveler's Chosen,Sidearm,Common,low-tier-item,,54,43,E,availability-unverified,type prior minus 28-point low-tier retention penalty; item-level
+53159281,Traveler's Chosen (Damaged),Sidearm,Common,low-tier-item,,54,43,E,source-indicated,type prior minus 28-point low-tier retention penalty; item-level
+254156943,Dead Zone Rifle,Sniper Rifle,Common,low-tier-item,,54,41,E,source-indicated,type prior minus 28-point low-tier retention penalty; item-level
+772531208,Etude-12,Submachine Gun,Common,low-tier-item,,53,45,E,source-indicated,type prior minus 28-point low-tier retention penalty; item-level
+1195725819,Sorrow MG2,Submachine Gun,Common,low-tier-item,,53,45,E,source-indicated,type prior minus 28-point low-tier retention penalty; item-level
+2683682447,Traitor's Fate,Sword,Common,low-tier-item,,61,34,E,availability-unverified,type prior minus 28-point low-tier retention penalty; item-level
+2351747816,Cuboid ARu,Auto Rifle,Rare,low-tier-item,,65,50,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2860172149,Cuboid ARu,Auto Rifle,Rare,low-tier-item,,65,50,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2903592984,Lionheart,Auto Rifle,Rare,low-tier-item,,65,50,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2903592986,Rebuke AX-GL,Auto Rifle,Rare,low-tier-item,,65,50,E,availability-unverified,type prior minus 18-point low-tier retention penalty; item-level
+2351747817,Refrain-23,Auto Rifle,Rare,low-tier-item,,65,50,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2860172148,Refrain-23,Auto Rifle,Rare,low-tier-item,,65,50,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2351747819,Ros Lysis II,Auto Rifle,Rare,low-tier-item,,65,50,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2860172150,Ros Lysis II,Auto Rifle,Rare,low-tier-item,,65,50,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2351747818,Sand Wasp-3au,Auto Rifle,Rare,low-tier-item,,65,50,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2860172151,Sand Wasp-3au,Auto Rifle,Rare,low-tier-item,,65,50,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2903592987,Yellowjacket-3au,Auto Rifle,Rare,low-tier-item,,65,50,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3651075426,Holless-IV,Combat Bow,Rare,low-tier-item,,67,48,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3441197112,Nox Cordis II,Fusion Rifle,Rare,low-tier-item,,54,51,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3662200189,Nox Cordis II,Fusion Rifle,Rare,low-tier-item,,54,51,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3441197113,Nox Lumen II,Fusion Rifle,Rare,low-tier-item,,54,51,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3662200188,Nox Lumen II,Fusion Rifle,Rare,low-tier-item,,54,51,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3441197115,Parsec TSu,Fusion Rifle,Rare,low-tier-item,,54,51,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3662200190,Parsec TSu,Fusion Rifle,Rare,low-tier-item,,54,51,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2936850733,Harsh Language,Grenade Launcher,Rare,low-tier-item,,69,48,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1120843238,Plemusa-B,Grenade Launcher,Rare,low-tier-item,,69,48,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3493948735,Plemusa-B,Grenade Launcher,Rare,low-tier-item,,69,48,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1120843239,Stampede Mk.32,Grenade Launcher,Rare,low-tier-item,,69,48,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3493948734,Stampede Mk.32,Grenade Launcher,Rare,low-tier-item,,69,48,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+653875715,Allegro-34,Hand Cannon,Rare,low-tier-item,,62,58,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2591586260,Allegro-34,Hand Cannon,Rare,low-tier-item,,62,58,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+653875714,Azimuth DSu,Hand Cannon,Rare,low-tier-item,,62,58,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2591586261,Azimuth DSu,Hand Cannon,Rare,low-tier-item,,62,58,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+653875712,Ballyhoo Mk.27,Hand Cannon,Rare,low-tier-item,,62,58,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2591586263,Ballyhoo Mk.27,Hand Cannon,Rare,low-tier-item,,62,58,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1595336070,Guseva-C,Hand Cannon,Rare,low-tier-item,,62,58,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+653875713,Lamia HC2,Hand Cannon,Rare,low-tier-item,,62,58,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2591586262,Lamia HC2,Hand Cannon,Rare,low-tier-item,,62,58,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1595336071,Presto-48,Hand Cannon,Rare,low-tier-item,,62,58,E,availability-unverified,type prior minus 18-point low-tier retention penalty; item-level
+1502662697,King Cobra-4fr,Linear Fusion Rifle,Rare,low-tier-item,,66,48,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3117873459,Exitus Mk.I,Machine Gun,Rare,low-tier-item,,69,47,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1669771781,Agrona PR2,Pulse Rifle,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1678957658,Agrona PR2,Pulse Rifle,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1669771783,Bayesian MSu,Pulse Rifle,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1678957656,Bayesian MSu,Pulse Rifle,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1669771780,Encore-25,Pulse Rifle,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1678957659,Encore-25,Pulse Rifle,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3627718345,Nanty Narker,Pulse Rifle,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1669771782,Psi Cirrus II,Pulse Rifle,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1678957657,Psi Cirrus II,Pulse Rifle,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1877183765,Cup-Bearer SA/2,Rocket Launcher,Rare,low-tier-item,,66,49,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+4221925398,Cup-Bearer SA/2,Rocket Launcher,Rare,low-tier-item,,66,49,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1877183764,Reginar-B,Rocket Launcher,Rare,low-tier-item,,66,49,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+4221925399,Reginar-B,Rocket Launcher,Rare,low-tier-item,,66,49,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+372212741,Weaver-C,Rocket Launcher,Rare,low-tier-item,,66,49,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1650626964,Armillary PSu,Scout Rifle,Rare,low-tier-item,,64,52,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3906357379,Armillary PSu,Scout Rifle,Rare,low-tier-item,,64,52,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1650626965,Black Tiger-2sr,Scout Rifle,Rare,low-tier-item,,64,52,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3906357378,Black Tiger-2sr,Scout Rifle,Rare,low-tier-item,,64,52,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1650626967,Madrugada SR2,Scout Rifle,Rare,low-tier-item,,64,52,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3906357376,Madrugada SR2,Scout Rifle,Rare,low-tier-item,,64,52,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2842493170,Sonata-48,Scout Rifle,Rare,low-tier-item,,64,52,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2842493171,Trax Dynia,Scout Rifle,Rare,low-tier-item,,64,52,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1650626966,Trax Lysis II,Scout Rifle,Rare,low-tier-item,,64,52,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3906357377,Trax Lysis II,Scout Rifle,Rare,low-tier-item,,64,52,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1457394911,Badlands Mk.24,Shotgun,Rare,low-tier-item,,62,53,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1995011456,Badlands Mk.24,Shotgun,Rare,low-tier-item,,62,53,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1457394910,Botheration Mk.28,Shotgun,Rare,low-tier-item,,62,53,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1995011457,Botheration Mk.28,Shotgun,Rare,low-tier-item,,62,53,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1457394908,Fussed Dark Mk.21,Shotgun,Rare,low-tier-item,,62,53,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1995011459,Fussed Dark Mk.21,Shotgun,Rare,low-tier-item,,62,53,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3556971406,Requiem-43,Shotgun,Rare,low-tier-item,,62,53,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+711899775,Dissonance-34,Sidearm,Rare,low-tier-item,,64,53,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3809805228,Dissonance-34,Sidearm,Rare,low-tier-item,,64,53,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+711899774,Requiem SI2,Sidearm,Rare,low-tier-item,,64,53,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3809805229,Requiem SI2,Sidearm,Rare,low-tier-item,,64,53,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+711899773,Roderic-C,Sidearm,Rare,low-tier-item,,64,53,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3809805230,Roderic-C,Sidearm,Rare,low-tier-item,,64,53,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+711899772,Vinegaroon-2si,Sidearm,Rare,low-tier-item,,64,53,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3809805231,Vinegaroon-2si,Sidearm,Rare,low-tier-item,,64,53,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1177293327,Aachen-LR2,Sniper Rifle,Rare,low-tier-item,,64,51,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+4157959958,Aachen-LR2,Sniper Rifle,Rare,low-tier-item,,64,51,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1177293326,Damietta-LR2,Sniper Rifle,Rare,low-tier-item,,64,51,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+4157959959,Damietta-LR2,Sniper Rifle,Rare,low-tier-item,,64,51,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1177293325,Tongeren-LR3,Sniper Rifle,Rare,low-tier-item,,64,51,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+4157959956,Tongeren-LR3,Sniper Rifle,Rare,low-tier-item,,64,51,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1281822858,Furina-2mg,Submachine Gun,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3383958217,Furina-2mg,Submachine Gun,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1281822859,Harmony-21,Submachine Gun,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3383958216,Harmony-21,Submachine Gun,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1281822857,Philippis-B,Submachine Gun,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3383958218,Philippis-B,Submachine Gun,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1281822856,Protostar CSu,Submachine Gun,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+3383958219,Protostar CSu,Submachine Gun,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1195725817,Sondok-C,Submachine Gun,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1195725818,Whip Scorpion-3mg,Submachine Gun,Rare,low-tier-item,,63,55,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1447973651,Future Imperfect,Sword,Rare,low-tier-item,,69,44,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2891976012,Future Imperfect,Sword,Rare,low-tier-item,,69,44,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+1447973650,Rest for the Wicked,Sword,Rare,low-tier-item,,69,44,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2891976013,Rest for the Wicked,Sword,Rare,low-tier-item,,69,44,E,source-indicated,type prior minus 18-point low-tier retention penalty; item-level
+2694044461,Cydonia-AR1,Auto Rifle,Uncommon,low-tier-item,,60,45,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+2694044460,Home Again,Auto Rifle,Uncommon,low-tier-item,,60,45,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+2694044463,Jiangshi AR1,Auto Rifle,Uncommon,low-tier-item,,60,45,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+2694044462,SUROS Throwback,Auto Rifle,Uncommon,low-tier-item,,60,45,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+1393021133,Equinox Tsu,Fusion Rifle,Uncommon,low-tier-item,,49,46,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+1393021135,Nox Calyx II,Fusion Rifle,Uncommon,low-tier-item,,49,46,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+1393021134,Nox Reve II,Fusion Rifle,Uncommon,low-tier-item,,49,46,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+2936850734,Gareth-C,Grenade Launcher,Uncommon,low-tier-item,,64,43,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+3246523828,Hadrian-A,Grenade Launcher,Uncommon,low-tier-item,,64,43,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+3246523831,Para Torus I,Grenade Launcher,Uncommon,low-tier-item,,64,43,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+2936850735,Penumbra GSm,Grenade Launcher,Uncommon,low-tier-item,,64,43,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+3246523829,Resilient People,Grenade Launcher,Uncommon,low-tier-item,,64,43,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+3185293914,Minuet-12,Hand Cannon,Uncommon,low-tier-item,,57,53,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+3185293912,Mos Ultima II,Hand Cannon,Uncommon,low-tier-item,,57,53,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+3185293913,One Earth,Hand Cannon,Uncommon,low-tier-item,,57,53,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+3185293915,Picayune Mk. 33,Hand Cannon,Uncommon,low-tier-item,,57,53,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+2213848861,Cadenza-11,Pulse Rifle,Uncommon,low-tier-item,,58,50,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+2213848863,Psi Ferox II,Pulse Rifle,Uncommon,low-tier-item,,58,50,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+2213848860,Psi Termina II,Pulse Rifle,Uncommon,low-tier-item,,58,50,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+2213848862,Standing Tall,Pulse Rifle,Uncommon,low-tier-item,,58,50,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+3627718344,Triumph DX-PR,Pulse Rifle,Uncommon,low-tier-item,,58,50,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+2037589099,Butler RS/2,Rocket Launcher,Uncommon,low-tier-item,,61,44,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+3361694401,Fare-Thee-Well,Scout Rifle,Uncommon,low-tier-item,,59,47,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+3361694403,Inverness-SR2,Scout Rifle,Uncommon,low-tier-item,,59,47,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+3361694402,Sea Scorpion-1sr,Scout Rifle,Uncommon,low-tier-item,,59,47,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+3361694400,Trax Arda II,Scout Rifle,Uncommon,low-tier-item,,59,47,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+4138415949,Ded Acumen II,Shotgun,Uncommon,low-tier-item,,57,48,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+4138415950,Ded Nemoris II,Shotgun,Uncommon,low-tier-item,,57,48,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+4138415948,Hand in Hand,Shotgun,Uncommon,low-tier-item,,57,48,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+1310413524,Recital-17,Sidearm,Uncommon,low-tier-item,,59,48,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+1310413525,Victoire SI2,Sidearm,Uncommon,low-tier-item,,59,48,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+2605790033,Luna Nullis II,Sniper Rifle,Uncommon,low-tier-item,,59,46,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+2605790034,Trondheim-LR2,Sniper Rifle,Uncommon,low-tier-item,,59,46,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+2605790032,Troubadour,Sniper Rifle,Uncommon,low-tier-item,,59,46,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+531591353,Daystar SMG2,Submachine Gun,Uncommon,low-tier-item,,58,50,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+531591352,Forte-15,Submachine Gun,Uncommon,low-tier-item,,58,50,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
+1270948323,Nasreddin,Sword,Uncommon,low-tier-item,,66,39,E,source-indicated,type prior minus 23-point low-tier retention penalty; item-level
