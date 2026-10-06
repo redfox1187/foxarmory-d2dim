@@ -52,7 +52,7 @@ def govern_catalog(lines,items,aff):
  out=[];audit=[]
  for l in lines:
   m=RR.match(l)
-  if not m or m.group(1):out.append(l);continue
+  if not m or m.group(1) or not m.group(3):out.append(l);continue
   h=int(m.group(2));perks=tuple(int(x) for x in m.group(3).split(',') if x.strip().isdigit());notes=m.group(4);base,_=metric(notes,'PVE')
   if base is None:out.append(l);continue
   typ=(items.get(h) or {}).get('itemTypeDisplayName') or '';a=aff.get((h,perks),0)
@@ -86,7 +86,7 @@ def favorite_block(source,items):
  for h,p,n,k in leg:
   e,q=scores[(h,p)];ce,cq=community(d,h)
   if h==BREAKNECK:e='80P';ev='favorite+profile-direct'
-  else:ev='favorite+historical-personal' if e.endswith('P') or q.endswith('P') else 'favorite'
+  else:ev='favorite+historical-personal' if e.endswith('P') else 'favorite'
   amb=' | ambiguity:same-name-legal-dual-candidate' if k=='ambiguous_dual_candidate' else ''
   b += [f'// {n} — Fox Favorite',f'dimwishlist:item={h}&perks={",".join(map(str,p))}#notes:CPVE:{ce} | PVE:{e} | CPVP:{cq} | PVP:{q} | match:fox-favorite | evidence:{ev} | source:fox-owned | score-model:foxfit-v1.0{amb}']
  b += ['','// --- Favorite Exotics (item-level preference; variant-specific quality may still differ) ---']
