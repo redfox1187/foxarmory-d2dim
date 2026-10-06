@@ -1,6 +1,6 @@
 # Fox Armory 2026 Return — v1.0 Release Report
 
-**Status:** release candidate generated on `release/v1.0-20261006`
+**Status:** PROMOTED TO `master` via PR #1 on 2026-10-06
 **Manifest:** 244213.26.06.29.2000-1-bnet.65864
 
 ## Scope
@@ -39,4 +39,4 @@ No community score is fabricated. Generated rules use `CPVE:NA` / `CPVP:NA`.
 
 ## Version-history note
 
-v0.6-v0.8 are pinned to their actual generator commits on archival branches. v0.9 was produced locally and is documented as a reconstruction rather than backdated. v1.0 is the first repository-native complete release candidate in this new lineage.
+v0.6-v0.8 are pinned to their actual generator commits on archival branches. v0.9 was produced locally and is documented as a reconstruction rather than backdated. v1.0 is the first repository-native complete release in this lineage. PR #1 merged to `master` as merge commit `edcc4f45e3b1b254d6b72438163d71ac9d526b20`.
