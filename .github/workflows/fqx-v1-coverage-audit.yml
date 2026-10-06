@@ -69,7 +69,7 @@ jobs:
               inv=o.get("inventory") or {}
               if o.get("itemType") != 3: continue
               # Legendary only; Exotics/fixed rolls handled separately.
-              if inv.get("tierType") != 5: continue
+              if inv.get("tierTypeName") != "Legendary" and inv.get("tierType") != 5: continue
               if not o.get("isInstanceItem",False): continue
               sc,rand,reuse,traitlike=socket_stats(o)
               if rand==0 and reuse==0: continue
