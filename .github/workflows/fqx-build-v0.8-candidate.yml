@@ -48,7 +48,7 @@ jobs:
                       pm=re.search(r'(?:^|\|\s*)PVE:(\d+)([EPV]?)',notes)
                       if pm:
                           suffix=pm.group(2) or "E"
-                          notes=re.sub(r'PVE:\d+[EPV]?',f'PVE:{pred["PVE"]}{suffix}',notes,count=1)
+                          notes=re.sub(r'(^|\|\s*)PVE:\d+[EPV]?',lambda mm: f'{mm.group(1)}PVE:{pred["PVE"]}{suffix}',notes,count=1)
                           if "score-model:positive-fit-v0.1" not in notes:
                               notes += f' | score-model:positive-fit-v0.1 | fox-fit-bonus:+{pred["bonus"]}'
                           line=f'dimwishlist:item={wh}&perks={m.group(3)}#notes:{notes}'
@@ -154,7 +154,7 @@ jobs:
           out_lines=out_lines[:first_rule]+block+[""]+out_lines[first_rule:]
 
           # Audit positions, syntax, and score floor.
-          positions={}; negpos={}; malformed=[]; favorite_rules=[]
+          positions={}; negpos={}; malformed=[]; favorite_rules=[]; catalog_notes={}
           for idx,line in enumerate(out_lines):
               if not line.startswith("dimwishlist:item="): continue
               m=rule_re.match(line)
@@ -164,6 +164,8 @@ jobs:
               if m.group(1): negpos.setdefault(wh,[]).append(idx)
               else: positions.setdefault((wh,perks),[]).append(idx)
               if "match:fox-favorite" in m.group(4): favorite_rules.append((idx,wh,perks,m.group(4)))
+              if not m.group(1) and (wh,perks) in catalog_map and "score-model:positive-fit-v0.1" in m.group(4):
+                  catalog_notes[(wh,perks)]=m.group(4)
 
           failures=[]; score_failures=[]
           for a in audit_leg:
@@ -181,11 +183,30 @@ jobs:
               m=re.search(r'(?:^|\|\s*)PVE:(\d+)([EPV])',notes)
               if not m or int(m.group(1))<70: score_failures.append({"weapon_hash":wh,"perks":list(perks),"notes":notes})
 
+          catalog_semantic_failures=[]
+          catalog_verified=0
+          for sig,pred in catalog_map.items():
+              notes=catalog_notes.get(sig)
+              if not notes:
+                  catalog_semantic_failures.append({"weapon_hash":sig[0],"perks":list(sig[1]),"reason":"catalog_rule_not_annotated"})
+                  continue
+              pm=re.search(r'(?:^|\|\s*)PVE:(\d+)([EPV]?)',notes)
+              cm=re.search(r'(?:^|\|\s*)CPVE:(\d+)(?=\s*\||$)',notes)
+              if not pm or int(pm.group(1)) != pred["PVE"]:
+                  catalog_semantic_failures.append({"weapon_hash":sig[0],"perks":list(sig[1]),"reason":"pve_target_mismatch","expected":pred["PVE"],"notes":notes})
+                  continue
+              if not cm:
+                  catalog_semantic_failures.append({"weapon_hash":sig[0],"perks":list(sig[1]),"reason":"cpve_format_corrupted","notes":notes})
+                  continue
+              catalog_verified += 1
+
           favorite_hashes={a["weapon_hash"] for a in audit_leg}|{a["weapon_hash"] for a in audit_ex}
           summary={
               "candidate_version":"v0.8-candidate",
               "catalog_prediction_rules":len(catalog_map),
               "catalog_rules_updated":catalog_updated,
+              "catalog_rules_semantically_verified":catalog_verified,
+              "catalog_semantic_failures":len(catalog_semantic_failures),
               "legendary_rules":len(audit_leg),
               "legendary_hashes":len({a["weapon_hash"] for a in audit_leg}),
               "exotic_rules":len(audit_ex),
@@ -202,9 +223,9 @@ jobs:
           if catalog_updated != len(catalog_map):
               failures.append({"reason":"catalog_update_count_mismatch","expected":len(catalog_map),"actual":catalog_updated})
           pathlib.Path("foxarmory-2026-return-d2dim.v0.8-candidate.txt").write_text("\n".join(out_lines)+"\n",encoding="utf-8")
-          pathlib.Path("fqx_v08_candidate_audit.json").write_text(json.dumps({"summary":summary,"failures":failures,"score_failures":score_failures,"malformed":malformed,"legendary_rules":audit_leg,"exotic_rules":audit_ex},indent=2),encoding="utf-8")
+          pathlib.Path("fqx_v08_candidate_audit.json").write_text(json.dumps({"summary":summary,"failures":failures,"score_failures":score_failures,"catalog_semantic_failures":catalog_semantic_failures,"malformed":malformed,"legendary_rules":audit_leg,"exotic_rules":audit_ex},indent=2),encoding="utf-8")
           print(json.dumps(summary,indent=2))
-          if failures or score_failures or malformed: raise SystemExit("v0.8 candidate audit failed")
+          if failures or score_failures or catalog_semantic_failures or malformed: raise SystemExit("v0.8 candidate audit failed")
 
       - name: Upload v0.8 candidate
         uses: actions/upload-artifact@v4
