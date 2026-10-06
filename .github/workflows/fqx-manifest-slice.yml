@@ -46,7 +46,7 @@ jobs:
           socket_categories = load_table("DestinySocketCategoryDefinition")
           socket_types = load_table("DestinySocketTypeDefinition")
 
-          item_names = {}
+          item_meta = {}
           weapons = {}
 
           for row in con.execute('SELECT id, json FROM "DestinyInventoryItemDefinition"'):
@@ -56,7 +56,15 @@ jobs:
                   continue
               h = int(row["id"]) & 0xffffffff
               name = (obj.get("displayProperties") or {}).get("name") or ""
-              item_names[h] = name
+              item_meta[h] = {
+                  "name": name,
+                  "item_type": obj.get("itemType"),
+                  "item_sub_type": obj.get("itemSubType"),
+                  "item_type_display_name": obj.get("itemTypeDisplayName") or "",
+                  "item_category_hashes": obj.get("itemCategoryHashes") or [],
+                  "trait_ids": obj.get("traitIds") or [],
+                  "plug_category_identifier": ((obj.get("plug") or {}).get("plugCategoryIdentifier") or ""),
+              }
               if obj.get("itemType") == 3 and obj.get("sockets"):
                   weapons[h] = obj
 
@@ -78,7 +86,9 @@ jobs:
                       continue
                   out.append({
                       "hash": int(ph),
-                      "name": item_names.get(int(ph), ""),
+                      "name": (item_meta.get(int(ph)) or {}).get("name", ""),
+                      "item_type_display_name": (item_meta.get(int(ph)) or {}).get("item_type_display_name", ""),
+                      "plug_category_identifier": (item_meta.get(int(ph)) or {}).get("plug_category_identifier", ""),
                   })
               return out
 
@@ -107,7 +117,11 @@ jobs:
                       seen.add(ph)
                       options.append({
                           "hash": ph,
-                          "name": item_names.get(ph, ""),
+                          "name": (item_meta.get(ph) or {}).get("name", ""),
+                          "item_type_display_name": (item_meta.get(ph) or {}).get("item_type_display_name", ""),
+                          "plug_category_identifier": (item_meta.get(ph) or {}).get("plug_category_identifier", ""),
+                          "item_category_hashes": (item_meta.get(ph) or {}).get("item_category_hashes", []),
+                          "trait_ids": (item_meta.get(ph) or {}).get("trait_ids", []),
                           "source": source,
                       })
 
